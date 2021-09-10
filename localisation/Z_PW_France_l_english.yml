@@ -1,0 +1,44 @@
+﻿l_english:
+ 
+ 
+ #Bookmark Lore Blurb
+ FRA_PROJECT_WILSON_DESC:0 "The Great War saw the return of Alsace-Lorraine to the rightful owners of France but the Prime Minister Georges Clemenceau felt that he was pushed aside during the drafting and signing of the Post-War treaties by President Wilson in the United States. Clemenceau discreetly had propaganda published which inadvertedly lead to the rise of a new nationalist movement in France much like in Hungary. Rise of New Nationalists lead to a left wing government in the late 20s that eventually lost to the now ruling National Bloc attempting to quell radicals while also preparing for whats to come."
+ 
+ #Country Name
+ FRA_national_unitarist:0 "French Republic"
+ FRA_national_unitarist_DEF:0 "The French Republic"
+ FRA_national_unitarist_ADJ:0 "French"
+ FRA_despotist:0 "French Republic"
+ FRA_despotist_DEF:0 "The French Republic"
+ FRA_despotist_ADJ:0 "French"
+ FRA_authoritarian_democrat:0 "French Republic"
+ FRA_authoritarian_democrat_DEF:0 "The French Republic"
+ FRA_authoritarian_democrat_ADJ:0 "French"
+ FRA_social_conservative:0 "French Republic"
+ FRA_social_conservative_DEF:0 "The French Republic"
+ FRA_social_conservative_ADJ:0 "French"
+ FRA_market_liberal:0 "French Republic"
+ FRA_market_liberal_DEF:0 "The French Republic"
+ FRA_market_liberal_ADJ:0 "French"
+ FRA_social_liberal:0 "French Republic"
+ FRA_social_liberal_DEF:0 "The French Republic"
+ FRA_social_liberal_ADJ:0 "French"
+ FRA_social_democrat:0 "French Republic"
+ FRA_social_democrat_DEF:0 "The French Republic"
+ FRA_social_democrat_ADJ:0 "French"
+ FRA_libertarian:0 "French Republic"
+ FRA_libertarian_DEF:0 "The French Republic"
+ FRA_libertarian_ADJ:0 "French"
+ FRA_radical_socialist:0 "French Republic"
+ FRA_radical_socialist_DEF:0 "The French Republic"
+ FRA_radical_socialist_ADJ:0 "French"
+ FRA_communist:0 "French Republic"
+ FRA_communist_DEF:0 "The French Republic"
+ FRA_communist_ADJ:0 "French"
+ 
+ FRA_social_conservative_party:0 "Bloc National-FR"
+ FRA_social_conservative_party_long:0 "Bloc National(Fédération Républicaine) - National Bloc(Republican Federation)"
+ FRA_market_liberal_party:0 "Bloc National-AD"
+ FRA_market_liberal_party_long:0 "Bloc National(Alliance Démocratique) - National Bloc(Democratic Alliance)"
+ FRA_social_liberal_party:0 "Bloc National-RI"
+ FRA_social_liberal_party_long:0 "Bloc National(Radicaux Indépendants) - National Bloc(Independent Radicals)" #If the Bloc fails then it just becomes Independent Radicals

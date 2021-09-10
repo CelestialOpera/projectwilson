@@ -1,0 +1,27 @@
+
+state={
+	id=817
+	name="STATE_817"
+
+	history={
+		victory_points = {
+			4611 5
+		}
+		owner = PAN
+		add_core_of = PAN
+		buildings = {
+			infrastructure = 3
+			4611 = {
+				naval_base = 1
+			}
+		}
+
+	}
+
+	provinces={
+		1633 4611 4624
+	}
+	manpower=175411
+	buildings_max_level_factor=1.000
+	state_category=town
+}

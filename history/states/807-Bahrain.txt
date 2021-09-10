@@ -1,0 +1,23 @@
+state={
+	id=807
+	name="STATE_807"
+
+	resources={
+		oil=5
+	}
+
+	history={
+		owner = ENG
+		buildings = {
+			infrastructure = 3
+		}
+
+	}
+
+	provinces={
+		13236 
+	}
+	manpower=50231
+	buildings_max_level_factor=1.000
+	state_category=town
+}

@@ -1,0 +1,51 @@
+﻿capital = 267
+
+oob = "AFG_1936"
+
+set_technology = {
+	infantry_weapons = 1
+	gwtank = 1
+	basic_light_tank = 1
+}
+
+set_politics = {
+	ruling_party = authoritarian_democrat
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	national_unitarist = 10
+	despotist = 10
+	authoritarian_democrat = 10
+	social_conservative = 10
+	market_liberal = 10
+	social_liberal = 10
+	social_democrat = 10
+	libertarian = 10
+	radical_socialist = 10
+	communist = 10
+}
+
+create_country_leader = {
+	name = "King Amanullah I"
+	desc = "POLITICS_KING_AMANULLAH_I_DESC"
+	picture = "King_Amanullah_I.dds"
+	expire = "1965.1.1"
+	ideology = authoritarian_democrat_ideology
+	traits = {
+		#
+	}
+}
+
+create_corps_commander = {
+	name = "Sardar Shah Wali Khan"
+	portrait_path = "gfx/leaders/SAU/Portrait_Arabia_Generic_land_3.dds"
+	traits = { desert_fox }
+	skill = 4
+	attack_skill = 5
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+}

@@ -1,0 +1,90 @@
+bookmarks = {
+	bookmark = {
+		name = "PROJECT_WILSON_NAME"
+		desc = "PROJECT_WILSON_DESC"
+		date = 1936.1.1.12
+		picture = "GFX_select_date_1936"
+		default_country = "HUN"
+		default = yes
+		
+		"SOV"={
+			history = "SOV_PROJECT_WILSON_DESC"
+			ideology = communist
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}	
+		}
+		"FRA"={
+			history = "FRA_PROJECT_WILSON_DESC"
+			ideology = social_conservative
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		"ENG"={
+			history = "ENG_PROJECT_WILSON_DESC"
+			ideology = social_liberal
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		"USA"={
+			history = "USA_PROJECT_WILSON_DESC"
+			ideology = social_conservative
+			ideas = {
+				
+			}	
+			focuses = {
+				
+			}		
+		}
+		"JAP"={
+			history = "JAP_PROJECT_WILSON_DESC"
+			ideology = social_liberal
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		"GER"={
+			history = "GER_PROJECT_WILSON_DESC"
+			ideology = social_democratic
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		"RUS"={
+			history = "RUS_PROJECT_WILSON_DESC"
+			ideology = despotist
+			ideas = {
+				
+			}	
+			focuses = {
+				
+			}			
+		}
+
+		"---"={
+			history = "OTHER_PROJECT_WILSON_DESC"
+		}
+		
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

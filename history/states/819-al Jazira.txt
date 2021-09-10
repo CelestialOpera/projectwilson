@@ -1,0 +1,29 @@
+
+state={
+	id=819
+	name="STATE_819"
+
+	history={
+		owner = SYR
+		add_core_of = SYR
+		add_claim_by = KUR
+		buildings = {
+			infrastructure = 3
+
+		}
+		victory_points = {
+			1549 1
+		}
+		victory_points = {
+			6883 1
+		}
+
+	}
+
+	provinces={
+		901 1549 1578 1606 1634 6883 10882
+	}
+	manpower=171111
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

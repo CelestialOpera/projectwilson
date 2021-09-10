@@ -1,0 +1,1803 @@
+﻿focus_tree = {
+	id = hungarian_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = -10
+			tag = HUN
+		}
+	}
+	
+	
+	continuous_focus_position = { x = 0 y = 10000 }
+	
+	
+	focus = {
+		id = HUN_death_of_our_leader
+		icon = GFX_focus_generic_treaty
+		x = 10
+		y = 0
+
+		cost = 2
+		
+		#bypass = {
+		#	date < 2010.01.01
+		#}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+			has_country_flag = HUN_gambos_dead
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HUN_a_statement_of_strength
+		#icon = GFX_focus_generic_little_entente
+		x = -2
+		y = 1
+		relative_position_id = HUN_death_of_our_leader
+
+		cost = 2
+		prerequisite = { focus = HUN_death_of_our_leader }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HUN_state_funeral
+		#icon = GFX_focus_generic_little_entente
+		x = 0
+		y = 1
+		relative_position_id = HUN_death_of_our_leader
+
+		cost = 2
+		prerequisite = { focus = HUN_death_of_our_leader }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HUN_a_conspiracy_by_doctors #Add ? in loc
+		#icon = GFX_focus_generic_little_entente
+		x = 2
+		y = 1
+		relative_position_id = HUN_death_of_our_leader
+
+		cost = 2
+		prerequisite = { focus = HUN_death_of_our_leader }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HUN_convene_the_hungarian_assembly
+		#icon = GFX_focus_generic_little_entente
+		x = 0
+		y = 2
+		relative_position_id = HUN_death_of_our_leader
+
+		cost = 2
+		prerequisite = { focus = HUN_a_statement_of_strength }
+		prerequisite = { focus = HUN_state_funeral }
+		prerequisite = { focus = HUN_a_conspiracy_by_doctors }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HUN_tribalistak_takes_the_reigns #Tribalisták
+		#icon = GFX_focus_generic_little_entente
+		x = -5
+		y = 3
+		relative_position_id = HUN_death_of_our_leader
+
+		cost = 3
+		prerequisite = { focus = HUN_convene_the_hungarian_assembly }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+			has_country_flag = HUN_Pronay_wins_out
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HUN_honor_the_traditions_of_old
+		#icon = GFX_focus_generic_little_entente
+		x = -6
+		y = 4
+		relative_position_id = HUN_death_of_our_leader
+
+		cost = 5
+		prerequisite = { focus = HUN_tribalistak_takes_the_reigns }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HUN_the_hungarian_man_rides_the_steed
+		#icon = GFX_focus_generic_little_entente
+		x = -4
+		y = 4
+		relative_position_id = HUN_death_of_our_leader
+
+		cost = 5
+		prerequisite = { focus = HUN_tribalistak_takes_the_reigns }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HUN_in_a_catholic_way
+		#icon = GFX_focus_generic_little_entente
+		x = -6
+		y = 5
+		relative_position_id = HUN_death_of_our_leader
+
+		cost = 5
+		prerequisite = { focus = HUN_honor_the_traditions_of_old }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HUN_hungarian_tribalism
+		#icon = GFX_focus_generic_little_entente
+		x = -4
+		y = 5
+		relative_position_id = HUN_death_of_our_leader
+
+		cost = 5
+		prerequisite = { focus = HUN_the_hungarian_man_rides_the_steed }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HUN_power_to_the_fo
+		#icon = GFX_focus_generic_little_entente
+		x = -5
+		y = 6
+		relative_position_id = HUN_death_of_our_leader
+
+		cost = 4
+		prerequisite = { focus = HUN_in_a_catholic_way }
+		prerequisite = { focus = HUN_hungarian_tribalism }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HUN_but_all_under_the_nagyfonok #Nagyfőnök/Great Chief
+		#icon = GFX_focus_generic_little_entente
+		x = -5
+		y = 7
+		relative_position_id = HUN_death_of_our_leader
+
+		cost = 3
+		prerequisite = { focus = HUN_power_to_the_fo }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HUN_husegesek_maintain_control #Hűségesek
+		#icon = GFX_focus_generic_little_entente
+		x = 0
+		y = 3
+		relative_position_id = HUN_death_of_our_leader
+
+		cost = 3
+		prerequisite = { focus = HUN_convene_the_hungarian_assembly }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+			has_country_flag = HUN_endre_wins_out
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HUN_immortalize_apa_gambos
+		#icon = GFX_focus_generic_little_entente
+		x = -1
+		y = 4
+		relative_position_id = HUN_death_of_our_leader
+
+		cost = 5
+		prerequisite = { focus = HUN_husegesek_maintain_control }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HUN_corporate_achievement_of_the_magyar
+		#icon = GFX_focus_generic_little_entente
+		x = 1
+		y = 4
+		relative_position_id = HUN_death_of_our_leader
+
+		cost = 5
+		prerequisite = { focus = HUN_husegesek_maintain_control }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HUN_the_agrarian_initiative
+		#icon = GFX_focus_generic_little_entente
+		x = -1
+		y = 5
+		relative_position_id = HUN_death_of_our_leader
+
+		cost = 5
+		prerequisite = { focus = HUN_immortalize_apa_gambos }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HUN_purge_the_intellectuals
+		#icon = GFX_focus_generic_little_entente
+		x = 1
+		y = 5
+		relative_position_id = HUN_death_of_our_leader
+
+		cost = 5
+		prerequisite = { focus = HUN_corporate_achievement_of_the_magyar }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HUN_their_last_moon #Purge of opposition like Szalasi and Pronay
+		#icon = GFX_focus_generic_little_entente
+		x = 0
+		y = 6
+		relative_position_id = HUN_death_of_our_leader
+
+		cost = 4
+		prerequisite = { focus = HUN_the_agrarian_initiative }
+		prerequisite = { focus = HUN_purge_the_intellectuals }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HUN_trust_in_the_ujapa #Újapa = New Father/Endre
+		#icon = GFX_focus_generic_little_entente
+		x = 0
+		y = 7
+		relative_position_id = HUN_death_of_our_leader
+
+		cost = 3
+		prerequisite = { focus = HUN_their_last_moon }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HUN_fiatal_garda_take_over #Fiatal Gárda
+		#icon = GFX_focus_generic_little_entente
+		x = 5
+		y = 3
+		relative_position_id = HUN_death_of_our_leader
+
+		cost = 3
+		prerequisite = { focus = HUN_convene_the_hungarian_assembly }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+			has_country_flag = HUN_szalasi_wins_out
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HUN_catholic_law 
+		#icon = GFX_focus_generic_little_entente
+		x = 4
+		y = 4
+		relative_position_id = HUN_death_of_our_leader
+
+		cost = 5
+		prerequisite = { focus = HUN_fiatal_garda_take_over }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HUN_lesser_grip_on_the_worker 
+		#icon = GFX_focus_generic_little_entente
+		x = 6
+		y = 4
+		relative_position_id = HUN_death_of_our_leader
+
+		cost = 5
+		prerequisite = { focus = HUN_fiatal_garda_take_over }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HUN_promote_magyar_racial_science 
+		#icon = GFX_focus_generic_little_entente
+		x = 4
+		y = 5
+		relative_position_id = HUN_death_of_our_leader
+
+		cost = 5
+		prerequisite = { focus = HUN_catholic_law }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HUN_radicalize_the_peasentry 
+		#icon = GFX_focus_generic_little_entente
+		x = 6
+		y = 5
+		relative_position_id = HUN_death_of_our_leader
+
+		cost = 5
+		prerequisite = { focus = HUN_lesser_grip_on_the_worker }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HUN_hungarians_rule_hungary
+		#icon = GFX_focus_generic_little_entente
+		x = 5
+		y = 6
+		relative_position_id = HUN_death_of_our_leader
+
+		cost = 4
+		prerequisite = { focus = HUN_promote_magyar_racial_science }
+		prerequisite = { focus = HUN_radicalize_the_peasentry }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HUN_all_hail_the_vezeto
+		#icon = GFX_focus_generic_little_entente
+		x = 5
+		y = 7
+		relative_position_id = HUN_death_of_our_leader
+
+		cost = 3
+		prerequisite = { focus = HUN_hungarians_rule_hungary }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HUN_magyars_first
+		#icon = GFX_focus_generic_little_entente
+		x = 0
+		y = 8
+		relative_position_id = HUN_death_of_our_leader
+
+		cost = 1
+		prerequisite = { focus = HUN_but_all_under_the_nagyfonok focus = HUN_trust_in_the_ujapa focus = HUN_all_hail_the_vezeto }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HUN_forge_hungarian_warrior_spirit
+		#icon = GFX_focus_generic_little_entente
+		x = -1
+		y = 9
+		relative_position_id = HUN_death_of_our_leader
+
+		cost = 8
+		prerequisite = { focus = HUN_magyars_first }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HUN_kigyogyitas_education #Kigyógyítás - Reclemation
+		#icon = GFX_focus_generic_little_entente
+		x = 1
+		y = 9
+		relative_position_id = HUN_death_of_our_leader
+
+		cost = 8
+		prerequisite = { focus = HUN_magyars_first }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HUN_demands_over_burgenland
+		#icon = GFX_focus_generic_little_entente
+		x = 0
+		y = 10
+		relative_position_id = HUN_death_of_our_leader
+
+		cost = 10
+		prerequisite = { focus = HUN_forge_hungarian_warrior_spirit }
+		prerequisite = { focus = HUN_kigyogyitas_education }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+		}
+
+		completion_reward = {
+			#If Austria does not own Burgenland then Hungary gets claims to it; and a wargoal if possible with variables basing on whomever owns it
+		}
+	}
+	
+	focus = {
+		id = HUN_declare_the_egyseg_paktum #Egység Paktum
+		#icon = GFX_focus_generic_little_entente
+		x = -2
+		y = 11
+		relative_position_id = HUN_death_of_our_leader
+
+		cost = 10
+		prerequisite = { focus = HUN_demands_over_burgenland }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HUN_promises_of_peace_with_turkish_brothers
+		#icon = GFX_focus_generic_little_entente
+		x = -2
+		y = 12
+		relative_position_id = HUN_death_of_our_leader
+
+		cost = 10
+		prerequisite = { focus = HUN_declare_the_egyseg_paktum }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HUN_push_the_slavs_south
+		#icon = GFX_focus_generic_little_entente
+		x = 1
+		y = 11
+		relative_position_id = HUN_death_of_our_leader
+
+		cost = 10
+		prerequisite = { focus = HUN_demands_over_burgenland }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HUN_push_into_croatia
+		#icon = GFX_focus_generic_little_entente
+		x = 1
+		y = 12
+		relative_position_id = HUN_death_of_our_leader
+
+		cost = 10
+		prerequisite = { focus = HUN_push_the_slavs_south }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HUN_decry_liberal_world_order
+		#icon = GFX_focus_generic_little_entente
+		x = -2
+		y = 13
+		relative_position_id = HUN_death_of_our_leader
+
+		cost = 10
+		prerequisite = { focus = HUN_promises_of_peace_with_turkish_brothers }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HUN_treaty_of_nitra
+		#icon = GFX_focus_generic_little_entente
+		x = 2
+		y = 13
+		relative_position_id = HUN_death_of_our_leader
+
+		cost = 10
+		prerequisite = { focus = HUN_promises_of_peace_with_turkish_brothers }
+		prerequisite = { focus = HUN_push_into_croatia }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+			has_completed_focus = HUN_decry_liberal_world_order
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HUN_turkish_hungarian_treaty_of_research
+		#icon = GFX_focus_generic_little_entente
+		x = -3
+		y = 14
+		relative_position_id = HUN_death_of_our_leader
+
+		cost = 10
+		prerequisite = { focus = HUN_decry_liberal_world_order }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HUN_expansion_of_hungarian_fortification
+		#icon = GFX_focus_generic_little_entente
+		x = -1
+		y = 14
+		relative_position_id = HUN_death_of_our_leader
+
+		cost = 10
+		prerequisite = { focus = HUN_decry_liberal_world_order }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HUN_slovenia_or_death
+		#icon = GFX_focus_generic_little_entente
+		x = 2
+		y = 14
+		relative_position_id = HUN_death_of_our_leader
+
+		cost = 10
+		prerequisite = { focus = HUN_treaty_of_nitra }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HUN_train_with_the_turkish
+		#icon = GFX_focus_generic_little_entente
+		x = -3
+		y = 15
+		relative_position_id = HUN_death_of_our_leader
+
+		cost = 10
+		prerequisite = { focus = HUN_turkish_hungarian_treaty_of_research }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HUN_demands_to_the_vlachs
+		#icon = GFX_focus_generic_little_entente
+		x = 2
+		y = 15
+		relative_position_id = HUN_death_of_our_leader
+
+		cost = 10
+		prerequisite = { focus = HUN_slovenia_or_death }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HUN_approach_bukhara
+		#icon = GFX_focus_generic_little_entente
+		x = -4
+		y = 16
+		relative_position_id = HUN_death_of_our_leader
+
+		cost = 10
+		prerequisite = { focus = HUN_train_with_the_turkish }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HUN_approach_the_whites
+		#icon = GFX_focus_generic_little_entente
+		x = -2
+		y = 16
+		relative_position_id = HUN_death_of_our_leader
+
+		cost = 10
+		prerequisite = { focus = HUN_train_with_the_turkish }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HUN_the_italians_are_enemies
+		#icon = GFX_focus_generic_little_entente
+		x = 0
+		y = 16
+		relative_position_id = HUN_death_of_our_leader
+
+		cost = 10
+		prerequisite = { focus = HUN_expansion_of_hungarian_fortification }
+		prerequisite = { focus = HUN_demands_to_the_vlachs }
+		mutually_exclusive = {
+			focus = HUN_the_fiume_deal
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HUN_the_fiume_deal
+		#icon = GFX_focus_generic_little_entente
+		x = 2
+		y = 16
+		relative_position_id = HUN_death_of_our_leader
+
+		cost = 10
+		prerequisite = { focus = HUN_demands_to_the_vlachs }
+		mutually_exclusive = {
+			focus = HUN_the_italians_are_enemies
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HUN_enemy_in_the_germans
+		#icon = GFX_focus_generic_little_entente
+		x = 0
+		y = 17
+		relative_position_id = HUN_death_of_our_leader
+
+		cost = 10
+		prerequisite = { focus = HUN_the_italians_are_enemies focus = HUN_the_fiume_deal }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HUN_carpathia_and_beyond
+		#icon = GFX_focus_generic_little_entente
+		x = 2
+		y = 17
+		relative_position_id = HUN_death_of_our_leader
+
+		cost = 10
+		prerequisite = { focus = HUN_the_italians_are_enemies focus = HUN_the_fiume_deal }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HUN_enemy_in_the_french
+		#icon = GFX_focus_generic_little_entente
+		x = 4
+		y = 17
+		relative_position_id = HUN_death_of_our_leader
+
+		cost = 10
+		prerequisite = { focus = HUN_the_italians_are_enemies focus = HUN_the_fiume_deal }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HUN_build_the_foutvonal #Főútvonal - Highway/Sorta like Autobahn???
+		icon = GFX_focus_generic_treaty
+		x = 20
+		y = 0
+
+		cost = 9
+		
+		#bypass = {
+		#	date < 2010.01.01
+		#}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HUN_ideas_of_onellato #Önellátó meaning Self Determination, sorta Hungarianized Autarky
+		#icon = GFX_focus_generic_little_entente
+		x = -2
+		y = 1
+		relative_position_id = HUN_build_the_foutvonal
+
+		cost = 10
+		prerequisite = { focus = HUN_build_the_foutvonal }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HUN_loans_from_league_of_nations
+		#icon = GFX_focus_generic_little_entente
+		x = 0
+		y = 1
+		relative_position_id = HUN_build_the_foutvonal
+
+		cost = 10
+		prerequisite = { focus = HUN_build_the_foutvonal }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HUN_brothers_of_turan
+		#icon = GFX_focus_generic_little_entente
+		x = 2
+		y = 1
+		relative_position_id = HUN_build_the_foutvonal
+
+		cost = 5
+		prerequisite = { focus = HUN_build_the_foutvonal }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HUN_synthetic_fuel
+		#icon = GFX_focus_generic_little_entente
+		x = -3
+		y = 2
+		relative_position_id = HUN_build_the_foutvonal
+
+		cost = 7
+		prerequisite = { focus = HUN_ideas_of_onellato }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HUN_focus_on_hungarian_mining_operations
+		#icon = GFX_focus_generic_little_entente
+		x = -1
+		y = 2
+		relative_position_id = HUN_build_the_foutvonal
+
+		cost = 10
+		prerequisite = { focus = HUN_ideas_of_onellato }
+		mutually_exclusive = {
+			focus = HUN_prospects_in_anatolia
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HUN_prospects_in_anatolia
+		#icon = GFX_focus_generic_little_entente
+		x = 1
+		y = 2
+		relative_position_id = HUN_build_the_foutvonal
+
+		cost = 10
+		prerequisite = { focus = HUN_brothers_of_turan }
+		mutually_exclusive = {
+			focus = HUN_focus_on_hungarian_mining_operations
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HUN_keeping_our_friends_strong
+		#icon = GFX_focus_generic_little_entente
+		x = 3
+		y = 2
+		relative_position_id = HUN_build_the_foutvonal
+
+		cost = 10
+		prerequisite = { focus = HUN_brothers_of_turan }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HUN_gambos_mukodik #Működik meaning Works like a company name like Maxon Works
+		#icon = GFX_focus_generic_little_entente
+		x = -3
+		y = 3
+		relative_position_id = HUN_build_the_foutvonal
+
+		cost = 10
+		prerequisite = { focus = HUN_synthetic_fuel }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HUN_expand_research_and_development
+		#icon = GFX_focus_generic_little_entente
+		x = 0
+		y = 3
+		relative_position_id = HUN_build_the_foutvonal
+
+		cost = 10
+		prerequisite = { focus = HUN_focus_on_hungarian_mining_operations focus = HUN_prospects_in_anatolia }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HUN_create_weapons_deals
+		#icon = GFX_focus_generic_little_entente
+		x = 3
+		y = 3
+		relative_position_id = HUN_build_the_foutvonal
+
+		cost = 8
+		prerequisite = { focus = HUN_keeping_our_friends_strong }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HUN_hungarian_atomics
+		#icon = GFX_focus_generic_little_entente
+		x = -1
+		y = 4
+		relative_position_id = HUN_build_the_foutvonal
+
+		cost = 20
+		prerequisite = { focus = HUN_expand_research_and_development }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+			NOT = {
+				AND = {
+					has_completed_focus = HUN_hungarian_rocketry
+					date > 1942.01.01
+				}
+			}	
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HUN_hungarian_rocketry
+		#icon = GFX_focus_generic_little_entente
+		x = 1
+		y = 4
+		relative_position_id = HUN_build_the_foutvonal
+
+		cost = 20
+		prerequisite = { focus = HUN_expand_research_and_development }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+			NOT = {
+				AND = {
+					has_completed_focus = HUN_hungarian_rocketry
+					date > 1942.01.01
+				}
+			}
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HUN_reinvigorate_the_magyar_nemzeti_hadsereg #Magyar Nemzeti Hadsereg - Hungarian National Army
+		icon = GFX_focus_generic_treaty
+		x = 26
+		y = 0
+
+		cost = 10
+		
+		#bypass = {
+		#	date < 2010.01.01
+		#}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HUN_focus_on_study_of_new_strategy
+		#icon = GFX_focus_generic_little_entente
+		x = -1
+		y = 1
+		relative_position_id = HUN_reinvigorate_the_magyar_nemzeti_hadsereg
+
+		cost = 10
+		prerequisite = { focus = HUN_reinvigorate_the_magyar_nemzeti_hadsereg }
+		mutually_exclusive = {
+			focus = HUN_the_strategy_of_power
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HUN_the_strategy_of_power
+		#icon = GFX_focus_generic_little_entente
+		x = 1
+		y = 1
+		relative_position_id = HUN_reinvigorate_the_magyar_nemzeti_hadsereg
+
+		cost = 10
+		prerequisite = { focus = HUN_reinvigorate_the_magyar_nemzeti_hadsereg }
+		mutually_exclusive = {
+			focus = HUN_focus_on_study_of_new_strategy
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HUN_expand_the_industry
+		#icon = GFX_focus_generic_little_entente
+		x = 0
+		y = 2
+		relative_position_id = HUN_reinvigorate_the_magyar_nemzeti_hadsereg
+
+		cost = 10
+		prerequisite = { focus = HUN_focus_on_study_of_new_strategy focus = HUN_the_strategy_of_power }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HUN_keep_the_men_supplied
+		#icon = GFX_focus_generic_little_entente
+		x = -1
+		y = 3
+		relative_position_id = HUN_reinvigorate_the_magyar_nemzeti_hadsereg
+
+		cost = 10
+		prerequisite = { focus = HUN_expand_the_industry }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HUN_lessons_from_the_trenches
+		#icon = GFX_focus_generic_little_entente
+		x = 1
+		y = 3
+		relative_position_id = HUN_reinvigorate_the_magyar_nemzeti_hadsereg
+
+		cost = 10
+		prerequisite = { focus = HUN_expand_the_industry }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HUN_hungarians_plan_on_the_spot
+		#icon = GFX_focus_generic_little_entente
+		x = 0
+		y = 4
+		relative_position_id = HUN_reinvigorate_the_magyar_nemzeti_hadsereg
+
+		cost = 10
+		prerequisite = { focus = HUN_keep_the_men_supplied }
+		prerequisite = { focus = HUN_lessons_from_the_trenches }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HUN_the_skies_of_hungary
+		icon = GFX_focus_generic_treaty
+		x = 30
+		y = 0
+
+		cost = 10
+		
+		#bypass = {
+		#	date < 2010.01.01
+		#}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HUN_strategic_innovation
+		#icon = GFX_focus_generic_little_entente
+		x = -1
+		y = 1
+		relative_position_id = HUN_the_skies_of_hungary
+
+		cost = 10
+		prerequisite = { focus = HUN_the_skies_of_hungary }
+		mutually_exclusive = {
+			focus = HUN_tactical_innovation
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HUN_tactical_innovation
+		#icon = GFX_focus_generic_little_entente
+		x = 1
+		y = 1
+		relative_position_id = HUN_the_skies_of_hungary
+
+		cost = 10
+		prerequisite = { focus = HUN_the_skies_of_hungary }
+		mutually_exclusive = {
+			focus = HUN_strategic_innovation
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HUN_expand_our_plans #doctrinal boosts + Maybe More?
+		#icon = GFX_focus_generic_little_entente
+		x = 0
+		y = 2
+		relative_position_id = HUN_the_skies_of_hungary
+
+		cost = 10
+		prerequisite = { focus = HUN_strategic_innovation focus = HUN_tactical_innovation }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+}

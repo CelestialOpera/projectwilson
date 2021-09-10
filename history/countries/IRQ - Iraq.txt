@@ -1,0 +1,54 @@
+﻿capital = 291
+
+oob = "IRQ_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_mountaineers = 1
+	gw_artillery = 1
+	early_fighter = 1
+	CAS1 = 1
+	fuel_silos = 1
+}
+
+if = {
+	limit = {
+		has_dlc = "Battle for the Bosporus"
+	}
+	set_technology = { camelry = 1 }
+}
+
+set_convoys = 5
+
+set_politics = {
+	ruling_party = despotist
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	national_unitarist = 10
+	despotist = 10
+	authoritarian_democrat = 10
+	social_conservative = 10
+	market_liberal = 10
+	social_liberal = 10
+	social_democrat = 10
+	libertarian = 10
+	radical_socialist = 10
+	communist = 10
+}
+
+create_country_leader = {
+	name = "Ghazi I"
+	desc = "POLITICS_GHAZI_I_DESC"
+	picture = "Ghazi_I.dds"
+	expire = "1965.1.1"
+	ideology = despotist_ideology
+	traits = {
+		#
+	}
+}

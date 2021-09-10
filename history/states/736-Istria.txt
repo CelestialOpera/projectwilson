@@ -1,0 +1,27 @@
+state={
+	id=736
+	name="STATE_736"
+	
+	state_category = small_town
+
+	history={
+		
+		owner = ITA
+		add_core_of = ITA
+		add_core_of = YUG
+		add_core_of = SLV
+		add_core_of = CRO
+		buildings = {
+			infrastructure = 2
+			
+
+		}
+
+	}
+
+	provinces={
+		599 11595 11735 
+	}
+	manpower=814852
+	buildings_max_level_factor=1.000
+}

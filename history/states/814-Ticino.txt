@@ -1,0 +1,21 @@
+
+state={
+	id=814
+	name="STATE_814"
+
+	history={
+		owner = SWI
+		add_core_of = SWI
+		buildings = {
+			infrastructure = 4
+		}
+
+	}
+
+	provinces={
+		3641 9600
+	}
+	manpower=104213
+	buildings_max_level_factor=1.000
+	state_category=town
+}

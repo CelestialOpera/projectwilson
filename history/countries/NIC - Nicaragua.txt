@@ -1,0 +1,45 @@
+﻿capital = 317
+
+oob = "NIC_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+	early_fighter = 1
+	early_bomber = 1
+}
+set_country_flag = monroe_doctrine
+set_war_support = 0.1
+set_convoys = 10
+
+set_politics = {
+	ruling_party = social_conservative
+	last_election = "1934.11.8"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	national_unitarist = 10
+	despotist = 10
+	authoritarian_democrat = 10
+	social_conservative = 10
+	market_liberal = 10
+	social_liberal = 10
+	social_democrat = 10
+	libertarian = 10
+	radical_socialist = 10
+	communist = 10
+}
+
+create_country_leader = {
+	name = "Emiliano C. Vargas"
+	desc = "POLITICS_EMILIANO_C_VARGAS_DESC"
+	picture = "Emiliano_Chamorro_Vargas.dds"
+	expire = "1965.1.1"
+	ideology = social_conservative_ideology
+	traits = {
+		#
+	}
+}

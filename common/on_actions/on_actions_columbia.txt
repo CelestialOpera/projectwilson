@@ -1,0 +1,3 @@
+on_actions = {
+ #For Election stuff take inspiration from modern KR system
+}

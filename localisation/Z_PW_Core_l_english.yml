@@ -1,0 +1,114 @@
+﻿l_english:
+ 
+ #Country Name
+ PW_BOX_NAME:0 "[?ROOT.GetName]"
+ 
+ ##Bookmark Stuff
+ PROJECT_WILSON_NAME:0 "Project Wilson"
+ 
+ #Ideologies
+
+ national_unitarist:0 "National-Unitarist"
+ national_unitarist_noun:0 "National-Unitarism"
+ national_unitarist_desc:0 "National-Unitarist Regime"
+ despotist:0 "Despotist"
+ despotist_noun:0 "Despotism"
+ despotist_desc:0 "Despotic Regime"
+ authoritarian_democrat:0 "Authoritarian Democrat"
+ authoritarian_democrat_noun:0 "Authoritarian Democracy"
+ authoritarian_democrat_desc:0 "Authoritarian Democratic Regime"
+ social_conservative:0 "Social Conservative"
+ social_conservative_noun:0 "Social Conservatism"
+ social_conservative_desc:0 "Social Conservative Regime"
+ market_liberal:0 "Market Liberal"
+ market_liberal_noun:0 "Market Liberalism"
+ market_liberal_desc:0 "Market Liberal Regime"
+ social_liberal:0 "Social Liberal"
+ social_liberal_noun:0 "Social Liberalism"
+ social_liberal_desc:0 "Social Liberal Regime"
+ social_democrat:0 "Social Democrat"
+ social_democrat_noun:0 "Social Democracy"
+ social_democrat_desc:0 "Social Democratic Regime"
+ libertarian:0 "Libertarian"
+ libertarian_noun:0 "Libertarianism"
+ libertarian_desc:0 "Libertarian Regime"
+ radical_socialist:0 "Radical Socialist"
+ radical_socialist_noun:0 "Radical Socialism"
+ radical_socialist_desc:0 "Radical Socialist Regime"
+ communist:0 "Communist"
+ communist_noun:0 "Communism"
+ communist_desc:0 "Communist Regime"
+ 
+ 
+ ###Country Ideas###
+ ###################
+ 
+ #Ministers
+ cabinet:0 "Cabinet"
+ second_in_command:0 "Second In Command"
+ foreign_minister:0 "Foreign Minister"
+ economic_minister:0 "Economic Minister"
+ intelligence_minister:0 "Intelligence Minister"
+ defense_minister:0 "Defense Minister"
+ very_important_person:0 "V.I.P."
+ 
+ #Political Stances
+ radical_socialist:0 "Radical Socialist"
+ utopian_socialist:0 "Utopian Socialist"
+ pastoralist:0 "Pastoralist"
+ liberal:0 "Liberal"
+ staatist:0 "Staatist"
+ conservative:0 "Conservative"
+ traditionalist:0 "Traditionalist"
+ popularist:0 "Popularist"
+ 
+ #Ministerial Traits
+ politician_with_connections:0 "Politician With Connections"
+ naval_intelligence_specialist:0 "Navy Intelligence Specialist"
+ novice_mastermind:0 "Novice Mastermind"
+ efficient_sociopath:0 "Efficient Sociopath"
+ prince_of_terror:0 "Prince of Terror"
+ intelligence_director:0 "Intelligence Director"
+ isolationist:0 "Isolationist"
+ ex_military:0 "Ex-Military"
+ compassionate_gentleman:0 "Compassionate Gentleman"
+ silent_lawyer:0 "Silent Lawyer"
+ extreme_regulator:0 "Extreme Regulator"
+ corrupt_kleptocrat:0 "Corrupt Kleptocrat"
+ private_military_specialist:0 "Private Military Specialist"
+ former_scientist:0 "Former Scientist"
+ libertarian_capitalist:0 "Libertarian Capitalist"
+ moderate_fill_in:0 "Moderate Fill In"
+ resource_industrialist:0 "Resource Industrialist"
+ administrative_genius:0 "Administrative Genius"
+ international_schemer:0 "International Schemer"
+ great_compromiser:0 "Great Compromiser"
+ iron_fisted_brute:0 "Iron Fisted Brute"
+ apologetic_clerk:0 "Apologetic Clerk"
+ ideological_crusader:0 "Ideological Crusader"
+ biased_intellectual:0 "Biased Intellectual"
+ religious_leader:0 "Religious Leader"
+ corporate_suit:0 "Corporate Suit"
+ ambitious_union_boss:0 "Ambitious Union Boss"
+ political_protege:0 "Political Protégé"
+ retired_air_force_general:0 "Retired Air Force General"
+ retired_admiral:0 "Retired Admiral"
+ retired_general:0 "Retired General"
+ oil_baron:0 "Oil Baron"
+ flamboyant_tough_guy:0 "Flamboyant Tough Guy"
+ naive_optimist:0 "Naive Optimist"
+ silent_workhorse:0 "Silent Workhorse"
+ insignificant_layman:0 "Insignificant Layman"
+ autocratic_charmer:0 "Autocratic Charmer"
+ power_hungry_demagogue:0 "Power Hungry Demagogue"
+ 
+ 
+ #Political Systems
+ government_form:0 "Government Form"
+ economic_policy:0 "Economic Policy"
+ civil_liberties:0 "Civil Liberties"
+ press_liberties:0 "Press Laws"
+ racial_integration:0 "Racial Integration"
+ religious_policy:0 "Religious Policy"
+ security_policy:0 "Security Policy"
+ 

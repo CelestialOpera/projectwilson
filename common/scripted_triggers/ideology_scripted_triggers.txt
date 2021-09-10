@@ -1,0 +1,32 @@
+
+is_enemy_ideology = {
+	OR = {
+		AND = {
+			has_government = komnenist
+			ROOT = {
+				OR = {
+					has_government = platonist_machiavellianist
+					has_government = rahimist
+				}
+			}
+		}
+		AND = {
+			has_government = rahimist
+			ROOT = {
+				OR = {
+					has_government = komnenist
+					has_government = platonist_machiavellianist
+				}
+			}
+		}
+		AND = {
+			has_government = platonist_machiavellianist
+			ROOT = {
+				OR = {
+					has_government = rahimist
+					has_government = komnenist
+				}
+			}
+		}
+	}
+}
