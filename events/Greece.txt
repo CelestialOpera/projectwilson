@@ -1,0 +1,320 @@
+add_namespace = greece
+add_namespace = greece_news
+
+country_event = { #the occupation of Istanbul
+	id = greece.1
+	title = greece.1.t
+	desc = greece.1.d
+	picture = greece_occupation_of_istanbul
+	fire_only_once = yes
+	
+	trigger = {
+		tag = GRE
+		date > 1937.3.1
+		date < 1937.3.30
+	}
+	
+	mean_time_to_happen = {
+		days = 6
+	}
+	
+	option = {
+		name = greece.1.o1
+		transfer_state = 797
+		add_state_core = 797
+		set_country_flag = greece_greco_turkish_war
+		341 = {
+			set_demilitarized_zone = no
+		}
+		797 = {
+			set_demilitarized_zone = no
+		}
+		add_named_threat = { 
+			threat = 5 
+			name = GRE_tension_istanbul
+		}
+		hidden_effect = {
+			TUR = {
+				country_event = {
+					days = 4
+					id = greece.2
+				}
+			}
+		}
+	}
+}
+
+country_event = { #Turkey Declares War on Greece
+	id = greece.2
+	title = greece.2.t
+	desc = greece.2.d
+	picture = greece_ataturks_response
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 6
+	}
+	
+	option = {
+		name = greece.2.o1
+		declare_war_on = {
+			target = GRE
+			type = annex_everything
+		}
+		set_country_flag = turkey_greco_turkish_war
+		every_country = {
+			news_event = {
+			    hours = 4
+			    id = greece_news.1
+		    }
+		}
+	}
+}
+
+country_event = { #Turkey Wins the Second Greco-Turkish War
+	id = greece.3
+	title = greece.3.t 
+	desc = greece.3.d
+	picture = greece_turkey_wins
+	fire_only_once = yes
+	
+	trigger = {
+		tag = GRE
+		surrender_progress > 0.5
+		has_country_flag = greece_greco_turkish_war
+	}
+	
+	option = {
+		name = greece.3.o1
+		add_political_power = -200
+		add_popularity = {
+			ideology = ROOT
+			popularity = -0.15
+		}
+		white_peace = {
+			tag = TUR
+			message = turkey_won_peace_prompt
+		}
+		TUR = {
+			transfer_state = 797
+			transfer_state = 341
+			transfer_state = 184
+			transfer_state = 731
+			transfer_state = 187
+			transfer_state = 182
+			hidden_effect = {
+				country_event = {
+					days = 2
+					id = greece.4
+				}
+			}
+		}
+	}
+}
+
+country_event = { #Trakya Regained!
+	id = greece.4
+	title = greece.4.t
+	desc = greece.4.d
+	picture = greece_turkish_triumph
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = greece.4.o1
+		add_stability = 0.05
+		add_political_power = 50
+		add_war_support = 0.05
+		custom_effect_tooltip = turkey_renames_greek_places_tooltip
+		hidden_effect = {
+			341 = {
+				set_state_name = "Edirne"
+			}
+			set_province_name = {
+				id = 11842
+				name = "Edirne"
+			}
+			184 = {
+				set_state_name = "Trakya"
+			}
+			set_province_name = {
+				id = 11905
+				name = "Dedeagac"
+			}
+			731 = {
+				set_state_name = "Makedonya"
+			}
+			set_province_name = {
+				id = 11818
+				name = "Selanik"
+			}
+			187 = {
+				set_state_name = "Ege Adalari"
+			}
+			set_province_name = {
+				id = 8435
+				name = "Midilli"
+			}
+			set_province_name = {
+				id = 6550
+				name = "Sisam"
+			}
+			182 = {
+				set_state_name = "Girit"
+			}
+			set_province_name = {
+				id = 9940
+				name = "Kandiye"
+			}
+			set_province_name = {
+				id = 12058
+				name = "Hanya"
+			}
+		}
+		clr_country_flag = turkey_greco_turkish_war
+	}
+}
+
+country_event = { #Greece Wins the Second Greco-Turkish War
+	id = greece.5
+	title = greece.5.t 
+	desc = greece.5.d
+	picture = greece_greece_wins
+	fire_only_once = yes
+	
+	trigger = {
+		tag = TUR
+		surrender_progress > 0.5
+		has_country_flag = turkey_greco_turkish_war
+	}
+	
+	option = {
+		name = greece.5.o1
+		add_political_power = -200
+		add_popularity = {
+			ideology = ROOT
+			popularity = -0.15
+		}
+		white_peace = {
+			tag = GRE
+			message = greece_won_peace_prompt
+		}
+		GRE = {
+			transfer_state = 340
+			transfer_state = 339
+			transfer_state = 347
+			transfer_state = 342
+			hidden_effect = {
+				country_event = {
+					days = 2
+					id = greece.6
+				}
+			}
+		}
+	}
+}
+
+country_event = { #The Megali Idea Fulfilled!
+	id = greece.6
+	title = greece.6.t
+	desc = greece.6.d
+	picture = greece_greek_triumph
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = greece.6.o1
+		add_stability = 0.05
+		add_political_power = 50
+		add_war_support = 0.05
+		set_capital = 797
+		custom_effect_tooltip = greece_renames_turkish_places_tooltip
+		hidden_effect = {
+			797 = {
+				set_state_name = "Constantinople"
+			}
+			set_province_name = {
+				id = 9833
+				name = "Constantinople"
+			}
+			347 = {
+				set_state_name = "Optimatoi"
+			}
+			set_province_name = {
+				id = 11811
+				name = "Nikomedia"
+			}
+			set_province_name = {
+				id = 904
+				name = "Agrillion"
+			}
+			340 = {
+				set_state_name = "Opsikion"
+			}
+			set_province_name = {
+				id = 947
+				name = "Prousa"
+			}
+			set_province_name = {
+				id = 9799
+				name = "Palaeokastron"
+			}
+			339 = {
+				set_state_name = "Smyrna"
+			}
+			set_province_name = {
+				id = 4112
+				name = "Smyrna"
+			}
+			set_province_name = {
+				id = 928
+				name = "Magnesion"
+			}
+			342 = {
+				set_state_name = "Attaleia"
+			}
+			set_province_name = {
+				id = 1005
+				name = "Attaleia"
+			}
+		}
+		clr_country_flag = greece_greco_turkish_war
+	}
+}
+
+news_event = { #Second Greco-Turkish War Begins
+	id = greece_news.1
+	title = greece_news.1.t
+	desc = greece_news.1.d
+	picture = greece_news_of_second_war
+	is_triggered_only = yes
+	fire_only_once = yes 
+	
+	option = { 
+		name = greece_news.1.a
+		trigger = {
+			NOT = {
+				OR ={
+					tag = TUR
+					tag = GRE
+				}
+			}
+		}
+	}
+    option = { 
+		name = greece_news.1.b 
+		trigger = {
+			tag = GRE
+		}
+	}
+	
+	option = { 
+		name = greece_news.1.c
+		trigger = {
+			tag = TUR
+		}
+	}
+}

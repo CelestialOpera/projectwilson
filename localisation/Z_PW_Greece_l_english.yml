@@ -1,0 +1,33 @@
+l_english:
+ greece.1.t:0 "The Liberation of Constantinople"
+ greece.1.d:0 "The Turkish assaults on our people can be permitted no longer! Following the latest series of blatant offences against our Hellenic brethren in Constantinople, the demands to our government to take action can be needed only be heeded. As Greek Constantinopolitans cowered in basements and hid in their homes from the mobs in the streets, [Root.GetLeader] ordered the Greek army to intervene to restore order. Crossing the undermanned Turkish border and disarming the guards, the Army had taken control of the city before noon, securing the European side of the Bosporus with nary a shot fired. As order returns to the streets and the mobs are being put down, it is clear that the government in Ankara will not let this slight tolerate this slight. Already, a mobilisation of citizens are working hard to fortify the Queen of Cities against the inevitable reprisal."
+ greece.1.o1:0 "Let them come"
+ greece.2.t:0 "Our Response"
+ greece.2.d:0 "The cowards in Athens, not having learnt their lesson from the last time, have occupied Istanbul, no doubt with the wish to force its Turkish citizens out of their homes in a delusion of grandeur. This offence against our country cannot be accepted. The Greeks forfeited their rights to Istanbul in 1453 when Mehmed Fatih conquered it, a loss that was reaffirmed in 1922 when our courageous soldiers reclaimed it from the occupying forces. Already, Atatürk has called upon the Turkish Armed Forces to liberate our city, and to remind the Greeks of the lesson they appear to have forgotten. Our armies will not stop until all of Trakya have been liberated."
+ greece.2.o1:0 "We march for independence once more"
+ greece.3.t:0 "The Treaty of Nicosia"
+ greece.3.d:0 "Following setback upon setback in our courageous struggle against Turkey, it is clear that our armies can no longer resist. Routed on every front, most of our country is now under the control of our enemies. [Root.GetLeader] was not easy to convince, but even he came to see reason. With a British offer to mediate the conflict, we met in the city of Nicosia on Cyprus to negotiate a peace deal. The Turkish diplomats were rapacious, asking not just for Constantinople returned but stating their desire to annex the entirety of Macedonia, the Aegean Islands and Crete. While we could certainly protest this egregious landgrab, we had no other choice, as the British were pressuring us to accept this turn of events. May history forgive us, for our countrymen will not."
+ greece.3.o1:0 "A century of struggle undone..."
+ greece.4.t:0 "Trakya Regained"
+ greece.4.d:0 "Our righteous war against the Greeks was even more successful than we anticipated. The might of our army smashed their puny forces aside, and as we marched into Trakya and Makedonya, we could gaze upon territory that had not been ours for decades. With this victory, we can say that we truly have restored all of the honour lost over the many bygone years. This has boosted the government of [Root.GetLeader] tremendously, with support reaching hitherto unseen levels."
+ greece.4.o1:0 "Ne mutlu Türküm diyene"
+ greece.5.t:0 "The Treaty of Nicosia"
+ greece.5.d:0 "In an utter humiliation, our armed forces proved incapable of beating back the Greek offensive. As Istanbul has slipped from our grasp, large parts of Anatolia have fallen as well. Although we would not give up so easily, the perfidious Greeks have enlisted the help of the British in securing a 'peace treaty', and we have had no choice but to accept. Gathering in the Cypriot city of Lefkoşa, the Greek proved their avarice when they asked for their illegal occupation of Istanbul to not just be recognised, but to be ceded the Anatolian Coastline entirely! While this insult will not be forgotten, we are forced to accept this mutilating peace. Let the Greeks remember, we will surely return some day."
+ greece.5.o1:0 "A temporary setback, surely..."
+ greece.6.t:0 "The Megali Idea Fulfilled"
+ greece.6.d:0 "At long last, we have accomplished what the Greek nation has dreamt of for centuries. Constantinople, Smyrna and Prousa are all back under our control once more, to the jubilation of the Greek people. Although our numbers in this region are not what they used to have been, we can finally say that the injustice of 1453 has been righted. Already, preparations are being made to move the capital back to Constantinople, where it should always have been, while work crews are restoring the city, including Hagia Sophia, which will be inaugurated as a church once more soon enough.
+ greece.6.o1:0 "Once more, as years and time go by, once more they shall be ours"
+ 
+ greece_news.1.t:0 "Third Greco-Turkish War Erupts"
+ greece_news.1.d:0 "Concerning developments have come out of eastern Mediterranean, where it appears that following a series of riots in the city of Istanbul that [GRE.GetName] has occupied the city. The government of [TUR.GetName] could not accept this slight, and when their ultimatum to the Greek state ended, they declared a war to liberate this heavily contested city. Already, leading nations of the world are observing the conflict, worried what this might mean for regional stability and for humanitarian concerns."
+ greece_news.1.a:0 "Will this result in another genocide?"
+ greece_news.1.b:0 "Freedom or Death!"
+ greece_news.1.c:0 "The second war of independence begins!"
+ 
+ ###Tooltips and Misc"
+ turkey_won_peace_prompt:0 "As Greece crumbles, Turkey is one step closer to Misak-ı Millî"
+ greece_won_peace_prompt:0 "Ioannis Kolettis' dream is at long last fulfilled"
+ turkey_renames_greek_places_tooltip:0 "Wipes away the stain of Greek rule"
+ greece_renames_turkish_places_tooltip:0 "Restores proper Hellenic names to Asia Minor"
+ GRE_tension_istanbul:0 "The Occupation of Istanbul"
+ 
