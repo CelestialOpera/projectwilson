@@ -1,5 +1,6 @@
-l_english:
-
+﻿l_english:
+ 
+ #Events
  greece.1.t:0 "The Liberation of Constantinople"
  greece.1.d:0 "The Turkish assaults on our people can be permitted no longer! Following the latest series of blatant offences against our Hellenic brethren in Constantinople, the demands to our government to take action can be needed only be heeded. As Greek Constantinopolitans cowered in basements and hid in their homes from the mobs in the streets, [Root.GetLeader] ordered the Greek army to intervene to restore order. Crossing the undermanned Turkish border and disarming the guards, the Army had taken control of the city before noon, securing the European side of the Bosporus with nary a shot fired. As order returns to the streets and the mobs are being put down, it is clear that the government in Ankara will not let this slight tolerate this slight. Already, a mobilisation of citizens are working hard to fortify the Queen of Cities against the inevitable reprisal."
  greece.1.o1:0 "Let them come"
@@ -32,6 +33,7 @@ l_english:
  greece_renames_turkish_places_tooltip:0 "Restores proper Hellenic names to Asia Minor"
  GRE_tension_istanbul:0 "The Occupation of Istanbul"
  
+ #Country Name
  GRE_national_unitarist:0 "Hellenic Republic"
  GRE_national_unitarist_DEF:0 "The Hellenic Republic"
  GRE_national_unitarist_ADJ:0 "Greek"
@@ -62,4 +64,3 @@ l_english:
  GRE_communist:0 "Hellenic Republic"
  GRE_communist_DEF:0 "The Hellenic Republic"
  GRE_communist_ADJ:0 "Greek"
- 
