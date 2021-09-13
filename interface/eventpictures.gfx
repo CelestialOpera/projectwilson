@@ -1,0 +1,33 @@
+spriteTypes = {
+
+	
+	spriteType = {
+		name = "greece_occupation_of_istanbul"
+		texturefile = "gfx/event_pictures/report_event/greek_army_1.dds"
+	}
+	
+	spriteType = {
+		name = "ataturks_response"
+		texturefile = "gfx/event_pictures/report_event/ataturks_response.dds"
+	}
+	
+	spriteType = {
+		name = "greece_turkey_wins"
+		texturefile = "gfx/event_pictures/report_event/greece_war_over.dds"
+	}
+	
+	spriteType = {
+		name = "greece_greece_wins"
+		texturefile = "gfx/event_pictures/report_event/greece_war_over.dds"
+	}
+	
+	spriteType = {
+		name = "greece_turkish_triumph"
+		texturefile = "gfx/event_pictures/report_event/greece_turkish_triumph.dds"
+	}
+	
+	spriteType = {
+		name = "greece_greek_triumph"
+		texturefile = "gfx/event_pictures/report_event/greece_greek_triumph.dds"
+	}
+}

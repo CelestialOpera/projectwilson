@@ -1,0 +1,8 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "greece_news_of_second_war"
+		texturefile = "gfx/event_pictures/news_event/greece_news_of_second_war.dds"
+	}
+
+}

@@ -48,7 +48,7 @@ country_event = { #Turkey Declares War on Greece
 	id = greece.2
 	title = greece.2.t
 	desc = greece.2.d
-	picture = greece_ataturks_response
+	picture = ataturks_response
 	fire_only_once = yes
 	is_triggered_only = yes
 	
