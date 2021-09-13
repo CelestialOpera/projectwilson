@@ -1,0 +1,41 @@
+russian_civil_war_RUS = {
+	allowed = {
+		original_tag = RUS
+	}
+	enable = {
+		date < 1937.07.0
+		country_exists = SOV
+	}
+	abort = {
+		NOT = {
+			country_exists = SOV
+		}
+	}
+	
+	ai_strategy = {
+		type = antagonize
+		id = "SOV"			
+		value = 200
+	}		
+}
+
+russian_civil_war_SOV = {
+	allowed = {
+		original_tag = SOV
+	}
+	enable = {
+		date < 1937.07.0
+		country_exists = RUS
+	}
+	abort = {
+		NOT = {
+			country_exists = RUS
+		}
+	}
+	
+	ai_strategy = {
+		type = antagonize
+		id = "RUS"			
+		value = 200
+	}		
+}
