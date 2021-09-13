@@ -1,6 +1,7 @@
 ﻿capital = 566
 
 set_research_slots = 1
+oob = "RUS_1936"
 
 # Starting tech
 set_technology = {
