@@ -1775,7 +1775,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			#add_timed_idea = { idea = collectivist_ethos_focus days = 1095 }
+			#add_timed_idea = { idea = authoritarian_ethos_focus days = 1095 }
 		}
 	}
 	
