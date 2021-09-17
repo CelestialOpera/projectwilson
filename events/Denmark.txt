@@ -1,0 +1,252 @@
+add_namespace = denmark
+add_namespace = denmark_news
+
+country_event = { #Christen Christensen Assassinated
+	id = denmark.1
+	title = denmark.1.t
+	desc = denmark.1.d
+	picture = denmark_murder_of_christensen
+	fire_only_once = yes
+	
+	trigger = {
+		tag = DEN
+		date > 1936.11.1
+		date < 1936.11.30
+	}
+	
+	mean_time_to_happen = {
+		days = 11
+	}
+	
+	option = {
+		name = denmark.1.o1
+		add_political_power = -100
+		add_stability = -0.15
+		kill_country_leader = yes
+		create_country_leader = {
+			name = "Aksel Larsen"
+			desc = "POLITICS_AKSEL_LARSEN_DESC"
+			picture = "Aksel_Larsen.dds"
+			ideology = radical_socialist_ideology
+		}
+		hidden_effect = {
+			country_event = {
+				days = 7
+				id = denmark.2
+			}
+		}
+	}
+}
+
+country_event = { #Mobilise the Home Guard?
+	id = denmark.2
+	title = denmark.2.t
+	desc = denmark.2.d
+	picture = denmark_the_home_guard
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { #Yes, these are uncertain times
+		name = denmark.2.o1
+		add_political_power = -25
+		add_manpower = 5000
+		add_popularity = {
+			ideology = communist
+			popularity = 0.05
+		}
+		hidden_effect = {
+			country_event = {
+				days = 8
+				id = denmark.3
+			}
+		}
+	}
+	
+	option = { #No, the army is surely trustworthy
+		name = denmark.2.o2
+		add_stability = 0.05
+		hidden_effect = {
+			country_event = {
+				days = 10
+				id = denmark.5
+			}
+		}
+	}
+}
+
+country_event = { #Military Coup Averted
+	id = denmark.3
+	title = denmark.3.t
+	desc = denmark.3.d
+	picture = denmark_military_coup_prevented
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = denmark.3.o1
+		add_war_support = -0.1
+		add_popularity = {
+			ideology = authoritarian_democrat
+			popularity = -0.1
+		}
+		hidden_effect = {
+			country_event = {
+				days = 25
+				id = denmark.4
+			}
+		}
+	}
+}
+
+country_event = { #Elections for the Chairman of the People's Thing
+	id = denmark.4
+	title = denmark.4.t
+	desc = denmark.4.d
+	picture = denmark_folketing_chairman_elections
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { #Aksel Larsen Secures Power
+		name = denmark.4.o1
+		create_country_leader = {
+			name = "Aksel Larsen"
+			desc = "POLITICS_AKSEL_LARSEN_DESC"
+			picture = "Aksel_Larsen.dds"
+			ideology = communist_ideology
+		}
+		set_politics = {
+			ruling_party = communist
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = communist
+			popularity = 0.15
+		}
+		hidden_effect = {
+			create_country_leader = {
+				name = "Marie Nielsen"
+				desc = "POLITICS_MARIE_NIELSEN_DESC"
+				picture = "DEN_Marie_Nielsen.dds"
+				ideology = radical_socialist
+			}
+		}
+		ai_chance = {
+			factor = 40
+		}
+	}
+	
+	option = { #Marie Nielsen Stays the Course
+		name = denmark.4.o2
+		create_country_leader = {
+			name = "Marie Nielsen"
+			desc = "POLITICS_MARIE_NIELSEN_DESC"
+			picture = "DEN_Marie_Nielsen.dds"
+			ideology = radical_socialist
+		}
+		add_popularity = {
+			ideology = radical_socialist
+			popularity = 0.05
+		}
+		ai_chance = {
+			factor = 30
+		}
+	}
+	
+	option = { #Hans Hedtoft and the Moderates 
+		name = denmark.4.o3
+		set_politics = {
+			ruling_party = social_democrat
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = social_democrat
+			popularity = 0.15
+		}
+		add_popularity = {
+			ideology = social_liberal
+			popularity = 0.07
+		}
+		add_popularity = {
+			ideology = national_unitarist
+			popularity = 0.03
+		}
+		ai_chance = {
+			factor = 20
+		}
+	}
+	
+	option = { #Andreas Fritzner and the Radicals
+		name = denmark.4.o4
+		set_politics = {
+			ruling_party = libertarian
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = libertarian
+			popularity = 0.15
+		}
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+
+
+country_event = { #Military Overthrows the Workers' Republic
+	id = denmark.5
+	title = denmark.5.t
+	desc = denmark.5.d
+	picture = denmark_military_coup
+	fire_only_once = yes
+	is_triggered_only = yes
+		
+	option = { #Restore the 1915 Constitution
+		name = denmark.5.o1
+		add_political_power = -50
+		set_politics = {
+			ruling_party = authoritarian_democrat
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = authoritarian_democrat
+			popularity = 0.2
+		}
+		add_popularity = {
+			ideology = market_liberal
+			popularity = 0.1
+		}
+		hidden_effect = {
+			set_party_name = { 
+				ideology = market_liberal 
+				long_name = DEN_scavenius_party_long 
+				name = DEN_scavenius_party 
+			}
+			puppet = ICE
+		}
+	}
+	
+	option = { #Restore His Majesty the King
+		name = denmark.5.o2
+		add_political_power = -75
+		set_politics = {
+			ruling_party = despotist
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = despotist
+			popularity = 0.15
+		}
+		add_popularity = {
+			ideology = market_liberal
+			popularity = 0.05
+		}
+		hidden_effect = {
+			set_party_name = { 
+				ideology = market_liberal 
+				long_name = DEN_scavenius_party_long 
+				name = DEN_scavenius_party 
+			}
+			puppet = ICE
+		}
+	}
+}

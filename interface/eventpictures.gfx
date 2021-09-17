@@ -30,4 +30,29 @@ spriteTypes = {
 		name = "greece_greek_triumph"
 		texturefile = "gfx/event_pictures/report_event/greece_greek_triumph.dds"
 	}
+	
+	spriteType = {
+		name = "denmark_murder_of_christensen"
+		texturefile = "gfx/event_pictures/report_event/denmark_murder_of_christensen.dds"
+	}
+	
+	spriteType = {
+		name = "denmark_the_home_guard"
+		texturefile = "gfx/event_pictures/report_event/denmark_the_home_guard.dds"
+	}
+	
+	spriteType = {
+		name = "denmark_military_coup_prevented"
+		texturefile = "gfx/event_pictures/report_event/denmark_military_coup_prevented.dds"
+	}
+	
+	spriteType = {
+		name = "denmark_folketing_chairman_elections"
+		texturefile = "gfx/event_pictures/report_event/denmark_folketing_chairman_elections.dds"
+	}
+	
+	spriteType = {
+		name = "denmark_military_coup"
+		texturefile = "gfx/event_pictures/report_event/denmark_military_coup.dds"
+	}
 }
