@@ -29,13 +29,6 @@ ideas = {
 			
 			available = {
 				#has_manpower_for_recruit_change_to =  { value = 0.015 group = mobilization_laws }
-				if = {
-					limit = {
-						original_tag = HUN
-						has_dlc = "Death or Dishonor"
-					}
-					NOT = { has_idea = HUN_treaty_of_triannon }
-				}
 				NOT = { has_idea = undisturbed_isolation }
 				NOT = { has_idea = isolation }
 			}
@@ -46,6 +39,7 @@ ideas = {
    				modifier = {
 					factor = 60 # being disarmed is bad in a wargame yo
 					has_idea = disarmed_nation 
+					date < 1937.1.1
 				}
 			}
 
@@ -82,11 +76,7 @@ ideas = {
 					#Prio if low on manpower
 					factor = 20
 					manpower_per_military_factory <  1000
-				}
-				modifier = {
-					tag = ENG
-					has_idea_with_trait = military_theorist
-					factor = 20
+					date < 1937.6.1
 				}
 			}
 			
@@ -98,11 +88,12 @@ ideas = {
 			available = {
 				#has_manpower_for_recruit_change_to = { value = 0.05 group = mobilization_laws }
 				OR = {
-					has_government = fascism
-					has_government = communism
+					has_government = national_unitarist
+					has_government = despotist
+					has_government = authoritarian_democrat
+					has_government = communist
 					AND = {
 						has_war = yes
-						enemies_strength_ratio > 0.5
 						#any_enemy_country = {
 						#	strength_ratio = {
 						#		tag = ROOT 
@@ -121,14 +112,17 @@ ideas = {
 					#Prio if low on manpower
 					factor = 20
 					manpower_per_military_factory <  800
+					date < 1938.1.1
 				}
 
 				
 
 				modifier = { # china relies a lot on throwing bodies at the enemy
 					factor = 3
-
-					tag = CHI
+					OR = {
+						tag = CHI
+						tag = NRA
+					}
 					has_manpower < 200000
 				}
 				
@@ -154,11 +148,12 @@ ideas = {
 			available = {
 				#has_manpower_for_recruit_change_to =  { value = 0.1 group = mobilization_laws }
 				OR = {
-					has_government = fascism
-					has_government = communism
+					has_government = national_unitarist
+					has_government = despotist
+					has_government = authoritarian_democrat
+					has_government = communist
 					AND = {
 						has_war = yes
-						enemies_strength_ratio > 0.6
 						#any_enemy_country = {
 						#	strength_ratio = {
 						#		tag = ROOT 
@@ -169,65 +164,9 @@ ideas = {
 				}
 				OR = {
 					has_war_support > 0.6
-					surrender_progress > 0
 				}
 
-				if = {
-					limit = {
-						original_tag = AST
-						has_dlc = "Together for Victory"
-					}
-					has_completed_focus = AST_citizen_military_forces
-					has_completed_focus = AST_fight_work_or_perish
-				}
-
-				if = {
-					limit = {
-						original_tag = CAN
-						has_dlc = "Together for Victory"
-					}
-					OR = {
-						has_completed_focus = CAN_compromise_with_quebec
-						has_completed_focus = CAN_forced_quebec_conscription
-					}
-				}
-				if = {
-					limit = {
-						original_tag = RAJ
-						has_dlc = "Together for Victory"
-					}
-					is_subject = no
-				}
-
-				if = {
-					limit = {
-						original_tag = HUN
-						has_dlc = "Death or Dishonor"
-					}
-					NOT = { has_idea = HUN_treaty_of_triannon }
-				}
-				if = {
-					limit = {
-						original_tag = ENG
-						has_dlc = "Man the Guns"
-						has_completed_focus = ENG_concessions_to_the_trade_unions
-					}
-					NOT = { has_country_flag = ENG_cannot_increase_conscription_law }
-				}
-				if = {
-					limit = {
-						original_tag = SPR
-						has_dlc = "La Resistance"
-					}
-					NOT = { has_completed_focus = SPR_all_must_bear_the_torch }
-				}
-				if = {
-					limit = {
-						original_tag = BUL
-						has_dlc = "Battle for the Bosporus"
-					}
-					NOT = { has_idea = BUL_army_restrictions }
-				}
+				
 			}
 
 			ai_will_do = {
@@ -236,17 +175,20 @@ ideas = {
 					#Prio if low on manpower
 					factor = 20
 					manpower_per_military_factory <  700
+					date < 1938.6.1
 				}
 				modifier = {
 					#Lower chance if has decent amount
 					factor = 0.5
 					manpower_per_military_factory >  1000
+					date < 1938.6.1
 				}
 				modifier = {
 					#Block has plenty manpower
 					factor = 0
 					NOT = { tag = CHI }
-					NOT = { tag = SOV }
+					NOT = { tag = NRA }
+					#NOT = { tag = SOV }
 					manpower_per_military_factory >  3000
 				}
 
@@ -304,62 +246,7 @@ ideas = {
 				#	}
 				#}
 
-				if = {
-					limit = {
-						original_tag = AST
-						has_dlc = "Together for Victory"
-					}
-					has_completed_focus = AST_citizen_military_forces
-					has_completed_focus = AST_fight_work_or_perish
-				}
 
-				if = {
-					limit = {
-						original_tag = CAN
-						has_dlc = "Together for Victory"
-					}
-					OR = {
-						has_completed_focus = CAN_compromise_with_quebec
-						has_completed_focus = CAN_forced_quebec_conscription
-					}					
-				}
-				if = {
-					limit = {
-						original_tag = RAJ
-						has_dlc = "Together for Victory"
-					}
-					is_subject = no
-				}
-
-				if = {
-					limit = {
-						original_tag = HUN
-						has_dlc = "Death or Dishonor"
-					}
-					NOT = { has_idea = HUN_treaty_of_triannon }
-				}
-				if = {
-					limit = {
-						original_tag = ENG
-						has_dlc = "Man the Guns"
-						has_completed_focus = ENG_concessions_to_the_trade_unions
-					}
-					NOT = { has_country_flag = ENG_cannot_increase_conscription_law }
-				}
-				if = {
-					limit = {
-						original_tag = SPR
-						has_dlc = "La Resistance"
-					}
-					NOT = { has_completed_focus = SPR_all_must_bear_the_torch }
-				}
-				if = {
-					limit = {
-						original_tag = BUL
-						has_dlc = "Battle for the Bosporus"
-					}
-					NOT = { has_idea = BUL_army_restrictions }
-				}
 			}
 
 			ai_will_do = {
@@ -368,11 +255,13 @@ ideas = {
 					#Prio if low on manpower
 					factor = 20
 					manpower_per_military_factory <  600
+					date < 1942.1.1
 				}
 				modifier = {
 					#Lower chance if has decent amount
 					factor = 0.5
 					manpower_per_military_factory >  1000
+					date < 1942.1.1
 				}
 				modifier = {
 					#Block has plenty manpower
@@ -428,62 +317,6 @@ ideas = {
 				#		ratio > 1
 				#	}
 				#}
-				if = {
-					limit = {
-						original_tag = AST
-						has_dlc = "Together for Victory"
-					}
-					has_completed_focus = AST_citizen_military_forces
-					has_completed_focus = AST_fight_work_or_perish
-				}
-
-				if = {
-					limit = {
-						original_tag = CAN
-						has_dlc = "Together for Victory"
-					}
-					OR = {
-						has_completed_focus = CAN_compromise_with_quebec
-						has_completed_focus = CAN_forced_quebec_conscription
-					}
-				}
-				if = {
-					limit = {
-						original_tag = RAJ
-						has_dlc = "Together for Victory"
-					}
-					is_subject = no
-				}
-
-				if = {
-					limit = {
-						original_tag = HUN
-						has_dlc = "Death or Dishonor"
-					}
-					NOT = { has_idea = HUN_treaty_of_triannon }
-				}
-				if = {
-					limit = {
-						original_tag = ENG
-						has_dlc = "Man the Guns"
-						has_completed_focus = ENG_concessions_to_the_trade_unions
-					}
-					NOT = { has_country_flag = ENG_cannot_increase_conscription_law }
-				}
-				if = {
-					limit = {
-						original_tag = SPR
-						has_dlc = "La Resistance"
-					}
-					NOT = { has_completed_focus = SPR_all_must_bear_the_torch }
-				}
-				if = {
-					limit = {
-						original_tag = BUL
-						has_dlc = "Battle for the Bosporus"
-					}
-					NOT = { has_idea = BUL_army_restrictions }
-				}
 			}
 
 			ai_will_do = {
@@ -492,16 +325,19 @@ ideas = {
 					#Prio if low on manpower
 					factor = 20
 					manpower_per_military_factory <  500
+					date < 1942.6.1
 				}				
 				modifier = {
 					#Lower chance if has decent amount
 					factor = 0.5
 					manpower_per_military_factory >  1000
+					date < 1942.6.1
 				}
 				modifier = {
 					#Block has plenty manpower
 					factor = 0
 					manpower_per_military_factory >  5000
+					date < 1942.6.1
 				}
 			}
 

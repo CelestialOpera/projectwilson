@@ -277,6 +277,32 @@ ideas = {
 		#		democratic_drift = -0.02
 		#	}
 		#}
+		
+		authoritarian_ethos_focus = {
+			
+		
+			allowed = {
+				always = no
+			}
+		
+			allowed_civil_war = {
+				OR = {	
+					has_government = communist
+					has_government = national_unitarist
+					has_government = despotist
+					has_government = authoritarian_democrat
+					has_government = radical_socialist
+				}
+			}
+		
+			removal_cost = -1
+		
+			picture = generic_pp_unity_bonus
+		
+			modifier = {
+				#democratic_drift = -0.02
+			}
+		}
 	
 	
 		neutrality_idea = {
