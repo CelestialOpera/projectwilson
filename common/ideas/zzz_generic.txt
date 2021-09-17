@@ -304,6 +304,72 @@ ideas = {
 				stability_factor = 0.05
 				war_support_factor = 0.05
 				army_morale_factor = 0.05
+				national_unitarist_acceptance = 50
+				despotist_acceptance = 50
+				authoritarian_democrat_acceptance = 50
+				radical_socialist_acceptance = 50
+				communist_acceptance = 50
+			}
+		}
+		
+		a_glorified_cause = {
+			
+		
+			allowed = {
+				always = no
+			}
+		
+			allowed_civil_war = {
+				OR = {	
+					has_government = communist
+					has_government = national_unitarist
+					has_government = despotist
+					has_government = authoritarian_democrat
+					has_government = radical_socialist
+				}
+			}
+		
+			removal_cost = -1
+		
+			picture = generic_pp_unity_bonus
+		
+			modifier = {
+				stability_factor = 0.10
+				war_support_factor = 0.05
+				war_support_weekly = 0.02
+				national_unitarist_acceptance = 15
+				despotist_acceptance = 15
+				authoritarian_democrat_acceptance = 15
+				radical_socialist_acceptance = 15
+				communist_acceptance = 15
+			}
+		}
+		
+		preying_on_the_weak = {
+			
+		
+			allowed = {
+				always = no
+			}
+		
+			allowed_civil_war = {
+				OR = {	
+					has_government = communist
+					has_government = national_unitarist
+					has_government = despotist
+					has_government = authoritarian_democrat
+					has_government = radical_socialist
+				}
+			}
+		
+			removal_cost = -1
+		
+			picture = generic_pp_unity_bonus
+		
+			modifier = {
+				justify_war_goal_time = -0.3
+				command_power_gain = 0.15
+				conscription_factor = 0.15
 			}
 		}
 	

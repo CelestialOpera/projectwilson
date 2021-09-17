@@ -112,3 +112,11 @@
  religious_policy:0 "Religious Policy"
  security_policy:0 "Security Policy"
  
+ #National Spirits
+ authoritarian_ethos_focus:0 "Authoritarian Ethos"
+ authoritarian_ethos_focus_desc:0 ""
+ a_glorified_cause:0 "A Glorified Cause"
+ a_glorified_cause_desc:0 ""
+ preying_on_the_weak:0 "Preying On The Weak"
+ preying_on_the_weak_desc:0 ""
+ 
