@@ -1,0 +1,146 @@
+add_namespace = japan
+add_namespace = japan_news
+
+country_event = { #The Night of The Black Tulips
+	id = japan.1
+	title = japan.1.t
+	desc = japan.1.d
+	#picture = night_of_black_tulips
+	fire_only_once = yes
+	
+	trigger = {
+		tag = JAP
+		date > 1936.5.1
+		date < 1937.5.30
+	}
+	
+	mean_time_to_happen = {
+		days = 6
+	}
+	
+	option = { #Government Holds Strong
+		name = japan.1.o1
+		
+		set_country_flag = japan_night_of_black_tulips
+		set_country_flag = japan_government_holds
+		
+		
+		hidden_effect = {
+			every_country = {
+				news_event = {
+					hours = 4
+					id = japan_news.3
+				}
+			}
+		}
+	}
+	
+	option = { #Tōseiha's Dawn
+		name = japan.1.o2
+		
+		set_country_flag = japan_night_of_black_tulips
+		set_country_flag = japan_tosheihas_dawn
+		
+		
+		hidden_effect = {
+			every_country = {
+				news_event = {
+					hours = 4
+					id = japan_news.1
+				}
+			}
+		}
+	}
+	
+	option = { #Yangunipponsosaeti's Success ########## Yangunipponsosaeti = Young Nippon Society
+		name = japan.1.o3
+		
+		set_country_flag = japan_night_of_black_tulips
+		set_country_flag = japan_yangunipponsosaeti_success
+		
+		
+		hidden_effect = {
+			every_country = {
+				news_event = {
+					hours = 4
+					id = japan_news.2
+				}
+			}
+		}
+	}
+}
+
+news_event = { #Coup In Japan/Tosheiha
+	id = japan_news.1
+	title = japan_news.1.t
+	desc = japan_news.1.d
+	#picture = japan_coup
+	is_triggered_only = yes
+	fire_only_once = yes 
+	
+	option = { 
+		name = japan_news.1.o1
+		trigger = {
+			NOT = {
+				tag = JAP
+			}
+		}
+	}
+    option = { 
+		name = japan_news.1.o2
+		trigger = {
+			tag = JAP
+		}
+	}
+	
+}
+
+news_event = { #Coup In Japan/Yangunipponsosaeti
+	id = japan_news.2
+	title = japan_news.2.t
+	desc = japan_news.2.d
+	#picture = japan_coup
+	is_triggered_only = yes
+	fire_only_once = yes 
+	
+	option = { 
+		name = japan_news.2.o1
+		trigger = {
+			NOT = {
+				tag = JAP
+			}
+		}
+	}
+    option = { 
+		name = japan_news.2.o2
+		trigger = {
+			tag = JAP
+		}
+	}
+	
+}
+
+news_event = { #Failed Coup In Japan
+	id = japan_news.3
+	title = japan_news.3.t
+	desc = japan_news.3.d
+	#picture = japan_coup
+	is_triggered_only = yes
+	fire_only_once = yes 
+	
+	option = { 
+		name = japan_news.3.o1
+		trigger = {
+			NOT = {
+				tag = JAP
+			}
+		}
+	}
+    option = { 
+		name = japan_news.3.o2
+		trigger = {
+			tag = JAP
+		}
+	}
+	
+}
