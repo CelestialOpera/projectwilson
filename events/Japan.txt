@@ -24,6 +24,26 @@ country_event = { #The Night of The Black Tulips
 		set_country_flag = japan_night_of_black_tulips
 		set_country_flag = japan_government_holds
 		
+
+		add_popularity = {
+			ideology = social_conservative
+			popularity = 0.05
+		}
+		
+		add_popularity = {
+			ideology = market_liberal
+			popularity = 0.10
+		}
+		
+		add_popularity = {
+			ideology = social_liberal
+			popularity = 0.05
+		}
+		
+		add_popularity = {
+			ideology = social_democrat
+			popularity = 0.05
+		}
 		
 		hidden_effect = {
 			every_country = {
@@ -39,8 +59,16 @@ country_event = { #The Night of The Black Tulips
 		name = japan.1.o2
 		
 		set_country_flag = japan_night_of_black_tulips
-		set_country_flag = japan_tosheihas_dawn
+		set_country_flag = japan_toseihas_dawn
 		
+		set_politics = {
+			ruling_party = despotist
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = despotist
+			popularity = 0.15
+		}
 		
 		hidden_effect = {
 			every_country = {
@@ -58,6 +86,14 @@ country_event = { #The Night of The Black Tulips
 		set_country_flag = japan_night_of_black_tulips
 		set_country_flag = japan_yangunipponsosaeti_success
 		
+		set_politics = {
+			ruling_party = national_unitarist
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = national_unitarist
+			popularity = 0.15
+		}
 		
 		hidden_effect = {
 			every_country = {
@@ -70,7 +106,7 @@ country_event = { #The Night of The Black Tulips
 	}
 }
 
-news_event = { #Coup In Japan/Tosheiha
+news_event = { #Coup In Japan/Toseiha
 	id = japan_news.1
 	title = japan_news.1.t
 	desc = japan_news.1.d

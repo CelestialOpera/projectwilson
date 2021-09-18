@@ -16,7 +16,7 @@ add_ideas = {
 
 	JAP_zaibatsus
 	JAP_duplicate_research_efforts
-	JAP_militarism
+	#JAP_militarism
 }
 
 609 = {
@@ -163,9 +163,9 @@ if = {
 }
 
 create_import = {
-		resource = oil
-		factories = 2
-		exporter = USA
+	resource = oil
+	factories = 2
+	exporter = USA
 }
 
 set_convoys = 400
@@ -188,6 +188,26 @@ set_popularities = {
 	libertarian = 1
 	radical_socialist = 6
 	communist = 4
+}
+
+create_country_leader = {
+	name = "Fumimaro Konoe"
+	desc = "POLITICS_FUMIMARO_KONOE_DESC"
+	picture = "Fumimaro_Konoe.dds"
+	expire = "1989.1.1"
+	ideology = national_unitarist_ideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Tetsuzan Nagata"
+	desc = "POLITICS_TETSUZAN_NAGATA_DESC"
+	picture = "Tetsuzan_Nagata.dds"
+	expire = "1989.1.1"
+	ideology = despotist_ideology
+	traits = {
+	}
 }
 
 create_country_leader = {

@@ -65,8 +65,8 @@ country_event = { #Frank Murphy Assassinated In Honolulu
 		days = 6
 	}
 	
-	option = { #Government Holds Strong
-		name = unitedstates.1.o1
+	option = { #They Will Not Get Away With Terror!
+		name = unitedstates.2.o1
 		
 		set_country_flag = USA_murphy_assassinated_honolulu
 		set_global_flag = USA_japanese_american_war
