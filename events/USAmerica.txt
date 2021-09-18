@@ -1,0 +1,156 @@
+add_namespace = unitedstates
+add_namespace = unitedstates_news
+
+country_event = { #Frank Murphy Assassinated In Manila
+	id = unitedstates.1
+	title = unitedstates.1.t
+	desc = unitedstates.1.d
+	#picture = night_of_black_tulips
+	fire_only_once = yes
+	
+	trigger = {
+		tag = USA
+		date > 1939.8.1
+		date < 1939.8.30
+		has_puppet = PHI
+	}
+	
+	mean_time_to_happen = {
+		days = 6
+	}
+	
+	option = { #They Will Not Get Away With Terror!
+		name = unitedstates.1.o1
+		
+		set_country_flag = USA_murphy_assassinated_manila
+		set_global_flag = USA_japanese_american_war
+		
+		add_war_support = 0.25
+		
+		declare_war_on = {
+			target = JAP
+			type = annex_everything
+		}
+		
+		
+		hidden_effect = {
+			every_country = {
+				news_event = {
+					hours = 8
+					id = unitedstates_news.1
+				}
+			}
+		}
+	}
+}
+
+country_event = { #Frank Murphy Assassinated In Honolulu
+	id = unitedstates.2
+	title = unitedstates.2.t
+	desc = unitedstates.2.d
+	#picture = night_of_black_tulips
+	fire_only_once = yes
+	
+	trigger = {
+		tag = USA
+		date > 1939.12.1
+		date < 1939.12.30
+		NOT = {
+			has_puppet = PHI
+			has_country_flag = USA_murphy_assassinated_manila
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 6
+	}
+	
+	option = { #Government Holds Strong
+		name = unitedstates.1.o1
+		
+		set_country_flag = USA_murphy_assassinated_honolulu
+		set_global_flag = USA_japanese_american_war
+		
+		add_war_support = 0.40
+		
+		declare_war_on = {
+			target = JAP
+			type = annex_everything
+		}
+		
+		hidden_effect = {
+			every_country = {
+				news_event = {
+					hours = 8
+					id = unitedstates_news.2
+				}
+			}
+		}
+	}
+}
+
+news_event = { #War In The Pacific
+	id = unitedstates_news.1
+	title = unitedstates_news.1.t
+	desc = unitedstates_news.1.d
+	#picture = unitedstates_coup
+	is_triggered_only = yes
+	fire_only_once = yes 
+	
+	option = { 
+		name = unitedstates_news.1.o1
+		trigger = {
+			NOT = {
+				tag = JAP
+				tag = USA
+			}
+		}
+	}
+    option = { 
+		name = unitedstates_news.1.o2
+		trigger = {
+			tag = JAP
+		}
+	}
+	
+	option = { 
+		name = unitedstates_news.1.o3
+		trigger = {
+			tag = USA
+		}
+	}
+	
+}
+
+news_event = { #War In The Pacific if Hawaii
+	id = unitedstates_news.2
+	title = unitedstates_news.2.t
+	desc = unitedstates_news.2.d
+	#picture = unitedstates_coup
+	is_triggered_only = yes
+	fire_only_once = yes 
+	
+	option = { 
+		name = unitedstates_news.2.o1
+		trigger = {
+			NOT = {
+				tag = JAP
+				tag = USA
+			}
+		}
+	}
+    option = { 
+		name = unitedstates_news.2.o2
+		trigger = {
+			tag = JAP
+		}
+	}
+	
+	option = { 
+		name = unitedstates_news.2.o3
+		trigger = {
+			tag = USA
+		}
+	}
+	
+}

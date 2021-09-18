@@ -11,7 +11,7 @@ country_event = { #The Night of The Black Tulips
 	trigger = {
 		tag = JAP
 		date > 1936.5.1
-		date < 1937.5.30
+		date < 1936.5.30
 	}
 	
 	mean_time_to_happen = {
