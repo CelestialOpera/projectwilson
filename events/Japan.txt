@@ -45,14 +45,14 @@ country_event = { #The Night of The Black Tulips
 			popularity = 0.05
 		}
 		
-		hidden_effect = {
-			every_country = {
-				news_event = {
-					hours = 4
-					id = japan_news.3
-				}
+		
+		every_country = {
+			news_event = {
+				hours = 4
+				id = japan_news.3
 			}
 		}
+		
 	}
 	
 	option = { #Tōseiha's Dawn
@@ -70,14 +70,14 @@ country_event = { #The Night of The Black Tulips
 			popularity = 0.15
 		}
 		
-		hidden_effect = {
-			every_country = {
-				news_event = {
-					hours = 4
-					id = japan_news.1
-				}
+		
+		every_country = {
+			news_event = {
+				hours = 4
+				id = japan_news.1
 			}
 		}
+		
 	}
 	
 	option = { #Yangunipponsosaeti's Success ########## Yangunipponsosaeti = Young Nippon Society
@@ -95,14 +95,14 @@ country_event = { #The Night of The Black Tulips
 			popularity = 0.15
 		}
 		
-		hidden_effect = {
-			every_country = {
-				news_event = {
-					hours = 4
-					id = japan_news.2
-				}
+		
+		every_country = {
+			news_event = {
+				hours = 4
+				id = japan_news.2
 			}
 		}
+		
 	}
 }
 

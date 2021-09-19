@@ -135,6 +135,11 @@ set_autonomy = {
 	autonomous_state =  autonomy_puppet
 }
 
+set_autonomy = {
+	target = HAI
+	autonomous_state =  autonomy_puppet
+}
+
 create_country_leader = {
 	name = "James A. Reed"
 	desc = "POLITICS_JAMES_A_REED_DESC"
