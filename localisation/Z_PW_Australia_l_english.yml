@@ -1,0 +1,46 @@
+﻿l_english:
+ 
+ #Country Name
+ AST_national_unitarist:0 "Commonwealth of Australia"
+ AST_national_unitarist_DEF:0 "The Commonwealth of Australia"
+ AST_national_unitarist_ADJ:0 "Australian"
+ AST_despotist:0 "Commonwealth of Australia"
+ AST_despotist_DEF:0 "The Commonwealth of Australia"
+ AST_despotist_ADJ:0 "Australian"
+ AST_authoritarian_democrat:0 "Commonwealth of Australia"
+ AST_authoritarian_democrat_DEF:0 "The Commonwealth of Australia"
+ AST_authoritarian_democrat_ADJ:0 "Australian"
+ AST_social_conservative:0 "Commonwealth of Australia"
+ AST_social_conservative_DEF:0 "The Commonwealth of Australia"
+ AST_social_conservative_ADJ:0 "Australian"
+ AST_market_liberal:0 "Commonwealth of Australia"
+ AST_market_liberal_DEF:0 "The Commonwealth of Australia"
+ AST_market_liberal_ADJ:0 "Australian"
+ AST_social_liberal:0 "Commonwealth of Australia"
+ AST_social_liberal_DEF:0 "The Commonwealth of Australia"
+ AST_social_liberal_ADJ:0 "Australian"
+ AST_social_democrat:0 "Commonwealth of Australia"
+ AST_social_democrat_DEF:0 "The Commonwealth of Australia"
+ AST_social_democrat_ADJ:0 "Australian"
+ AST_libertarian:0 "Commonwealth of Australia"
+ AST_libertarian_DEF:0 "The Commonwealth of Australia"
+ AST_libertarian_ADJ:0 "Australian"
+ AST_radical_socialist:0 "Commonwealth of Australia"
+ AST_radical_socialist_DEF:0 "The Commonwealth of Australia"
+ AST_radical_socialist_ADJ:0 "Australian"
+ AST_communist:0 "Commonwealth of Australia"
+ AST_communist_DEF:0 "The Commonwealth of Australia"
+ AST_communist_ADJ:0 "Australian"
+ 
+ #Parties
+ AST_authoritarian_democrat_party:0 "Country"
+ AST_authoritarian_democrat_party_long:0 "Australian Country Party"
+ AST_social_conservative_party:0 "Nationalist"
+ AST_social_conservative_party_long:0 "Nationalist Party" #Hughes and Right-Moderate Labor like Lyons
+ 
+ AST_social_liberal_party:0 "Progressive"
+ AST_social_liberal_party_long:0 "Progressive Party of Australia" #The Left-Moderate Labor party
+ AST_social_democrat_party:0 "Labor"
+ AST_social_democrat_party_long:0 "Australian Labor Party" #Langites
+
+ 
