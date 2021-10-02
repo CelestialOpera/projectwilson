@@ -55,4 +55,14 @@ spriteTypes = {
 		name = "denmark_military_coup"
 		texturefile = "gfx/event_pictures/report_event/denmark_military_coup.dds"
 	}
+	
+	spriteType = {
+		name = "report_night_of_black_tulips"
+		texturefile = "gfx/event_pictures/report_event/night_of_black_tulips.dds"
+	}
+	
+	spriteType = {
+		name = "report_american_state_funeral"
+		texturefile = "gfx/event_pictures/report_event/american_state_funeral.dds"
+	}
 }

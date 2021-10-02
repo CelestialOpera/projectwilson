@@ -4,5 +4,20 @@ spriteTypes = {
 		name = "greece_news_of_second_war"
 		texturefile = "gfx/event_pictures/news_event/greece_news_of_second_war.dds"
 	}
+	
+	spriteType = {
+		name = "news_japan_coup"
+		texturefile = "gfx/event_pictures/news_event/japan_coup.dds"
+	}
+	
+	spriteType = {
+		name = "news_failed_japan_coup"
+		texturefile = "gfx/event_pictures/news_event/failed_japan_coup.dds"
+	}
+	
+	spriteType = {
+		name = "news_war_in_pacific"
+		texturefile = "gfx/event_pictures/news_event/war_in_pacific.dds"
+	}
 
 }

@@ -4,7 +4,7 @@ country_event = { #The Night of The Black Tulips
 	id = japan.1
 	title = japan.1.t
 	desc = japan.1.d
-	#picture = night_of_black_tulips
+	picture = report_night_of_black_tulips
 	fire_only_once = yes
 	
 	trigger = {

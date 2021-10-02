@@ -5,7 +5,7 @@ country_event = { #Frank Murphy Assassinated In Manila
 	id = unitedstates.1
 	title = unitedstates.1.t
 	desc = unitedstates.1.d
-	#picture = night_of_black_tulips
+	picture = report_american_state_funeral
 	fire_only_once = yes
 	
 	trigger = {
@@ -48,7 +48,7 @@ country_event = { #Frank Murphy Assassinated In Honolulu
 	id = unitedstates.2
 	title = unitedstates.2.t
 	desc = unitedstates.2.d
-	#picture = night_of_black_tulips
+	picture = report_american_state_funeral
 	fire_only_once = yes
 	
 	trigger = {
@@ -93,7 +93,7 @@ news_event = { #War In The Pacific
 	id = unitedstates_news.1
 	title = unitedstates_news.1.t
 	desc = unitedstates_news.1.d
-	#picture = unitedstates_coup
+	picture = news_war_in_pacific
 	is_triggered_only = yes
 	#fire_only_once = yes 
 	
@@ -126,7 +126,7 @@ news_event = { #War In The Pacific if Hawaii
 	id = unitedstates_news.2
 	title = unitedstates_news.2.t
 	desc = unitedstates_news.2.d
-	#picture = unitedstates_coup
+	picture = news_war_in_pacific
 	is_triggered_only = yes
 	#fire_only_once = yes 
 	
