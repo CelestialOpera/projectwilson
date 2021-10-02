@@ -48,7 +48,7 @@ country_event = { #The Night of The Black Tulips
 		
 		every_country = {
 			news_event = {
-				hours = 4
+				days = 4
 				id = japan_news.3
 			}
 		}
@@ -73,7 +73,7 @@ country_event = { #The Night of The Black Tulips
 		
 		every_country = {
 			news_event = {
-				hours = 4
+				days = 4
 				id = japan_news.1
 			}
 		}
@@ -98,7 +98,7 @@ country_event = { #The Night of The Black Tulips
 		
 		every_country = {
 			news_event = {
-				hours = 4
+				days = 4
 				id = japan_news.2
 			}
 		}
