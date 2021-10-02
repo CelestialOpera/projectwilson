@@ -95,7 +95,7 @@ news_event = { #War In The Pacific
 	desc = unitedstates_news.1.d
 	#picture = unitedstates_coup
 	is_triggered_only = yes
-	fire_only_once = yes 
+	#fire_only_once = yes 
 	
 	option = { 
 		name = unitedstates_news.1.o1
@@ -128,7 +128,7 @@ news_event = { #War In The Pacific if Hawaii
 	desc = unitedstates_news.2.d
 	#picture = unitedstates_coup
 	is_triggered_only = yes
-	fire_only_once = yes 
+	#fire_only_once = yes 
 	
 	option = { 
 		name = unitedstates_news.2.o1

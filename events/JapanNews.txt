@@ -6,8 +6,8 @@ news_event = { #Coup In Japan/Toseiha
 	desc = japan_news.1.d
 	#picture = japan_coup
 	is_triggered_only = yes
-	fire_only_once = yes 
-	major = yes
+	#fire_only_once = yes 
+	#major = yes
 	
 	option = { 
 		name = japan_news.1.o1
@@ -32,8 +32,8 @@ news_event = { #Coup In Japan/Yangunipponsosaeti
 	desc = japan_news.2.d
 	#picture = japan_coup
 	is_triggered_only = yes
-	fire_only_once = yes
-	major = yes
+	#fire_only_once = yes
+	#major = yes
 	
 	option = { 
 		name = japan_news.2.o1
@@ -58,8 +58,8 @@ news_event = { #Failed Coup In Japan
 	desc = japan_news.3.d
 	#picture = japan_coup
 	is_triggered_only = yes
-	fire_only_once = yes 
-	major = yes
+	#fire_only_once = yes 
+	#major = yes
 	
 	option = { 
 		name = japan_news.3.o1

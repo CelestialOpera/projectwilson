@@ -9,7 +9,7 @@ set_war_support = 0.8
 set_research_slots = 4
 set_fuel_ratio = 1.0
 add_ideas = {
-	state_shintoism
+	#state_shintoism
 	limited_exports
 	limited_conscription
 	partial_economic_mobilisation
@@ -17,13 +17,6 @@ add_ideas = {
 	JAP_zaibatsus
 	JAP_duplicate_research_efforts
 	#JAP_militarism
-}
-
-609 = {
-	start_resistance = yes
-	set_compliance = 5
-	set_resistance = 5
-	set_garrison_strength = 1.0
 }
 
 527 = {
