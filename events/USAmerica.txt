@@ -89,6 +89,136 @@ country_event = { #Frank Murphy Assassinated In Honolulu
 	}
 }
 
+country_event = { #Labor-Republican Fusion Ticket
+	id = unitedstates.3
+	title = unitedstates.3.t
+	desc = unitedstates.3.d
+	picture = report_labor_republican_fusion
+	fire_only_once = yes
+	
+	trigger = {
+		tag = USA
+		date > 1936.7.1
+		date < 1936.7.30
+	}
+	
+	mean_time_to_happen = {
+		days = 6
+	}
+	
+	option = { #Worrying Developments
+		name = unitedstates.3.o1
+		
+		set_country_flag = USA_labor_republican_fusion
+		add_political_power = -25
+		add_stability = -0.05
+		
+		#hidden_effect = {
+		#	every_country = {
+		#		news_event = {
+		#			hours = 8
+		#			id = unitedstates_news.2
+		#		}
+		#	}
+		#}
+	}
+}
+
+country_event = { #1936 US Election
+	id = unitedstates.4
+	title = unitedstates.4.t
+	desc = unitedstates.4.d
+	picture = report_1936_us_election
+	fire_only_once = yes
+	
+	trigger = {
+		tag = USA
+		date > 1936.10.1
+		date < 1936.10.30
+	}
+	
+	immediate = {
+		hidden_effect = {
+			set_country_flag = USA_1936_us_election
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 6
+	}
+	
+	option = { #James Reed 4 More Years
+		name = unitedstates.4.o1
+		
+		set_country_flag = USA_1936_james_reed
+		add_political_power = -25
+		add_stability = -0.10
+		
+		hidden_effect = {
+			create_country_leader = {
+				name = "William E. Borah"
+				desc = "POLITICS_William_E_Borah_DESC"
+				picture = "William_E_Borah.dds"
+				expire = "1965.1.1"
+				ideology = social_liberal_ideology
+				traits = {
+					
+				}
+			}
+		#	every_country = {
+		#		news_event = {
+		#			hours = 8
+		#			id = unitedstates_news.2
+		#		}
+		#	}
+		}
+	}
+	
+	option = { #William Borah Sweeps
+		name = unitedstates.4.o2
+		
+		set_country_flag = USA_1936_william_borah
+		add_political_power = 25
+		
+		create_country_leader = {
+			name = "William E. Borah"
+			desc = "POLITICS_William_E_Borah_DESC"
+			picture = "William_E_Borah.dds"
+			expire = "1965.1.1"
+			ideology = social_democrat_ideology
+			traits = {
+				
+			}
+		}
+		
+		set_party_name = { 
+			ideology = social_democrat 
+			long_name = USA_gop_labor_alliance_labor_long
+			name = USA_gop_labor_alliance_labor 
+		}
+		
+		set_party_name = { 
+			ideology = social_liberal 
+			long_name = USA_gop_labor_alliance_gop_long
+			name = USA_gop_labor_alliance_gop 
+		}
+		
+		set_politics = {
+			ruling_party = social_democrat
+			elections_allowed = no
+		}
+		
+		#hidden_effect = {
+		#	every_country = {
+		#		news_event = {
+		#			hours = 8
+		#			id = unitedstates_news.2
+		#		}
+		#	}
+		#}
+	}
+}
+
 news_event = { #War In The Pacific
 	id = unitedstates_news.1
 	title = unitedstates_news.1.t
@@ -154,3 +284,9 @@ news_event = { #War In The Pacific if Hawaii
 	}
 	
 }
+
+##Skeleton Content For America
+##1) Labor-Republican Fusion Ticket = The Republican party has a major split here. Many Pro-Business Individuals cautiously stand by but if the Pro-Labor caucus gets too much support from the President then the Business Republicans and Borahite Republicans get angy
+##2) US Election of 1936
+##3) Profit????
+
