@@ -41,7 +41,6 @@ create_country_leader = {
 	}
 }
 
-# Rafael Franco technically comes to and loses power slightly after/before the bookmarks, but is the go-to choice for a socialist leader
 create_country_leader = {
 	name = "Rafael Franco"
 	desc = "POLITICS_RAFAEL_FRANCO_DESC"
