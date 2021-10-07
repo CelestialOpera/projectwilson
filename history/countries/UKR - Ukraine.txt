@@ -60,52 +60,75 @@ if = {
 	}
 }
 
-set_popularities = {	social_liberal = 20	national_unitarist = 30	communist = 50
-}
-
-create_country_leader = {
-	name = "Kost Levytsky"
-	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
-	expire = "1953.3.1"
-	ideology = social_conservative_ideology
-	traits = {
-		
-	}
-}
-
-create_country_leader = {
-	name = "Nikita Sergeyevich Khrushchev"
-	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
-	expire = "1953.3.1"
-	ideology = radical_socialist_ideology
-	traits = {
-		
-	}
+set_popularities = {
+	national_unitarist = 3
+	despotist = 10
+	authoritarian_democrat = 18
+	social_conservative = 0
+	market_liberal = 0
+	social_liberal = 20
+	social_democrat = 32
+	libertarian = 2
+	radical_socialist = 12
+	communist = 3
 }
 
 create_country_leader = {
 	name = "Stepan Bandera"
-	desc = ""
-	picture = "gfx/leaders/SOV/Portrait_Soviet_Generic_3.dds"
-	expire = "1953.3.1"
+	picture = "Portrait_UKR_Stepan_Bandera.dds"
 	ideology = national_unitarist_ideology
-	traits = {
-		
-	}
 }
 
-#create_country_leader = {
-#	name = ""
-#	desc = ""
-#	picture = ""
-#	expire = "1953.3.1"
-#	ideology = authoritarian_democrat_ideology
-#	traits = {
-#		
-#	}
-#}
+create_country_leader = {
+	name = "Pavlo Skoropadskyi"
+	picture = "Portrait_UKR_Pavlo_Skoropadskyi.dds"
+	ideology = despotist_ideology
+}
+
+create_country_leader = {
+	name = "Yevhen Konovalets"
+	picture = "Portrait_UKR_Yevhen_Konovalets.dds"
+	ideology = authoritarian_democrat_ideology
+}
+
+create_country_leader = {
+	name = "Dmytro Levytsky"
+	picture = "Portrait_UKR_Dmytro_Levytsky.dds"
+	ideology = social_conservative_ideology
+}
+create_country_leader = {
+	name = "Oleksander Shulhyn"
+	picture = "Portrait_UKR_Oleksander_Shulhyn.dds"
+	ideology = market_liberal_ideology
+}
+
+create_country_leader = {
+	name = "Mikhail Tugan-Baranovsky"
+	picture = "Portrait_UKR_Mikhail_Tugan_Baranovsky .dds"
+	ideology = social_liberal_ideology
+}
+create_country_leader = {
+	name = "Volodymyr Vynnychenko"
+	picture = "Portrait_UKR_Volodymyr_Vynnychenko.dds"
+	ideology = social_democrat_ideology
+}
+
+create_country_leader = {
+	name = "Nestor Makhno"
+	picture = "Portrait_UKR_Nestor_Makhno.dds"
+	ideology = libertarian_ideology
+}
+create_country_leader = {
+	name = "Symon Petliura"
+	picture = "Portrait_UKR_Symon_Petliura.dds"
+	ideology = radical_socialist_ideology
+}
+
+create_country_leader = {
+	name = "Stanisław Kosior"
+	picture = "Portrait_UKR_Stanisław_Kosior.dds"
+	ideology = communist_ideology
+}
 
 
 
