@@ -69,20 +69,38 @@ set_politics = {
 }
 
 set_popularities = {
-	national_unitarist = 10
-	despotist = 10
-	authoritarian_democrat = 10
-	social_conservative = 10 #General Electoral League
-	market_liberal = 10 #People's
-	social_liberal = 10 # Farmers' League
-	social_democrat = 10 # Social Democratic
-	libertarian = 10
-	radical_socialist = 10
-	communist = 10
+	national_unitarist = 1
+	despotist = 15
+	authoritarian_democrat = 0
+	social_conservative = 30 #General Electoral League
+	market_liberal = 14 #People's
+	social_liberal = 19 # Farmers' League
+	social_democrat = 17 # Social Democratic
+	libertarian = 0
+	radical_socialist = 3
+	communist = 1
 }
 
 set_convoys = 25
 set_stability = 0.9
+
+create_country_leader = {
+	name = "Axel Rappe"
+	picture = "Portrait_SWE_Axel_Rappe.dds"
+	ideology = national_unitarist_ideology
+}
+
+create_country_leader = {
+	name = "Gustaf V"
+	picture = "Portrait_SWE_Gustaf_Fifth .dds"
+	ideology = despotist_ideology
+}
+
+create_country_leader = {
+	name = "Ivar Rhedin"
+	picture = "Portrait_SWE_Ivar_Rhedin .dds"
+	ideology = authoritarian_democrat_ideology
+}
 
 create_country_leader = {
 	name = "Arvid Lindman"
@@ -93,6 +111,40 @@ create_country_leader = {
 	traits = {
 		#
 	}
+}
+
+create_country_leader = {
+	name = "Gustaf Andersson"
+	picture = "Portrait_SWE_Gustaf_Andersson.dds"
+	ideology = market_liberal_ideology
+}
+
+create_country_leader = {
+	name = "Axel Pehrsson-Bramstorp"
+	picture = "Portrait_SWE_Axel_Pehrsson_Bramstorp.dds"
+	ideology = social_liberal_ideology
+}
+create_country_leader = {
+	name = "Per Albin Hansson"
+	picture = "Portrait_SWE_Per_Albin_Hansson.dds"
+	ideology = social_democrat_ideology
+}
+
+create_country_leader = {
+	name = "Karl Bergkvist"
+	picture = "Portrait_SWE_Karl_Bergkvist.dds"
+	ideology = libertarian_ideology
+}
+create_country_leader = {
+	name = "Karl Kilbom"
+	picture = "Portrait_SWE_Karl_Kilbom.dds"
+	ideology = radical_socialist_ideology
+}
+
+create_country_leader = {
+	name = "Nils Flyg"
+	picture = "Portrait_SWE_Nils_Flyg.dds"
+	ideology = communist_ideology
 }
 
 create_corps_commander = {
