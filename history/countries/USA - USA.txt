@@ -1065,3 +1065,29 @@ if = {
 		}
 	}
 }
+
+
+###Puppets Stuff
+
+#PHI
+
+"PHI" = {
+	set_politics = {
+		ruling_party = authoritarian_democrat
+		last_election = "1936.1.1"
+		election_frequency = 48
+		elections_allowed = no
+	}
+	set_popularities = {
+		national_unitarist = 10
+		despotist = 10
+		authoritarian_democrat = 10
+		social_conservative = 10
+		market_liberal = 10
+		social_liberal = 10
+		social_democrat = 10
+		libertarian = 10
+		radical_socialist = 10
+		communist = 10
+	}
+}
