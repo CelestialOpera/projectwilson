@@ -91,7 +91,6 @@ create_country_leader = {
 	picture = "Portrait_Antônio_Carlos_Ribeiro_de_Andrada.dds"
 	ideology = social_conservative_ideology
 }
-
 create_country_leader = {
 	name = "Valdemar Ferreira"
 	picture = "Portrait_Valdemar_Ferreira.dds"
@@ -103,7 +102,6 @@ create_country_leader = {
 	picture = "Portrait_Cleto_da_Costa_Campelo_Filho.dds"
 	ideology = social_liberal_ideology
 }
-
 create_country_leader = {
 	name = "Lindolfo Collor"
 	picture = "Portrait_Lindolfo_Collor.dds"
