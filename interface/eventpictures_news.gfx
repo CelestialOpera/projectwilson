@@ -19,5 +19,35 @@ spriteTypes = {
 		name = "news_war_in_pacific"
 		texturefile = "gfx/event_pictures/news_event/war_in_pacific.dds"
 	}
+	
+	spriteType = {
+		name = "soviet_death_of_lenin_news"
+		texturefile = "gfx/event_pictures/news_event/soviet_death_of_lenin_news.dds"
+	}
+	
+	spriteType = {
+		name = "soviet_rykov_won_news"
+		texturefile = "gfx/event_pictures/news_event/soviet_rykov_won_news.dds"
+	}
+	
+	spriteType = {
+		name = "soviet_trotsky_won_news"
+		texturefile = "gfx/event_pictures/news_event/soviet_trotsky_won_news.dds"
+	}
+	
+	spriteType = {
+		name = "soviet_schliapnikov_won_news"
+		texturefile = "gfx/event_pictures/news_event/soviet_schliapnikov_won_news.dds"
+	}
+	
+	spriteType = {
+		name = "soviet_bogdanov_won_news"
+		texturefile = "gfx/event_pictures/news_event/soviet_bogdanov_won_news.dds"
+	}
+	
+	spriteType = {
+		name = "soviet_martov_won_news"
+		texturefile = "gfx/event_pictures/news_event/soviet_martov_won_news.dds"
+	}
 
 }

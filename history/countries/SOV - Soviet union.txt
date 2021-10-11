@@ -117,3 +117,13 @@ create_country_leader = {
 		
 	}
 }
+
+create_country_leader = {
+	name = "Julius Martov"
+	desc = "POLITICS_JULIUS_MARTOV_DESC"
+	picture = "Julius_Martov.dds"
+	ideology = radical_socialist_ideology
+	traits = {
+		
+	}
+}

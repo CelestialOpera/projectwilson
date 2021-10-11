@@ -75,4 +75,39 @@ spriteTypes = {
 		name = "report_labor_republican_fusion"
 		texturefile = "gfx/event_pictures/report_event/labor_republican_fusion.dds"
 	}
+	
+	spriteType = {
+		name = "soviet_death_of_lenin"
+		texturefile = "gfx/event_pictures/report_event/soviet_death_of_lenin.dds"
+	}
+	
+	spriteType = {
+		name = "soviet_lenin_funeral"
+		texturefile = "gfx/event_pictures/report_event/soviet_lenin_funeral.dds"
+	}
+	
+	spriteType = {
+		name = "soviet_election_in_soviets"
+		texturefile = "gfx/event_pictures/report_event/soviet_election_in_soviets.dds"
+	}
+	
+	spriteType = {
+		name = "soviet_menshevik_sr_alliance"
+		texturefile = "gfx/event_pictures/report_event/soviet_menshevik_sr_alliance.dds"
+	}
+	
+	spriteType = {
+		name = "soviet_urban_rallies"
+		texturefile = "gfx/event_pictures/report_event/soviet_urban_rallies.dds"
+	}
+	
+	spriteType = {
+		name = "soviet_angry_farmers"
+		texturefile = "gfx/event_pictures/report_event/soviet_angry_farmers.dds"
+	}
+	
+	spriteType = {
+		name = "soviet_supreme_soviet_election"
+		texturefile = "gfx/event_pictures/report_event/soviet_supreme_soviet_election.dds"
+	}
 }

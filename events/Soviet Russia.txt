@@ -1,0 +1,501 @@
+add_namespace = soviet
+add_namespace = soviet_news
+
+country_event = { #Death of Lenin
+	id = soviet.1
+	title = soviet.1.t
+	desc = soviet.1.d
+	picture = soviet_death_of_lenin
+	
+	fire_only_once = yes
+	trigger = {
+		tag = SOV
+		date > 1936.3.1
+		date < 1936.3.30
+	}
+	mean_time_to_happen = {
+		days = 8
+	}
+	
+	option = {
+		name = soviet.1.o1
+		add_political_power = -100
+		add_stability = -0.05
+		kill_ideology_leader = communist
+		create_country_leader = {
+			name = "Alexei Rykov"
+			desc = "POLITICS_ALEXEI_RYKOV_DESC"
+			picture = "Alexei_Rykov.dds"
+			ideology = communist_ideology
+		}
+		hidden_effect = {
+			country_event = { days = 5 id = soviet.2 }
+			every_country = {
+				news_event = {
+					hours = 4
+					id = soviet_news.1
+				}
+			}
+		}
+	}
+}
+
+country_event = { #State Funeral for Vladimir Lenin
+	id = soviet.2
+	title = soviet.2.t
+	desc = soviet.2.d
+	picture = soviet_lenin_funeral
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = soviet.2.o1 
+		hidden_effect = {
+			country_event = { days = 14 id = soviet.3 }
+		}
+	}
+}
+
+country_event = { #Election of the Soviets Called
+	id = soviet.3
+	title = soviet.3.t
+	desc = soviet.3.d
+	picture = soviet_election_in_soviets
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = soviet.3.o1
+		hidden_effect = {
+			country_event = { days = 8 id = soviet.4 }
+		}
+	}
+}
+
+country_event = { #Mensheviks and Left-SRs Form Electoral Coalition
+	id = soviet.4
+	title = soviet.4.t
+	desc = soviet.4.d
+	picture = soviet_menshevik_sr_alliance
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = soviet.4.o1
+		add_popularity = {
+			ideology = radical_socialist
+			popularity = 0.1
+		}
+		add_popularity = {
+			ideology = social_democrat
+			popularity = 0.07
+		}
+		hidden_effect = {
+			country_event = { days = 5 id = soviet.5 }
+		}
+	}
+}
+
+country_event = { #Bolsheviks Stage Urban Large Urban Rallies
+	id = soviet.5
+	title = soviet.5.t
+	desc = soviet.5.d
+	picture = soviet_urban_rallies
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = soviet.5.o1
+		add_popularity = {
+			ideology = communist
+			popularity = 0.05
+		}
+		hidden_effect = {
+			country_event = { days = 3 id = soviet.6 }
+		}
+	}
+}
+
+country_event = { #Farmers Protest Lack of Rural Democracy
+	id = soviet.6
+	title = soviet.6.t
+	desc = soviet.6.d
+	picture = soviet_angry_farmers
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = soviet.6.o1
+		add_political_power = -15
+		add_popularity = {
+			ideology = social_conservative
+			popularity = 0.07
+		}
+		hidden_effect = {
+			country_event = { days = 10 id = soviet.7 }
+		}
+	}
+}
+
+country_event = { #1936 Elections for the Supreme Soviet
+	id = soviet.7
+	title = soviet.7.t
+	desc = soviet.7.d
+	picture = soviet_supreme_soviet_election
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { #Alexei Rykov is Reconfirmed
+		name = soviet.7.o1
+		add_popularity = {
+			ideology = communist
+			popularity = 0.1
+		}
+		ai_chance = {
+			factor = 35
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					NOT = {
+						tag = SOV
+					}
+				}
+				news_event = {
+					hours = 4
+					id = soviet_news.2
+				}
+			}
+		}
+	}
+	
+	option = { #Leon Trotsky Rallied the Bolshevik Base
+		name = soviet.7.o2
+		add_popularity = {
+			ideology = communist
+			popularity = 0.1
+		}
+		add_popularity = {
+			ideology = radical_socialist
+			popularity = 0.05
+		}
+		create_country_leader = {
+			name = "Leon Trotsky"
+			desc = "POLITICS_LEON_TROTSKY_DESC"
+			picture = "Leon_Trotsky.dds"
+			ideology = communist_ideology
+		}
+		add_war_support = 0.1
+		ai_chance = {
+			factor = 20
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					NOT = {
+						tag = SOV
+					}
+				}
+				news_event = {
+					hours = 4
+					id = soviet_news.3
+				}
+			}
+		}
+	}
+	
+	option = { #Shliapnikov and the Workers' Opposition Wins the Urban Workers
+		name = soviet.7.o3
+		add_popularity = {
+			ideology = communist
+			popularity = 0.07
+		}
+		add_popularity = {
+			ideology = radical_socialist
+			popularity = 0.07
+		}
+		create_country_leader = {
+			name = "Alexander Shliapnikov"
+			desc = "POLITICS_ALEXANDER_SHLIAPNIKOV_DESC"
+			picture = "Alexander_Shliapnikov.dds"
+			ideology = communist_ideology
+		}
+		ai_chance = {
+			factor = 15
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					NOT = {
+						tag = SOV
+					}
+				}
+				news_event = {
+					hours = 4
+					id = soviet_news.4
+				}
+			}
+		}
+	}
+	
+	option = { #The Proletkult Whips the Workers into a Revolutionary Fervor
+		name = soviet.7.o4
+		add_political_power = -35
+		add_popularity = {
+			ideology = communist
+			popularity = 0.15
+		}
+		create_country_leader = {
+			name = "Alexander Shliapnikov"
+			desc = "POLITICS_ALEXANDER_SHLIAPNIKOV_DESC"
+			picture = "Alexander_Shliapnikov.dds"
+			ideology = communist_ideology
+		}
+		ai_chance = {
+			factor = 10
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					NOT = {
+						tag = SOV
+					}
+				}
+				news_event = {
+					hours = 4
+					id = soviet_news.5
+				}
+			}
+		}
+	}
+	
+	option = { #Julius Martov Wins a Surprise Victory
+		name = soviet.7.o5
+		add_popularity = {
+			ideology = social_democrat
+			popularity = 0.07
+		}
+		add_popularity = {
+			ideology = radical_socialist
+			popularity = 0.15
+		}
+		set_politics = {
+			ruling_party = radical_socialist
+		}
+		ai_chance = {
+			factor = 20
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					NOT = {
+						tag = SOV
+					}
+				}
+				news_event = {
+					hours = 4
+					id = soviet_news.6
+				}
+			}
+		}
+	}
+}
+
+news_event = {	#Death of Lenin News
+	id = soviet_news.1
+	title = soviet_news.1.t
+	desc = soviet_news.1.d
+	picture = soviet_death_of_lenin_news
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = soviet_news.1.o1
+		trigger = {
+			tag = SOV
+		}
+	}
+	
+	option = {
+		name = soviet_news.1.o2
+		trigger = {
+			tag = RUS
+		}
+	}
+	
+	option = {
+		name = soviet_news.1.o3
+		trigger = {
+			NOT = {
+				OR = {
+					tag = SOV
+					tag = RUS
+				}
+			}
+			has_government = communist
+		}
+	}
+	
+	option = {
+		name = soviet_news.1.o4
+		trigger = {
+			NOT = {
+				OR = {
+					tag = SOV
+					tag = RUS
+				}
+			}
+			has_government = radical_socialist
+		}
+	}
+	
+	option = {
+		name = soviet_news.1.o5
+		trigger = {
+			NOT = {
+				OR = {
+					tag = SOV
+					tag = RUS
+				}
+			}
+			NOT = {
+				OR = {
+					has_government = communist
+					has_government = radical_socialist
+				}
+			}
+		}
+	}
+}
+
+news_event = { #Rykov Elected Chairman of the Council of People's Commissars
+	id = soviet_news.2
+	title = soviet_news.2.t
+	desc = soviet_news.2.d
+	picture = soviet_rykov_won_news
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = soviet_news.2.o1
+		trigger = {
+			NOT = {
+				tag = RUS
+			}
+		}
+	}
+	
+	option = {
+		name = soviet_news.2.o2
+		trigger = {
+			tag = RUS
+		}
+	}
+}
+
+news_event = { #Trotsky Elected Chairman of the Council of People's Commissars
+	id = soviet_news.3
+	title = soviet_news.3.t
+	desc = soviet_news.3.d
+	picture = soviet_trotsky_won_news
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = soviet_news.3.o1
+		trigger = {
+			NOT = {
+				tag = RUS
+			}
+		}
+	}
+	
+	option = {
+		name = soviet_news.3.o2
+		trigger = {
+			tag = RUS
+		}
+	}
+}
+
+news_event = { #Shliapnikov Elected Chairman of the Council of People's Commissars
+	id = soviet_news.4
+	title = soviet_news.4.t
+	desc = soviet_news.4.d
+	picture = soviet_schliapnikov_won_news
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = soviet_news.4.o1
+		trigger = {
+			NOT = {
+				tag = RUS
+			}
+		}
+	}
+	
+	option = {
+		name = soviet_news.4.o2
+		trigger = {
+			tag = RUS
+		}
+	}
+}
+
+news_event = { #Bogdanov Elected Chairman of the Council of People's Commissars
+	id = soviet_news.5
+	title = soviet_news.5.t
+	desc = soviet_news.5.d
+	picture = soviet_bogdanov_won_news
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = soviet_news.5.o1
+		trigger = {
+			NOT = {
+				tag = RUS
+			}
+		}
+	}
+	
+	option = {
+		name = soviet_news.5.o2
+		trigger = {
+			tag = RUS
+		}
+	}
+}
+
+news_event = { #Julius Martov Elected Chairman of the Council of People's Commissars
+	id = soviet_news.6
+	title = soviet_news.6.t
+	desc = soviet_news.6.d
+	picture = soviet_martov_won_news
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = soviet_news.6.o1
+		trigger = {
+			NOT = {
+				tag = RUS
+			}
+		}
+	}
+	
+	option = {
+		name = soviet_news.6.o2
+		trigger = {
+			tag = RUS
+		}
+	}
+}
+
