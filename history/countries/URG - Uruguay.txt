@@ -38,7 +38,7 @@ set_convoys = 5
 
 
 set_politics = {
-	ruling_party = authoritarian_democrat
+	ruling_party = social_liberal
 	last_election = "1934.4.19"
 	election_frequency = 48
 	elections_allowed = no
@@ -61,7 +61,7 @@ create_country_leader = {
 	desc = "POLITICS_GABRIEL_TERRA_DESC"
 	picture = "Gabriel_Terra.dds"
 	expire = "1965.1.1"
-	ideology = authoritarian_democrat_ideology
+	ideology = social_liberal_ideology
 	traits = {
 		#
 	}
