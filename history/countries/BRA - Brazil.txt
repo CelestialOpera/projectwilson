@@ -49,7 +49,7 @@ if = {
 set_country_flag = monroe_doctrine
 
 set_politics = {
-	ruling_party = authoritarian_democrat
+	ruling_party = social_conservative
 	last_election = "1934.7.17"
 	election_frequency = 48
 	elections_allowed = no
@@ -69,61 +69,16 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Arlindo Veiga dos Santos"
-	picture = "Portrait_Arlindo_Veiga_dos_Santos.dds"
-	ideology = national_unitarist_ideology
-}
-
-create_country_leader = {
-	name = "Isidoro Dias Lopes"
-	picture = "Portrait_Isidoro_Dias_Lopes.dds"
-	ideology = despotist_ideology
-}
-
-create_country_leader = {
-	name = "Júlio Prestes"
-	picture = "Portrait_Julio_Prestes.dds"
-	ideology = authoritarian_democrat_ideology
-}
-
-create_country_leader = {
-	name = "Antônio Carlos Ribeiro de Andrada"
-	picture = "Portrait_Antônio_Carlos_Ribeiro_de_Andrada.dds"
+	name = "Washington Luís"
+	desc = "POLITICS_WASHINGTON_LUIS_DESC"
+	picture = "Washington_Luis.dds"
+	expire = "1965.1.1"
 	ideology = social_conservative_ideology
-}
-create_country_leader = {
-	name = "Valdemar Ferreira"
-	picture = "Portrait_Valdemar_Ferreira.dds"
-	ideology = market_liberal_ideology
+	traits = {
+		#
+	}
 }
 
-create_country_leader = {
-	name = "Cleto da Costa Campelo Filho"
-	picture = "Portrait_Cleto_da_Costa_Campelo_Filho.dds"
-	ideology = social_liberal_ideology
-}
-create_country_leader = {
-	name = "Lindolfo Collor"
-	picture = "Portrait_Lindolfo_Collor.dds"
-	ideology = social_democrat_ideology
-}
-
-create_country_leader = {
-	name = "Edgard Leuenroth"
-	picture = "Portrait_Edgard_Leuenroth.dds"
-	ideology = libertarian_ideology
-}
-create_country_leader = {
-	name = "Luís Carlos Prestes"
-	picture = "Portrait_Luís_Carlos_Prestes.dds"
-	ideology = radical_socialist_ideology
-}
-
-create_country_leader = {
-	name = "Antonio Maciel Bonfim"
-	picture = "Portrait_Antonio_Maciel_Bonfim.dds"
-	ideology = communist_ideology
-}
 
 set_convoys = 40
 
