@@ -15,7 +15,7 @@ russian_civil_war_RUS = {
 	ai_strategy = {
 		type = antagonize
 		id = "SOV"			
-		value = 200
+		value = 2000
 	}		
 }
 
@@ -36,6 +36,6 @@ russian_civil_war_SOV = {
 	ai_strategy = {
 		type = antagonize
 		id = "RUS"			
-		value = 200
+		value = 2000
 	}		
 }

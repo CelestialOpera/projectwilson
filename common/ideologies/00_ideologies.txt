@@ -7,6 +7,12 @@ ideologies = {
 			national_unitarist_ideology = {
 			}
 			
+			national_socialist = { #Ferenc Szalasi
+			}
+			
+			magyar_revivalism = { #Pronay
+			}
+			
 		}
 		
 		dynamic_faction_names = {

@@ -1,0 +1,100 @@
+add_namespace = hungary
+add_namespace = hungary_news
+
+country_event = { #Gambos Succumbs To Fate
+	id = hungary.1
+	title = hungary.1.t
+	desc = hungary.1.d
+	#picture = hungary_death_of_gambos
+	fire_only_once = yes
+	
+	trigger = {
+		tag = HUN
+		date > 1936.10.1
+		date < 1936.10.30
+	}
+	
+	mean_time_to_happen = {
+		days = 5
+	}
+	
+	option = {
+		name = hungary.1.o1
+		add_political_power = -100
+		add_stability = -0.10
+		kill_country_leader = yes
+		create_country_leader = {
+			name = "László Endre"
+			desc = "POLITICS_LASZLO_ENDRE_DESC"
+			picture = "Laszlo_Endre.dds"
+			ideology = national_unitarist_ideology
+		}
+		hidden_effect = {
+			country_event = {
+				days = 34
+				id = hungary.2
+			}
+		}
+	}
+}
+
+country_event = { #The National Magyar Congrees Meets
+	id = hungary.2
+	title = hungary.2.t
+	desc = hungary.2.d
+	#picture = hungary_death_of_gambos
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	#Endre's Rule Continues
+	option = {
+		name = hungary.2.o1
+		
+		
+		hidden_effect = {
+			#country_event = {
+			#	days = 7
+			#	id = hungary.2
+			#}
+		}
+	}
+	
+	#Pal Pronay's Bands Ride Through Buda
+	option = {
+		name = hungary.2.o2
+		
+		create_country_leader = {
+			name = "Pál Prónay"
+			desc = "POLITICS_PAL_PRONAY_DESC"
+			picture = "Pal_Pronay.dds"
+			ideology = magyar_revivalism
+		}
+		
+		hidden_effect = {
+			#country_event = {
+			#	days = 7
+			#	id = hungary.2
+			#}
+		}
+	}
+	
+	#Szalasi Triumps In The Congress
+	option = {
+		name = hungary.2.o3
+		
+		create_country_leader = {
+			name = "Ferenc Szálasi"
+			desc = "POLITICS_FERENC_SZALASI_DESC"
+			picture = "Ferenc_Szalasi.dds"
+			ideology = national_socialist
+		}
+		
+		hidden_effect = {
+			#country_event = {
+			#	days = 7
+			#	id = hungary.2
+			#}
+		}
+	}
+}
