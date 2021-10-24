@@ -43,15 +43,15 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	national_unitarist = 5
-	despotist = 12
-	authoritarian_democrat = 7
+	national_unitarist = 7
+	despotist = 15
+	authoritarian_democrat = 5
 	social_conservative = 4
 	market_liberal = 0
-	social_liberal = 3
-	social_democrat = 15
-	libertarian = 12
-	radical_socialist = 25
+	social_liberal = 5
+	social_democrat = 17
+	libertarian = 5
+	radical_socialist = 26
 	communist = 16
 }
 

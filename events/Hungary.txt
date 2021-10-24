@@ -5,7 +5,7 @@ country_event = { #Gambos Succumbs To Fate
 	id = hungary.1
 	title = hungary.1.t
 	desc = hungary.1.d
-	#picture = hungary_death_of_gambos
+	picture = hungary_death_of_gambos
 	fire_only_once = yes
 	
 	trigger = {
@@ -18,10 +18,31 @@ country_event = { #Gambos Succumbs To Fate
 		days = 5
 	}
 	
+	#May Gombos rest in peace
 	option = {
 		name = hungary.1.o1
 		add_political_power = -100
 		add_stability = -0.10
+		kill_country_leader = yes
+		create_country_leader = {
+			name = "László Endre"
+			desc = "POLITICS_LASZLO_ENDRE_DESC"
+			picture = "Laszlo_Endre.dds"
+			ideology = national_unitarist_ideology
+		}
+		hidden_effect = {
+			country_event = {
+				days = 34
+				id = hungary.2
+			}
+		}
+	}
+	
+	#Vultures
+	option = {
+		name = hungary.1.o2
+		add_political_power = -150
+		add_stability = -0.15
 		kill_country_leader = yes
 		create_country_leader = {
 			name = "László Endre"
@@ -42,7 +63,7 @@ country_event = { #The National Magyar Congrees Meets
 	id = hungary.2
 	title = hungary.2.t
 	desc = hungary.2.d
-	#picture = hungary_death_of_gambos
+	picture = hungary_national_magyar_congress
 	fire_only_once = yes
 	
 	is_triggered_only = yes

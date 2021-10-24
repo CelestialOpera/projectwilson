@@ -110,4 +110,14 @@ spriteTypes = {
 		name = "soviet_supreme_soviet_election"
 		texturefile = "gfx/event_pictures/report_event/soviet_supreme_soviet_election.dds"
 	}
+	
+	spriteType = {
+		name = "hungary_death_of_gambos"
+		texturefile = "gfx/event_pictures/report_event/hungary_death_of_gambos.dds"
+	}
+	
+	spriteType = {
+		name = "hungary_national_magyar_congress"
+		texturefile = "gfx/event_pictures/report_event/hungary_national_magyar_congress.dds"
+	}
 }
