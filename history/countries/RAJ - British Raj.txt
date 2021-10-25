@@ -64,9 +64,9 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Lord Linlithgow"
+	name = "Victor Hope Linlithgow"
 	desc = "POLITICS_LORD_LINLITHGOW_DESC"
-	picture = "gfx/leaders/RAJ/Portrait_British_Raj_Lord_Linlithgow.dds"
+	picture = "Victor_Hope_Linlithgow.dds"
 	expire = "1965.1.1"
 	ideology = authoritarian_democrat_ideology
 	traits = {

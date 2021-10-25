@@ -49,7 +49,8 @@
  GER_social_liberal_party_long:0 "Deutsche Demokratische Partei - German Democratic Party"
  GER_social_democrat_party:0 "Sozialdemokraten"
  GER_social_democrat_party_long:0 "Sozialdemokratische Partei Deutschlands - Social Democratic Party of Germany"
- 
+ GER_libertarian_party:0 "FAUD"
+ GER_libertarian_party_long:0 "Freie Arbeiter Union Deutschlands - Free Workers' Union of Germany"
  GER_radical_socialist_party:0 "Spartakusbund"
  GER_radical_socialist_party_long:0 "Spartakusbund - Spartacus League"
  GER_communist_party:0 "Kommunistische"

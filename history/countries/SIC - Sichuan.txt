@@ -56,8 +56,8 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Various Cliques"
-	picture = "cliques.dds"
+	name = "Liu Xiang"
+	picture = "Liu_Xiang.dds"
 	expire = "1965.1.1"
 	ideology = despotist_ideology
 	traits = {

@@ -86,10 +86,10 @@ set_popularities = {
 	authoritarian_democrat = 16
 	social_conservative = 13
 	market_liberal = 6
-	social_liberal = 2
+	social_liberal = 4
 	social_democrat = 8
 	libertarian = 0
-	radical_socialist = 4
+	radical_socialist = 1
 	communist = 0
 }
 

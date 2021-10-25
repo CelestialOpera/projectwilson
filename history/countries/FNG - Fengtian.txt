@@ -47,11 +47,11 @@ set_popularities = {
 	despotist = 22
 	authoritarian_democrat = 5
 	social_conservative = 14
-	market_liberal = 0
+	market_liberal = 3
 	social_liberal = 7
 	social_democrat = 9
-	libertarian = 2
-	radical_socialist = 2
+	libertarian = 1
+	radical_socialist = 5
 	communist = 18
 }
 

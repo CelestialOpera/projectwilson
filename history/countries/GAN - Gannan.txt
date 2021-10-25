@@ -56,8 +56,8 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Councils"
-	picture = "cliques.dds"
+	name = "Ba Jin"
+	picture = "Ba_Jin.dds"
 	expire = "1965.1.1"
 	ideology = libertarian_ideology
 	traits = {

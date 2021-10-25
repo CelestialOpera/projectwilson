@@ -56,8 +56,8 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = ""
-	picture = "Cao_Kun.dds"
+	name = "Yang Sen"
+	picture = "Yang_Sen.dds"
 	expire = "1965.1.1"
 	ideology = authoritarian_democrat_ideology
 	traits = {
