@@ -2,7 +2,7 @@
  
  
  ###History Desc Bookmark
- GER_PROJECT_WILSON_DESC:0 "The end of the Great War saw many concessions from the Germans; however, much lighter then what the French government had hoped for. With the overthrowel of the Kaiser and revolutionary tendencies in the country, President Friedrich Ebert negotiated with the left wing Spartakusbund to allow for workers councils to develop and operate in the country. At first the German Reich struggled to bounce back from the Great War but eventually did stronger then most until 1929, even after the Stock crash however the Germans have managed to pull back stronger then many other nations. "
+ GER_PROJECT_WILSON_DESC:0 "The end of the Great War saw many concessions from the Germans; however, much lighter then what the French government had hoped for. With the overthrow of the Kaiser and revolutionary tendencies in the country, President Friedrich Ebert negotiated with the left wing Spartakusbund to allow for workers councils to develop and operate in the country. At first, the German Reich struggled to bounce back from the Great War, but eventually did stronger then most until 1929, even after the Stock crash however the Germans have managed to pull back stronger then many other nations. "
  #Country Name
  GER_national_unitarist:0 "German Reich"
  GER_national_unitarist_DEF:0 "The German Reich"
@@ -28,11 +28,11 @@
  GER_libertarian:0 "German Reich"
  GER_libertarian_DEF:0 "The German Reich"
  GER_libertarian_ADJ:0 "German"
- GER_radical_socialist:0 "German Reich"
- GER_radical_socialist_DEF:0 "The German Reich"
+ GER_radical_socialist:0 "People's Republic of Germany"
+ GER_radical_socialist_DEF:0 "People's Republic of Germany"
  GER_radical_socialist_ADJ:0 "German"
- GER_communist:0 "German Reich"
- GER_communist_DEF:0 "The German Reich"
+ GER_communist:0 "German Soviet Republic"
+ GER_communist_DEF:0 "The German Soviet Republic"
  GER_communist_ADJ:0 "German"
  
  GER_national_unitarist_party:0 "Nationale Arbeiter"
