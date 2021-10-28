@@ -236,11 +236,101 @@ give_military_access = RAJ
 give_guarantee = JAP
 
 create_country_leader = {
+	name = "Harry Pollitt"
+	desc = "POLITICS_HARRY_POLLITT_DESC"
+	picture = "Harry_Pollitt.dds"
+	expire = "1965.1.1"
+	ideology = communist_ideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Stafford Cripps"
+	desc = "POLITICS_STAFFORD_CRIPPS_DESC"
+	picture = "Stafford_Cripps.dds"
+	expire = "1965.1.1"
+	ideology = radical_socialist_ideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "James Maxton"
+	desc = "POLITICS_JAMES_MAXTON_DESC"
+	picture = "James_Maxton.dds"
+	expire = "1965.1.1"
+	ideology = libertarian_ideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "J.R. Clynes"
+	desc = "POLITICS_J_R_CLYNES_DESC"
+	picture = "J_R_Clynes.dds"
+	expire = "1965.1.1"
+	ideology = social_democrat_ideology
+	traits = {
+	}
+}
+
+create_country_leader = {
 	name = "Herbert L. Samuel"
 	desc = "POLITICS_HERBERT_SAMUEL_DESC"
 	picture = "Herbert_Samuel.dds"
 	expire = "1965.1.1"
 	ideology = social_liberal_ideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "John Simon"
+	desc = "POLITICS_JOHN_SIMON_DESC"
+	picture = "John_Simon.dds"
+	expire = "1965.1.1"
+	ideology = market_liberal_ideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Stanley Baldwin"
+	desc = "POLITICS_STANLEY_BALDWIN_DESC"
+	picture = "Stanley_Baldwin.dds"
+	expire = "1965.1.1"
+	ideology = social_conservative_ideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Winston Churchill"
+	desc = "POLITICS_WINSTON_CHURCHILL_DESC"
+	picture = "Winston_Churchill.dds"
+	expire = "1965.1.1"
+	ideology = authoritarian_democrat_ideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "J. F. C. Fuller"
+	desc = "POLITICS_JFC_Fuller_DESC"
+	picture = "JFC_Fuller.dds"
+	expire = "1965.1.1"
+	ideology = despotist_ideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "James L. Battersby"
+	desc = "POLITICS_JAMES_L_BATTERSBY_DESC"
+	picture = "James_L_Battersby.dds"
+	expire = "1965.1.1"
+	ideology = right_wing_technocracy
 	traits = {
 	}
 }

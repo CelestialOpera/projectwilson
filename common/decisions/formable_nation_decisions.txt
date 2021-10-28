@@ -1,0 +1,78 @@
+form_china_category = {
+	
+	form_china = {
+
+		icon = generic_form_nation
+
+		allowed = {
+			OR = {
+				original_tag = ZHI
+				original_tag = NRA
+				original_tag = FNG
+				original_tag = XIN
+				original_tag = XSM
+				original_tag = SIK
+				original_tag = SIC
+				original_tag = YUN
+				original_tag = GXC
+				original_tag = GAN
+				original_tag = SHX
+			}
+		}
+
+		available = {
+			is_subject = no
+			
+			custom_trigger_tooltip = {
+				tooltip = form_country_china_main_centres
+				controls_state = 608
+				controls_state = 613
+				controls_state = 594
+			}
+			has_political_power > 400
+	
+		}
+
+		visible = {
+			OR = {
+				original_tag = ZHI
+				original_tag = NRA
+				original_tag = FNG
+				original_tag = XIN
+				original_tag = XSM
+				original_tag = SIK
+				original_tag = SIC
+				original_tag = YUN
+				original_tag = GXC
+				original_tag = GAN
+				original_tag = SHX
+			}
+			NOT = { has_country_flag = form_china_flag }
+		}
+
+		complete_effect = {
+			set_cosmetic_tag = CHI_unified
+			if = {
+				limit = {
+					OR = {
+						tag = NRA
+						has_country_flag = KMT_aligned
+					}
+				}
+				set_cosmetic_tag = CHI_unified_KMT
+			}
+			hidden_effect = {
+				
+				set_country_flag = form_china_flag
+			}
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+}

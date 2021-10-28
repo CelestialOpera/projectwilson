@@ -1,0 +1,65 @@
+ideas = {
+
+	country = {
+		george_v = {
+			
+			allowed = {
+				original_tag = ENG
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			traits = { popular_figurehead }
+			
+
+		}
+
+		ENG_king_edward_positive = {
+			
+			allowed = {
+				original_tag = ENG
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = king_edward
+			
+			removal_cost = -1
+			
+			traits = { popular_figurehead }
+			
+
+		}
+		
+		ENG_king_edward = {
+			
+			allowed = {
+				original_tag = ENG
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = king_edward
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_weekly = -0.001				
+			}
+			
+
+		}
+
+	}
+
+
+}
+

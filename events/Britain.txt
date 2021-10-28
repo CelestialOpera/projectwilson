@@ -1,0 +1,401 @@
+add_namespace = britain
+add_namespace = britain_news
+
+country_event = { #Death of The King
+	id = britain.1
+	title = britain.1.t
+	desc = britain.1.d
+	#picture = britain_death_of_george_v
+	fire_only_once = yes
+	
+	trigger = {
+		tag = ENG
+		date > 1936.1.15
+		date < 1936.1.30
+	}
+	
+	mean_time_to_happen = {
+		days = 5
+	}
+	
+	option = {
+		name = britain.1.o1
+		swap_ideas = {
+			remove_idea = george_v
+			add_idea = ENG_king_edward
+		}
+		hidden_effect = {
+			#ENG = {
+			#	country_event = {
+			#		days = 4
+			#		id = britain.2
+			#	}
+			#}
+		}
+	}
+}
+
+country_event = { #Edward’s Speech
+	id = britain.2
+	title = britain.2.t
+	desc = britain.2.d
+	#picture = britain_death_of_george_v
+	fire_only_once = yes
+	
+	trigger = {
+		tag = ENG
+		date > 1936.1.25
+		date < 1936.2.15
+	}
+	
+	mean_time_to_happen = {
+		days = 5
+	}
+	
+	option = {
+		name = britain.2.o1
+		add_stability = -0.05
+		hidden_effect = {
+			#ENG = {
+			#	country_event = {
+			#		days = 4
+			#		id = britain.2
+			#	}
+			#}
+		}
+	}
+}
+
+country_event = { #The King’s Date
+	id = britain.3
+	title = britain.3.t
+	desc = britain.3.d
+	#picture = britain_death_of_george_v
+	fire_only_once = yes
+	
+	trigger = {
+		tag = ENG
+		date > 1936.5.7
+		date < 1936.5.30
+	}
+	
+	mean_time_to_happen = {
+		days = 5
+	}
+	
+	option = {
+		name = britain.3.o1
+		add_stability = -0.05
+		hidden_effect = {
+			#ENG = {
+			#	country_event = {
+			#		days = 4
+			#		id = britain.2
+			#	}
+			#}
+		}
+	}
+}
+
+country_event = { #The Prime Minister Speaks Out
+	id = britain.4
+	title = britain.4.t
+	desc = britain.4.d
+	#picture = britain_death_of_george_v
+	fire_only_once = yes
+	
+	trigger = {
+		tag = ENG
+		date > 1936.5.26
+		date < 1936.6.10
+	}
+	
+	mean_time_to_happen = {
+		days = 5
+	}
+	
+	option = {
+		name = britain.4.o1
+		add_stability = -0.05
+		
+		set_party_name = { 
+			ideology = social_conservative 
+			long_name = ENG_conservative_party_abdication_long
+			name = ENG_conservative_party_abdication 
+		}
+		
+		set_party_name = { 
+			ideology = authoritarian_democrat 
+			long_name = ENG_conservative_party_edward_long
+			name = ENG_conservative_edward_abdication 
+		}
+		
+		create_country_leader = {
+			name = "Edward Grigg"
+			desc = "POLITICS_EDWARD_GRIGG_DESC" 
+			picture = "Edward_Grigg.dds"
+			expire = "1965.1.1"
+			ideology = authoritarian_democrat_ideology
+			traits = {
+				
+			}
+		}
+	}
+}
+
+country_event = { #King Edward Announces His Love
+	id = britain.5
+	title = britain.5.t
+	desc = britain.5.d
+	#picture = britain_death_of_george_v
+	fire_only_once = yes
+	
+	trigger = {
+		tag = ENG
+		date > 1936.8.26
+		date < 1936.9.10
+	}
+	
+	mean_time_to_happen = {
+		days = 5
+	}
+	
+	option = {
+		name = britain.5.o1
+		add_stability = -0.10
+		
+		
+	}
+}
+
+country_event = { #Edward Proposes, Parliamen Demands
+	id = britain.6
+	title = britain.6.t
+	desc = britain.6.d
+	#picture = britain_death_of_george_v
+	fire_only_once = yes
+	
+	trigger = {
+		tag = ENG
+		date > 1936.9.28
+		date < 1936.10.10
+	}
+	
+	mean_time_to_happen = {
+		days = 5
+	}
+	
+	#ABDICATE BITCH
+	option = {
+		name = britain.6.o1
+		add_stability = -0.05
+		
+		#hidden_effect = { #The King abdicates infront of Parliament in the House of Commons, the crown passes to Albert
+		#	ENG = {
+		#		country_event = {
+		#			days = 1
+		#			id = britain.
+		#		}
+		#	}
+		#}
+	}
+	
+	#pwease stay mwista king
+	option = {
+		name = britain.6.o2
+		add_stability = -0.05
+		
+		hidden_effect = { #Parliamentary Leaders and MP's resign
+			ENG = {
+				country_event = {
+					days = 1
+					id = britain.7
+				}
+			}
+		}
+	}
+}
+
+country_event = { #Mass Resignations
+	id = britain.7
+	title = britain.7.t
+	desc = britain.7.d
+	#picture = britain_death_of_george_v
+	fire_only_once = yes	
+	is_triggered_only = yes
+	
+	
+	#The Weak Flee
+	option = {
+		name = britain.7.o1
+		add_stability = -0.05
+		add_political_power = -50
+		
+		create_country_leader = {
+			name = "David Lloyd George"
+			desc = "POLITICS_DAVID_LLOYD_GEORGE_DESC" 
+			picture = "David_Lloyd_George.dds"
+			expire = "1965.1.1"
+			ideology = social_liberal_ideology
+			traits = {
+				
+			}
+		}
+		
+		hidden_effect = { #Technocrats London Rally
+			ENG = {
+				country_event = {
+				days = 5
+					id = britain.8
+				}
+			}
+		}
+	}
+}
+
+country_event = { #Technocrats London Rally
+	id = britain.8
+	title = britain.8.t
+	desc = britain.8.d
+	#picture = britain_death_of_george_v
+	fire_only_once = yes	
+	is_triggered_only = yes
+	
+	
+	#Worrying?
+	option = {
+		name = britain.8.o1
+		
+		add_political_power = -50
+		
+		add_popularity = {
+			ideology = national_unitarist
+			popularity = 0.05
+		}
+		
+		hidden_effect = { #United Front Forms
+			ENG = {
+				country_event = {
+					days = 24
+					id = britain.9
+				}
+			}
+		}
+	}
+}
+
+country_event = { #United Front Formation
+	id = britain.9
+	title = britain.9.t
+	desc = britain.9.d
+	#picture = britain_death_of_george_v
+	fire_only_once = yes	
+	is_triggered_only = yes
+	
+	
+	#Interesting (Based and Bread pilled)
+	option = {
+		name = britain.9.o1
+		
+		add_political_power = -50
+		
+		add_popularity = {
+			ideology = radical_socialist
+			popularity = 0.05
+		}
+		
+		set_party_name = { 
+			ideology = communist 
+			long_name = ENG_cripps_united_front_commies_long
+			name = ENG_cripps_united_front_commies 
+		}
+		
+		set_party_name = { 
+			ideology = radical_socialist 
+			long_name = ENG_cripps_united_front_left_labour_long
+			name = ENG_cripps_united_front_left_labour 
+		}
+		
+		set_party_name = { 
+			ideology = libertarian 
+			long_name = ENG_cripps_united_front_indie_labour_long
+			name = ENG_cripps_united_front_indie_labour 
+		}
+		
+		set_party_name = { 
+			ideology = social_democrat 
+			long_name = ENG_cripps_united_front_labour_long
+			name = ENG_cripps_united_front_labour 
+		}
+		
+		hidden_effect = { #Election Of Radicals
+			ENG = {
+				country_event = {
+					days = 14
+					id = britain.10
+				}
+			}
+		}
+	}
+}
+
+country_event = { #The Election of Radicals
+	id = britain.10
+	title = britain.10.t
+	desc = britain.10.d
+	#picture = britain_death_of_george_v
+	fire_only_once = yes	
+	is_triggered_only = yes
+	
+	#Techno Bois
+	option = {
+		name = britain.10.o1
+		
+		add_political_power = 50
+		
+		add_popularity = {
+			ideology = national_unitarist
+			popularity = 0.15
+		}
+		
+		set_politics = {
+			ruling_party = national_unitarist
+			elections_allowed = no
+		}
+		
+		hidden_effect = { #Election Of Radicals
+			#ENG = {
+			#	country_event = {
+			#		days = 14
+			#		id = britain.10
+			#	}
+			#}
+		}
+	}
+	
+	#Stafford Cripps and The United Front (Based and Bread pilled)
+	option = {
+		name = britain.10.o2
+		
+		add_political_power = 50
+		
+		add_popularity = {
+			ideology = radical_socialist
+			popularity = 0.15
+		}
+		
+		set_politics = {
+			ruling_party = radical_socialist
+			elections_allowed = no
+		}
+		
+		hidden_effect = { #Election Of Radicals
+			#ENG = {
+			#	country_event = {
+			#		days = 14
+			#		id = britain.10
+			#	}
+			#}
+		}
+	}
+}
