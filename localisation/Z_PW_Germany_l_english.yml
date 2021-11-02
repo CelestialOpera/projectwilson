@@ -35,12 +35,12 @@
  GER_communist_DEF:0 "The German Soviet Republic"
  GER_communist_ADJ:0 "German"
  
- GER_national_unitarist_party:0 "Nationale Arbeiter"
- GER_national_unitarist_party_long:0 "Deutsche Arbeiterpartei - German Workers' Party"
- GER_despotist_party:0 "DNVP-Richtig"
- GER_despotist_party_long:0 "Deutschnationale Volkspartei(Richtig) - German National People's Party(Right)"
- GER_authoritarian_democrat_party:0 "DNVP-Moderat"
- GER_authoritarian_democrat_party_long:0 "Deutschnationale Volkspartei(Moderat) - German National People's Party(Moderates)"
+ GER_national_unitarist_party:0 "Natbols"
+ GER_national_unitarist_party_long:0 "Nationale bolschewistische Partei Deutschlands - National Bolshevik Party of Germany"
+ GER_despotist_party:0 "DNVP"
+ GER_despotist_party_long:0 "Deutschnationale Volkspartei - German National People's Party"
+ GER_authoritarian_democrat_party:0 "Chrisozs"
+ GER_authoritarian_democrat_party_long:0 "Christlich–soziale Partei - Christian Social Party" #The CSP and up are all part of the German Front, the front is dominated by the DNVP with the NBPD being the second largest.
  GER_social_conservative_party:0 "Zentrum"
  GER_social_conservative_party_long:0 "Deutsche Zentrumspartei - German Centre Party"
  GER_market_liberal_party:0 "Volkspartei"

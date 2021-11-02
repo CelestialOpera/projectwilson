@@ -5,7 +5,7 @@ country_event = { #Death of The King
 	id = britain.1
 	title = britain.1.t
 	desc = britain.1.d
-	#picture = britain_death_of_george_v
+	picture = britain_death_of_george_v
 	fire_only_once = yes
 	
 	trigger = {
@@ -39,7 +39,7 @@ country_event = { #Edward’s Speech
 	id = britain.2
 	title = britain.2.t
 	desc = britain.2.d
-	#picture = britain_death_of_george_v
+	picture = britain_edwards_speech
 	fire_only_once = yes
 	
 	trigger = {
@@ -70,7 +70,7 @@ country_event = { #The King’s Date
 	id = britain.3
 	title = britain.3.t
 	desc = britain.3.d
-	#picture = britain_death_of_george_v
+	picture = britain_kings_date
 	fire_only_once = yes
 	
 	trigger = {
@@ -101,7 +101,7 @@ country_event = { #The Prime Minister Speaks Out
 	id = britain.4
 	title = britain.4.t
 	desc = britain.4.d
-	#picture = britain_death_of_george_v
+	picture = britain_prime_minister_speaks
 	fire_only_once = yes
 	
 	trigger = {
@@ -147,7 +147,7 @@ country_event = { #King Edward Announces His Love
 	id = britain.5
 	title = britain.5.t
 	desc = britain.5.d
-	#picture = britain_death_of_george_v
+	picture = britain_edward_announces_love
 	fire_only_once = yes
 	
 	trigger = {
@@ -172,7 +172,7 @@ country_event = { #Edward Proposes, Parliamen Demands
 	id = britain.6
 	title = britain.6.t
 	desc = britain.6.d
-	#picture = britain_death_of_george_v
+	picture = britain_showdown_in_the_commons
 	fire_only_once = yes
 	
 	trigger = {
@@ -190,14 +190,14 @@ country_event = { #Edward Proposes, Parliamen Demands
 		name = britain.6.o1
 		add_stability = -0.05
 		
-		#hidden_effect = { #The King abdicates infront of Parliament in the House of Commons, the crown passes to Albert
-		#	ENG = {
-		#		country_event = {
-		#			days = 1
-		#			id = britain.
-		#		}
-		#	}
-		#}
+		hidden_effect = { #The King abdicates infront of Parliament in the House of Commons, the crown passes to Albert
+			ENG = {
+				country_event = {
+					days = 1
+					id = britain.11
+				}
+			}
+		}
 	}
 	
 	#pwease stay mwista king
@@ -220,7 +220,7 @@ country_event = { #Mass Resignations
 	id = britain.7
 	title = britain.7.t
 	desc = britain.7.d
-	#picture = britain_death_of_george_v
+	picture = britain_empty_house_of_commons
 	fire_only_once = yes	
 	is_triggered_only = yes
 	
@@ -257,7 +257,7 @@ country_event = { #Technocrats London Rally
 	id = britain.8
 	title = britain.8.t
 	desc = britain.8.d
-	#picture = britain_death_of_george_v
+	picture = britain_technocrats_rally
 	fire_only_once = yes	
 	is_triggered_only = yes
 	
@@ -288,7 +288,7 @@ country_event = { #United Front Formation
 	id = britain.9
 	title = britain.9.t
 	desc = britain.9.d
-	#picture = britain_death_of_george_v
+	picture = britain_united_front_formation
 	fire_only_once = yes	
 	is_triggered_only = yes
 	
@@ -343,7 +343,7 @@ country_event = { #The Election of Radicals
 	id = britain.10
 	title = britain.10.t
 	desc = britain.10.d
-	#picture = britain_death_of_george_v
+	picture = britain_election_of_radicals
 	fire_only_once = yes	
 	is_triggered_only = yes
 	
@@ -398,4 +398,35 @@ country_event = { #The Election of Radicals
 			#}
 		}
 	}
+}
+
+country_event = { #A Romantic Abdication
+	id = britain.11
+	title = britain.11.t
+	desc = britain.11.d
+	picture = britain_abdication
+	fire_only_once = yes	
+	is_triggered_only = yes
+	
+	#A new King?????
+	option = {
+		name = britain.11.o1
+		
+		add_political_power = 50
+		swap_ideas = {
+			remove_idea = ENG_king_edward
+			add_idea = ENG_george_vi
+		}
+		add_stability = 0.05
+		
+		hidden_effect = { #Election Of Radicals
+			#ENG = {
+			#	country_event = {
+			#		days = 14
+			#		id = britain.10
+			#	}
+			#}
+		}
+	}
+	
 }

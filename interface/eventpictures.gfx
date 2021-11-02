@@ -120,4 +120,60 @@ spriteTypes = {
 		name = "hungary_national_magyar_congress"
 		texturefile = "gfx/event_pictures/report_event/hungary_national_magyar_congress.dds"
 	}
+
+	spriteType = {
+		name = "britain_death_of_george_v"
+		texturefile = "gfx/event_pictures/report_event/britain_death_of_george_v.dds"
+	}
+	
+	spriteType = {
+		name = "britain_edwards_speech"
+		texturefile = "gfx/event_pictures/report_event/britain_edwards_speech.dds"
+	}
+	
+	spriteType = {
+		name = "britain_kings_date"
+		texturefile = "gfx/event_pictures/report_event/britain_kings_date.dds"
+	}
+	
+	spriteType = {
+		name = "britain_prime_minister_samuel_speaks"
+		texturefile = "gfx/event_pictures/report_event/britain_prime_minister_samuel_speaks.dds"
+	}
+	
+	spriteType = {
+		name = "britain_edward_announces_love"
+		texturefile = "gfx/event_pictures/report_event/britain_edward_announces_love.dds"
+	}
+	
+	spriteType = {
+		name = "britain_showdown_in_the_commons"
+		texturefile = "gfx/event_pictures/report_event/britain_showdown_in_the_commons.dds"
+	}
+
+	spriteType = {
+		name = "britain_empty_house_of_commons"
+		texturefile = "gfx/event_pictures/report_event/britain_empty_house_of_commons.dds"
+	}
+	
+	spriteType = {
+		name = "britain_technocrats_rally"
+		texturefile = "gfx/event_pictures/report_event/britain_technocrats_rally.dds"
+	}
+	
+	spriteType = {
+		name = "britain_united_front_formation"
+		texturefile = "gfx/event_pictures/report_event/britain_united_front_formation.dds"
+	}
+	
+	spriteType = {
+		name = "britain_election_of_radicals"
+		texturefile = "gfx/event_pictures/report_event/britain_election_of_radicals.dds"
+	}
+	
+	spriteType = {
+		name = "britain_abdication"
+		texturefile = "gfx/event_pictures/report_event/britain_abdication.dds"
+	}
+
 }

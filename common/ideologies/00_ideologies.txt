@@ -13,7 +13,7 @@ ideologies = {
 			magyar_revivalism = { #Pronay
 			}
 			
-			right_wing_technocracy = { #Pronay
+			right_wing_technocracy = { #British Technocracy
 			}
 			
 		}

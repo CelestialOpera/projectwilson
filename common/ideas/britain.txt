@@ -57,6 +57,24 @@ ideas = {
 			
 
 		}
+		
+		ENG_george_vi = {
+			
+			allowed = {
+				original_tag = ENG
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = george_vi
+			
+			removal_cost = -1
+			
+			traits = { popular_figurehead }
+			
+		}
 
 	}
 
