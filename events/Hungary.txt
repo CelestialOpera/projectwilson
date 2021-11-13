@@ -31,10 +31,11 @@ country_event = { #Gambos Succumbs To Fate
 			ideology = national_unitarist_ideology
 		}
 		hidden_effect = {
-			country_event = {
-				days = 34
-				id = hungary.2
-			}
+		#	country_event = {
+		#		days = 34
+		#		id = hungary.2
+		#	}
+			set_country_flag = GAMBOS_DEAD
 		}
 	}
 	
@@ -51,10 +52,11 @@ country_event = { #Gambos Succumbs To Fate
 			ideology = national_unitarist_ideology
 		}
 		hidden_effect = {
-			country_event = {
-				days = 34
-				id = hungary.2
-			}
+		#	country_event = {
+		#		days = 34
+		#		id = hungary.2
+		#	}
+			set_country_flag = GAMBOS_DEAD
 		}
 	}
 }
@@ -72,12 +74,13 @@ country_event = { #The National Magyar Congrees Meets
 	option = {
 		name = hungary.2.o1
 		
+		set_country_flag = endre_wins
 		
-		hidden_effect = {
-			#country_event = {
-			#	days = 7
-			#	id = hungary.2
-			#}
+		hidden_effect = { #Le epic event about paranoia
+			country_event = {
+				days = 25
+				id = hungary.7
+			}
 		}
 	}
 	
@@ -91,6 +94,8 @@ country_event = { #The National Magyar Congrees Meets
 			picture = "Pal_Pronay.dds"
 			ideology = magyar_revivalism
 		}
+		
+		set_country_flag = pronay_wins
 		
 		hidden_effect = {
 			#country_event = {
@@ -111,6 +116,8 @@ country_event = { #The National Magyar Congrees Meets
 			ideology = national_socialist
 		}
 		
+		set_country_flag = szalasi_wins
+		
 		hidden_effect = {
 			#country_event = {
 			#	days = 7
@@ -118,4 +125,248 @@ country_event = { #The National Magyar Congrees Meets
 			#}
 		}
 	}
+}
+
+country_event = { #United Front Coup???
+	id = hungary.3
+	title = hungary.3.t
+	desc = hungary.3.d
+	#picture = hungary_national_magyar_congress
+	fire_only_once = yes
+	
+	trigger = {
+		has_country_flag = GAMBOS_DEAD
+		has_country_flag = INCOMPETENCE
+		has_stability > 0.35
+		date < 1938.3.14
+		NOT = {
+			has_war = yes
+		}
+	}
+	
+	#Freedom From The White Tyranny!
+	option = {
+		name = hungary.3.o1
+		
+		set_country_flag = UNITED_FRONT_COUP
+		
+		set_politics = {
+			ruling_party = authoritarian_democrat
+			elections_allowed = no
+		}
+		
+		add_popularity = {
+			ideology = authoritarian_democrat
+			popularity = 0.10
+		}
+		
+		add_popularity = {
+			ideology = communist
+			popularity = 0.10
+		}
+		
+		set_party_name = { 
+			ideology = authoritarian_democrat 
+			long_name = HUN_united_front_long
+			name = HUN_united_front
+		}
+		
+		create_country_leader = {
+			name = "Miklós Horthy"
+			desc = "POLITICS_MIKLOS_HORTHY_DESC" 
+			picture = "Miklos_Horthy.dds"
+			expire = "1965.1.1"
+			ideology = authoritarian_democrat_ideology
+			traits = {
+				
+			}
+		}
+		
+		set_cosmetic_tag = HUN_united_front
+		
+		hidden_effect = {
+			#country_event = {
+			#	days = 7
+			#	id = hungary.2
+			#}
+		}
+	}
+	
+
+}
+
+country_event = { #A Jumbled Statement (Following Gombos' death)
+	id = hungary.4
+	title = hungary.4.t
+	desc = hungary.4.d
+	#picture = hungary_national_magyar_congress
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	#RIP boi
+	option = {
+		name = hungary.4.o1
+		
+		add_stability = -0.10
+		add_political_power = -150
+		
+		hidden_effect = {
+			#country_event = {
+			#	days = 7
+			#	id = hungary.2
+			#}
+		}
+	}
+	
+
+}
+
+country_event = { #Gombos' funeral
+	id = hungary.5
+	title = hungary.5.t
+	desc = hungary.5.d
+	#picture = hungary_national_magyar_congress
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	#RIP boi
+	option = {
+		name = hungary.5.o1
+		
+		add_political_power = -50
+		
+		add_popularity = {
+			ideology = national_unitarist
+			popularity = 0.05
+		}
+		
+		hidden_effect = {
+			#country_event = {
+			#	days = 7
+			#	id = hungary.2
+			#}
+		}
+	}
+	
+
+}
+
+country_event = { #Doctors Executed! but they were framed by the government to make them look bad and make Gombos look stronger
+	id = hungary.6
+	title = hungary.6.t
+	desc = hungary.6.d
+	#picture = hungary_national_magyar_congress
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	#RIP boi
+	option = {
+		name = hungary.6.o1
+		
+		add_political_power = 50
+		add_stability = -0.05
+		
+		hidden_effect = {
+			#country_event = {
+			#	days = 7
+			#	id = hungary.2
+			#}
+		}
+	}
+	
+
+}
+
+country_event = { #Close Advisor Warns of Opposition Plot (Lmao bro its fake, don't trust him, you gonna look dumb bruh"
+	id = hungary.7
+	title = hungary.7.t
+	desc = hungary.7.d
+	#picture = hungary_national_magyar_congress
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	#Tackle Them Now!
+	option = {
+		name = hungary.7.o1
+		
+		
+		hidden_effect = {
+			country_event = {
+				days = 10
+				id = hungary.8 #Event about like "lmao idiot" but more importanly they arrest them, bring them to a court by the gov. No evidence is had, gov looks stupiddd will get super fun natspirit that can destroy country
+			}
+		}
+	}
+	
+	#Bide Our Time But Prepare
+	option = {
+		name = hungary.7.o2
+		
+		add_political_power = -50
+		add_stability = -0.05
+		
+		hidden_effect = {
+			country_event = {
+				days = 35
+				id = hungary.9 # le based proven wrong (adivsor is) and Pronay doesn't seem like paranoid cuck will get stability back and some PP
+			}
+		}
+	}
+	
+
+}
+
+country_event = { #Bruh told yah (Fak coup)
+	id = hungary.8
+	title = hungary.8.t
+	desc = hungary.8.d
+	#picture = hungary_national_magyar_congress
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	#Tackle Them Now!
+	option = {
+		name = hungary.8.o1
+		
+		add_political_power = -500
+		#add_ideas = HUN_incompetance stability weekly dumb
+		add_stability = -0.25
+		hidden_effect = {
+			set_country_flag = INCOMPETENCE
+		}
+	}
+	
+	
+	
+
+}
+
+country_event = { #Told yah, no coup
+	id = hungary.9
+	title = hungary.9.t
+	desc = hungary.9.d
+	#picture = hungary_national_magyar_congress
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	#based
+	option = {
+		name = hungary.9.o1
+		
+		add_political_power = 50
+		add_stability = 0.05
+		hidden_effect = {
+			set_country_flag = INCOMPETENCE
+		}
+	}
+	
+	
+	
+
 }

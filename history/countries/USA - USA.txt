@@ -108,6 +108,8 @@ give_guarantee = URG
 
 set_convoys = 500
 
+#create_faction = global_peace_council
+
 
 set_politics = {
 	ruling_party = social_conservative

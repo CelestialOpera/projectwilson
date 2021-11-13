@@ -5,7 +5,7 @@
 		factor = 0
 		
 		modifier = {
-			add = -10
+			add = 10
 			tag = HUN
 		}
 	}
@@ -33,11 +33,14 @@
 			ROOT = {
 				is_subject = no
 			}
-			has_country_flag = HUN_gambos_dead
+			has_country_flag = GAMBOS_DEAD
+		}
+		bypass = {
+			has_country_flag = GAMBOS_DEAD
 		}
 
 		completion_reward = {
-			
+			add_political_power = 10
 		}
 	}
 	
@@ -61,7 +64,11 @@
 		}
 
 		completion_reward = {
-			
+			#Event for Speech By Endre
+			country_event = {
+				days = 2
+				id = hungary.4
+			}
 		}
 	}
 	
@@ -85,7 +92,11 @@
 		}
 
 		completion_reward = {
-			
+			#Event for Funeral
+			country_event = {
+				days = 2
+				id = hungary.5
+			}
 		}
 	}
 	
@@ -109,7 +120,11 @@
 		}
 
 		completion_reward = {
-			
+			#Event for Investigations of doctors
+			country_event = {
+				days = 2
+				id = hungary.6
+			}
 		}
 	}
 	
@@ -120,7 +135,7 @@
 		y = 2
 		relative_position_id = HUN_death_of_our_leader
 
-		cost = 2
+		cost = 4
 		prerequisite = { focus = HUN_a_statement_of_strength }
 		prerequisite = { focus = HUN_state_funeral }
 		prerequisite = { focus = HUN_a_conspiracy_by_doctors }
@@ -135,12 +150,15 @@
 		}
 
 		completion_reward = {
-			
+			country_event = {
+				days = 2
+				id = hungary.2
+			}
 		}
 	}
 	
 	focus = {
-		id = HUN_tribalistak_takes_the_reigns #Tribalisták
+		id = HUN_tribalistak_takes_the_reigns #Tribalisták - Magyar Revivalists Take The Reigns
 		#icon = GFX_focus_generic_little_entente
 		x = -5
 		y = 3
@@ -156,7 +174,7 @@
 			ROOT = {
 				is_subject = no
 			}
-			has_country_flag = HUN_Pronay_wins_out
+			has_country_flag = pronay_wins
 		}
 
 		completion_reward = {
@@ -310,7 +328,7 @@
 	}
 	
 	focus = {
-		id = HUN_husegesek_maintain_control #Hűségesek
+		id = HUN_husegesek_maintain_control #Hűségesek - Hardline Maintains Hold
 		#icon = GFX_focus_generic_little_entente
 		x = 0
 		y = 3
@@ -326,7 +344,7 @@
 			ROOT = {
 				is_subject = no
 			}
-			has_country_flag = HUN_endre_wins_out
+			has_country_flag = endre_wins
 		}
 
 		completion_reward = {
@@ -431,7 +449,7 @@
 	}
 	
 	focus = {
-		id = HUN_their_last_moon #Purge of opposition like Szalasi and Pronay
+		id = HUN_their_last_moon #Execution of the various political prisoners through public means in a show of nationalistic security
 		#icon = GFX_focus_generic_little_entente
 		x = 0
 		y = 6
@@ -480,7 +498,7 @@
 	}
 	
 	focus = {
-		id = HUN_fiatal_garda_take_over #Fiatal Gárda
+		id = HUN_fiatal_garda_take_over #Fiatal Gárda - National Socialists Take Over
 		#icon = GFX_focus_generic_little_entente
 		x = 5
 		y = 3
@@ -496,7 +514,7 @@
 			ROOT = {
 				is_subject = no
 			}
-			has_country_flag = HUN_szalasi_wins_out
+			has_country_flag = szalasi_wins
 		}
 
 		completion_reward = {
@@ -1206,6 +1224,9 @@
 			ROOT = {
 				is_subject = no
 			}
+			NOT = {
+				has_country_flag = UNITED_FRONT_COUP
+			}
 		}
 
 		completion_reward = {
@@ -1229,6 +1250,9 @@
 		available = {
 			ROOT = {
 				is_subject = no
+			}
+						NOT = {
+				has_country_flag = UNITED_FRONT_COUP
 			}
 		}
 
@@ -1254,6 +1278,9 @@
 			ROOT = {
 				is_subject = no
 			}
+						NOT = {
+				has_country_flag = UNITED_FRONT_COUP
+			}
 		}
 
 		completion_reward = {
@@ -1278,6 +1305,9 @@
 			ROOT = {
 				is_subject = no
 			}
+			NOT = {
+				has_country_flag = UNITED_FRONT_COUP
+			}
 		}
 
 		completion_reward = {
@@ -1301,6 +1331,9 @@
 		available = {
 			ROOT = {
 				is_subject = no
+			}
+			NOT = {
+				has_country_flag = UNITED_FRONT_COUP
 			}
 		}
 
@@ -1329,6 +1362,9 @@
 			ROOT = {
 				is_subject = no
 			}
+			NOT = {
+				has_country_flag = UNITED_FRONT_COUP
+			}
 		}
 
 		completion_reward = {
@@ -1337,7 +1373,7 @@
 	}
 	
 	focus = {
-		id = HUN_prospects_in_anatolia
+		id = HUN_prospects_in_anatolia #Help the Turkish with some stuff in exchange.... if enemies with Turkey then you get le epic decision for later
 		#icon = GFX_focus_generic_little_entente
 		x = 1
 		y = 2
@@ -1355,6 +1391,9 @@
 		available = {
 			ROOT = {
 				is_subject = no
+			}
+			NOT = {
+				has_country_flag = UNITED_FRONT_COUP
 			}
 		}
 
@@ -1380,6 +1419,9 @@
 			ROOT = {
 				is_subject = no
 			}
+			NOT = {
+				has_country_flag = UNITED_FRONT_COUP
+			}
 		}
 
 		completion_reward = {
@@ -1403,6 +1445,9 @@
 		available = {
 			ROOT = {
 				is_subject = no
+			}
+			NOT = {
+				has_country_flag = UNITED_FRONT_COUP
 			}
 		}
 
@@ -1428,6 +1473,9 @@
 			ROOT = {
 				is_subject = no
 			}
+			NOT = {
+				has_country_flag = UNITED_FRONT_COUP
+			}
 		}
 
 		completion_reward = {
@@ -1451,6 +1499,9 @@
 		available = {
 			ROOT = {
 				is_subject = no
+			}
+			NOT = {
+				has_country_flag = UNITED_FRONT_COUP
 			}
 		}
 
@@ -1482,6 +1533,9 @@
 					date > 1942.01.01
 				}
 			}	
+			NOT = {
+				has_country_flag = UNITED_FRONT_COUP
+			}
 		}
 
 		completion_reward = {
@@ -1511,6 +1565,9 @@
 					has_completed_focus = HUN_hungarian_rocketry
 					date > 1942.01.01
 				}
+			}
+			NOT = {
+				has_country_flag = UNITED_FRONT_COUP
 			}
 		}
 
@@ -1797,6 +1854,995 @@
 
 		completion_reward = {
 			
+		}
+	}
+	
+	
+	focus = {
+		id = HUN_an_unexpected_united_front
+		icon = GFX_focus_generic_treaty
+		x = 35
+		y = 0
+
+		cost = 1
+		
+		#bypass = {
+		#	date < 2010.01.01
+		#}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+			has_country_flag = UNITED_FRONT_COUP
+		}
+		bypass = {
+			has_country_flag = UNITED_FRONT_COUP
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HUN_eradicate_vestiges_of_natunis #Eradicate Vestiges of Nemzeti Egység
+		icon = GFX_focus_generic_treaty
+		x = -1
+		y = 1
+		relative_position_id = HUN_an_unexpected_united_front
+		prerequisite = {
+			focus = HUN_an_unexpected_united_front
+		}
+	
+		cost = 5
+		
+		#bypass = {
+		#	date < 2010.01.01
+		#}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+			has_country_flag = UNITED_FRONT_COUP
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HUN_release_political_prisoners
+		icon = GFX_focus_generic_treaty
+		x = 1
+		y = 1
+		relative_position_id = HUN_an_unexpected_united_front
+		prerequisite = {
+			focus = HUN_an_unexpected_united_front
+		}
+	
+		cost = 5
+		
+		#bypass = {
+		#	date < 2010.01.01
+		#}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+			has_country_flag = UNITED_FRONT_COUP
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HUN_national_convention
+		icon = GFX_focus_generic_treaty
+		x = 0
+		y = 2
+		relative_position_id = HUN_an_unexpected_united_front
+		prerequisite = {
+			focus = HUN_eradicate_vestiges_of_natunis
+		}
+		prerequisite = {
+			focus = HUN_release_political_prisoners
+		}
+	
+		cost = 7
+		
+		#bypass = {
+		#	date < 2010.01.01
+		#}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+			has_country_flag = UNITED_FRONT_COUP
+		}
+
+		completion_reward = {
+			#Event about National Convention and the take over by le ebil commies or Horthy's consolidation
+		}
+	}
+	
+	focus = {
+		id = HUN_the_admiral_returns
+		icon = GFX_focus_generic_treaty
+		x = -5
+		y = 3
+		relative_position_id = HUN_an_unexpected_united_front
+		prerequisite = {
+			focus = HUN_national_convention
+		}
+	
+		cost = 2
+		
+		#bypass = {
+		#	date < 2010.01.01
+		#}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+			has_country_flag = HORTHY_ON_TOP
+		}
+		bypass = {
+			has_country_flag = HORTHY_ON_TOP
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = HUN_legalize_parties
+		icon = GFX_focus_generic_treaty
+		x = -2
+		y = 1
+		relative_position_id = HUN_the_admiral_returns
+		prerequisite = {
+			focus = HUN_the_admiral_returns
+		}
+	
+		cost = 6
+		
+		#bypass = {
+		#	date < 2010.01.01
+		#}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+			has_country_flag = HORTHY_ON_TOP
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = HUN_promote_light_nationalism
+		icon = GFX_focus_generic_treaty
+		x = -2
+		y = 2
+		relative_position_id = HUN_the_admiral_returns
+		prerequisite = {
+			focus = HUN_legalize_parties
+		}
+	
+		cost = 6
+		
+		#bypass = {
+		#	date < 2010.01.01
+		#}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+			has_country_flag = HORTHY_ON_TOP
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = HUN_restore_the_kingdom_of_hungary
+		icon = GFX_focus_generic_treaty
+		x = 0
+		y = 1
+		relative_position_id = HUN_the_admiral_returns
+		prerequisite = {
+			focus = HUN_the_admiral_returns
+		}
+	
+		cost = 10
+		
+		#bypass = {
+		#	date < 2010.01.01
+		#}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+			has_country_flag = HORTHY_ON_TOP
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = HUN_monarchial_institutions
+		icon = GFX_focus_generic_treaty
+		x = 0
+		y = 2
+		relative_position_id = HUN_the_admiral_returns
+		prerequisite = {
+			focus = HUN_restore_the_kingdom_of_hungary
+		}
+	
+		cost = 10
+		
+		#bypass = {
+		#	date < 2010.01.01
+		#}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+			has_country_flag = HORTHY_ON_TOP
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = HUN_suppress_socialist_activity
+		icon = GFX_focus_generic_treaty
+		x = 2
+		y = 1
+		relative_position_id = HUN_the_admiral_returns
+		prerequisite = {
+			focus = HUN_the_admiral_returns
+		}
+	
+		cost = 6
+		
+		#bypass = {
+		#	date < 2010.01.01
+		#}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+			has_country_flag = HORTHY_ON_TOP
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = HUN_welfare_concessions
+		icon = GFX_focus_generic_treaty
+		x = 2
+		y = 2
+		relative_position_id = HUN_the_admiral_returns
+		prerequisite = {
+			focus = HUN_suppress_socialist_activity
+		}
+	
+		cost = 6
+		
+		#bypass = {
+		#	date < 2010.01.01
+		#}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+			has_country_flag = HORTHY_ON_TOP
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = HUN_regency_restored
+		icon = GFX_focus_generic_treaty
+		x = 0
+		y = 3
+		relative_position_id = HUN_the_admiral_returns
+		prerequisite = {
+			focus = HUN_promote_light_nationalism
+		}
+		prerequisite = {
+			focus = HUN_monarchial_institutions
+		}
+		prerequisite = {
+			focus = HUN_welfare_concessions
+		}
+	
+		cost = 6
+		
+		#bypass = {
+		#	date < 2010.01.01
+		#}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+			has_country_flag = HORTHY_ON_TOP
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = HUN_look_up_to_the_white_movement
+		icon = GFX_focus_generic_treaty
+		x = -2
+		y = 4
+		relative_position_id = HUN_the_admiral_returns
+		prerequisite = {
+			focus = HUN_regency_restored
+		}
+		mutually_exclusive = {
+			focus = HUN_isolation_is_safer
+			focus = HUN_reach_out_to_britain
+		}
+	
+		cost = 6
+		
+		#bypass = {
+		#	date < 2010.01.01
+		#}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+			has_country_flag = HORTHY_ON_TOP
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = HUN_isolation_is_safer
+		icon = GFX_focus_generic_treaty
+		x = 0
+		y = 4
+		relative_position_id = HUN_the_admiral_returns
+		prerequisite = {
+			focus = HUN_regency_restored
+		}
+		mutually_exclusive = {
+			focus = HUN_look_up_to_the_white_movement
+			focus = HUN_reach_out_to_britain
+		}
+	
+		cost = 6
+		
+		#bypass = {
+		#	date < 2010.01.01
+		#}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+			has_country_flag = HORTHY_ON_TOP
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = HUN_reach_out_to_britain
+		icon = GFX_focus_generic_treaty
+		x = 2
+		y = 4
+		relative_position_id = HUN_the_admiral_returns
+		prerequisite = {
+			focus = HUN_regency_restored
+		}
+		mutually_exclusive = {
+			focus = HUN_look_up_to_the_white_movement
+			focus = HUN_isolation_is_safer
+		}
+	
+		cost = 6
+		
+		#bypass = {
+		#	date < 2010.01.01
+		#}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+			has_country_flag = HORTHY_ON_TOP
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = HUN_expand_hungarian_education
+		icon = GFX_focus_generic_treaty
+		x = -1
+		y = 5
+		relative_position_id = HUN_the_admiral_returns
+		prerequisite = {
+			focus = HUN_look_up_to_the_white_movement
+			focus = HUN_isolation_is_safer
+			focus = HUN_reach_out_to_britain
+		}
+	
+		cost = 6
+		
+		#bypass = {
+		#	date < 2010.01.01
+		#}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+			has_country_flag = HORTHY_ON_TOP
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = HUN_privatization_of_mines
+		icon = GFX_focus_generic_treaty
+		x = 1
+		y = 5
+		relative_position_id = HUN_the_admiral_returns
+		prerequisite = {
+			focus = HUN_look_up_to_the_white_movement
+			focus = HUN_isolation_is_safer
+			focus = HUN_reach_out_to_britain
+		}
+	
+		cost = 6
+		
+		#bypass = {
+		#	date < 2010.01.01
+		#}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+			has_country_flag = HORTHY_ON_TOP
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	#########
+	
+	focus = {
+		id = HUN_communists_take_the_stage
+		icon = GFX_focus_generic_treaty
+		x = 5
+		y = 3
+		relative_position_id = HUN_an_unexpected_united_front
+		prerequisite = {
+			focus = HUN_national_convention
+		}
+	
+		cost = 2
+		
+		#bypass = {
+		#	date < 2010.01.01
+		#}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+			has_country_flag = communists_take_the_stage
+		}
+		bypass = {
+			has_country_flag = communists_take_the_stage
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = HUN_exile_horthy
+		icon = GFX_focus_generic_treaty
+		x = 2
+		y = 1
+		relative_position_id = HUN_communists_take_the_stage
+		prerequisite = {
+			focus = HUN_communists_take_the_stage
+		}
+	
+		cost = 6
+		
+		#bypass = {
+		#	date < 2010.01.01
+		#}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+			has_country_flag = communists_take_the_stage
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = HUN_long_live_the_soviet_republic
+		icon = GFX_focus_generic_treaty
+		x = 0
+		y = 1
+		relative_position_id = HUN_communists_take_the_stage
+		prerequisite = {
+			focus = HUN_communists_take_the_stage
+		}
+	
+		cost = 6
+		
+		#bypass = {
+		#	date < 2010.01.01
+		#}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+			has_country_flag = communists_take_the_stage
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = HUN_reach_out_to_narodnodar
+		icon = GFX_focus_generic_treaty
+		x = 2
+		y = 1
+		relative_position_id = HUN_communists_take_the_stage
+		prerequisite = {
+			focus = HUN_communists_take_the_stage
+		}
+	
+		cost = 6
+		
+		#bypass = {
+		#	date < 2010.01.01
+		#}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+			has_country_flag = communists_take_the_stage
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = HUN_review_of_the_military
+		icon = GFX_focus_generic_treaty
+		x = -1
+		y = 2
+		relative_position_id = HUN_communists_take_the_stage
+		prerequisite = {
+			focus = HUN_exile_horthy
+		}
+		prerequisite = {
+			focus = HUN_long_live_the_soviet_republic
+		}
+	
+		cost = 6
+		
+		#bypass = {
+		#	date < 2010.01.01
+		#}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+			has_country_flag = communists_take_the_stage
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = HUN_reform_the_lenin_fiuk #Lenin-Fiúk/Lenin Boys
+		icon = GFX_focus_generic_treaty
+		x = 1
+		y = 2
+		relative_position_id = HUN_communists_take_the_stage
+		prerequisite = {
+			focus = HUN_long_live_the_soviet_republic
+		}
+		prerequisite = {
+			focus = HUN_reach_out_to_narodnodar
+		}
+	
+		cost = 6
+		
+		#bypass = {
+		#	date < 2010.01.01
+		#}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+			has_country_flag = communists_take_the_stage
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = HUN_a_new_red_terror #A New Vörösterror
+		icon = GFX_focus_generic_treaty
+		x = 0
+		y = 3
+		relative_position_id = HUN_communists_take_the_stage
+		prerequisite = {
+			focus = HUN_review_of_the_military
+		}
+		prerequisite = {
+			focus = HUN_reform_the_lenin_fiuk
+		}
+	
+		cost = 6
+		
+		#bypass = {
+		#	date < 2010.01.01
+		#}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+			has_country_flag = communists_take_the_stage
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = HUN_join_workers_united_front
+		icon = GFX_focus_generic_treaty
+		x = 0
+		y = 4
+		relative_position_id = HUN_communists_take_the_stage
+		prerequisite = {
+			focus = HUN_a_new_red_terror
+		}
+	
+		cost = 6
+		
+		#bypass = {
+		#	date < 2010.01.01
+		#}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+			has_country_flag = communists_take_the_stage
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = HUN_work_with_russian_researchers #Boost
+		icon = GFX_focus_generic_treaty
+		x = -1
+		y = 5
+		relative_position_id = HUN_communists_take_the_stage
+		prerequisite = {
+			focus = HUN_join_workers_united_front
+		}
+		mutually_exclusive = {
+			focus = HUN_borrow_russian_researchers
+		}
+	
+		cost = 6
+		
+		#bypass = {
+		#	date < 2010.01.01
+		#}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+			has_country_flag = communists_take_the_stage
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = HUN_borrow_russian_researchers #Slot
+		icon = GFX_focus_generic_treaty
+		x = 1
+		y = 5
+		relative_position_id = HUN_communists_take_the_stage
+		prerequisite = {
+			focus = HUN_join_workers_united_front
+		}
+		mutually_exclusive = {
+			focus = HUN_work_with_russian_researchers
+		}
+	
+		cost = 6
+		
+		#bypass = {
+		#	date < 2010.01.01
+		#}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+			has_country_flag = communists_take_the_stage
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	####United Front Economic Branch
+	
+	focus = {
+		id = HUN_revitalize_hungarian_economy
+		icon = GFX_focus_generic_treaty
+		x = 0
+		y = 5
+		relative_position_id = HUN_an_unexpected_united_front
+	
+		cost = 5
+		
+		#bypass = {
+		#	date < 2010.01.01
+		#}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+			has_country_flag = UNITED_FRONT_COUP
+			OR = {
+				has_country_flag = HORTHY_ON_TOP
+				has_country_flag = communists_take_the_stage
+			}
+		}
+
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = HUN_hungarians_need_guns
+		icon = GFX_focus_generic_treaty
+		x = -1
+		y = 1
+		relative_position_id = HUN_revitalize_hungarian_economy
+		prerequisite = {
+			focus = HUN_revitalize_hungarian_economy
+		}
+	
+		cost = 8
+		
+		#bypass = {
+		#	date < 2010.01.01
+		#}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+		}
+
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = HUN_support_infrastructure_programs #OMG THIS IS SOCIALISMSSSS - 2021 Republicans
+		icon = GFX_focus_generic_treaty
+		x = 1
+		y = 1
+		relative_position_id = HUN_revitalize_hungarian_economy
+		prerequisite = {
+			focus = HUN_revitalize_hungarian_economy
+		}
+	
+		cost = 8
+		
+		#bypass = {
+		#	date < 2010.01.01
+		#}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+		}
+
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = HUN_basic_necessities
+		icon = GFX_focus_generic_treaty
+		x = 0
+		y = 2
+		relative_position_id = HUN_revitalize_hungarian_economy
+		prerequisite = {
+			focus = HUN_hungarians_need_guns
+		}
+		prerequisite = {
+			focus = HUN_support_infrastructure_programs
+		}
+	
+		cost = 8
+		
+		#bypass = {
+		#	date < 2010.01.01
+		#}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+		}
+
+
+		completion_reward = {
 		}
 	}
 	

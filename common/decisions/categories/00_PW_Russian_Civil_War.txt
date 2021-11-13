@@ -7,13 +7,13 @@
 #	}
 #}
 
-form_china_category = {
+rekindle_the_conflict = {
 
-	icon = generic_formable_nations
+	icon = border_conflicts
 
 	#picture = 
 
 	#allowed = {
-	#	has_dlc = "Waking the Tiger"
+	##	has_dlc = "Waking the Tiger"
 	#}
 }

@@ -1,5 +1,5 @@
 ﻿capital = 16
-
+create_faction = entent_revisee
 oob = "FRA_1936"
 if = {
 	limit = { has_dlc = "Man the Guns" }

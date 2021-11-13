@@ -1,0 +1,83 @@
+FRA_hates_america = {
+	allowed = {
+		original_tag = FRA
+	}
+	enable = {
+		date > 1936.1.1
+		OR = {
+			country_exists = USA
+			NOT = {
+				is_puppet_of = USA
+			}
+			
+		}
+	}
+	abort = {
+		OR = {
+			NOT = {
+				country_exists = USA
+			}
+			is_puppet_of = USA
+		}
+	}
+	
+	ai_strategy = {
+		type = alliance
+		id = "USA"			
+		value = -2000
+	}
+	
+	ai_strategy = {
+		type = befriend
+		id = "USA"			
+		value = -2000
+	}
+	
+	ai_strategy = {
+		type = support
+		id = "USA"			
+		value = -2000
+	}
+}
+
+JAP_hates_america = {
+	allowed = {
+		original_tag = JAP
+	}
+	enable = {
+		date > 1936.1.1
+		OR = {
+			country_exists = USA
+			NOT = {
+				is_puppet_of = USA
+			}
+			
+		}
+	}
+	abort = {
+		OR = {
+			NOT = {
+				country_exists = USA
+			}
+			is_puppet_of = USA
+		}
+	}
+	
+	ai_strategy = {
+		type = alliance
+		id = "USA"			
+		value = -2000
+	}
+	
+	ai_strategy = {
+		type = befriend
+		id = "USA"			
+		value = -2000
+	}
+	
+	ai_strategy = {
+		type = support
+		id = "USA"			
+		value = -2000
+	}
+}

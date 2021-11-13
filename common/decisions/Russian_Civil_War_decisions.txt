@@ -1,0 +1,134 @@
+rekindle_the_conflict = {
+	
+	declare_war_on_reds = {
+
+		icon = rekindle_the_conflict
+
+		allowed = {
+			
+			original_tag = RUS
+			
+		}
+
+		available = {
+			is_subject = no
+			
+			#custom_trigger_tooltip = {
+			#	tooltip = form_country_china_main_centres
+			#	
+			#}
+			#has_political_power > 400
+			date > 1937.1.1
+			NOT = {
+				has_war_with = SOV
+				has_country_flag = civil_war_rekindled_rus
+			}
+			SOV = {
+				exists = yes
+			}
+		}
+
+		visible = {
+			original_tag = RUS
+			
+			NOT = {
+				has_war_with = SOV
+			}
+			SOV = {
+				exists = yes
+			}
+		}
+
+		complete_effect = {
+			
+			declare_war_on = {
+				target = SOV
+				type = annex_everything
+			}
+			
+			hidden_effect = {
+				
+				set_country_flag = civil_war_rekindled_rus
+				SOV = {
+					set_country_flag = civil_war_rekindled_sov
+				}
+				set_global_flag = second_russian_civil_war
+			}
+		}
+
+		ai_will_do = {
+			factor = -200
+			modifier = {
+				factor = 500
+				date > 1937.7.1
+			}
+		}
+	}
+	
+	declare_war_on_whites = {
+
+		icon = rekindle_the_conflict
+
+		allowed = {
+			
+			original_tag = SOV
+			
+		}
+
+		available = {
+			is_subject = no
+			
+			#custom_trigger_tooltip = {
+			#	tooltip = form_country_china_main_centres
+			#	
+			#}
+			#has_political_power > 400
+			date > 1937.1.1
+			NOT = {
+				has_war_with = RUS
+				has_country_flag = civil_war_rekindled_sov
+			}
+			RUS = {
+				exists = yes
+			}
+		}
+
+		visible = {
+			original_tag = SOV
+			
+			NOT = {
+				has_war_with = RUS
+			}
+			RUS = {
+				exists = yes
+			}
+		}
+
+		complete_effect = {
+			
+			declare_war_on = {
+				target = RUS
+				type = annex_everything
+			}
+			
+			hidden_effect = {
+				
+				set_country_flag = civil_war_rekindled_sov
+				RUS = {
+					set_country_flag = civil_war_rekindled_rus
+				}
+				set_global_flag = second_russian_civil_war
+			}
+		}
+
+		ai_will_do = {
+			factor = -200
+			modifier = {
+				factor = 500
+				date > 1937.7.1
+			}
+		}
+	}
+	
+	
+}

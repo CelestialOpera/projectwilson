@@ -1,0 +1,22 @@
+add_namespace = exact_date_trigger
+
+country_event = {
+	id = exact_date_trigger.1
+	hidden = yes
+	fire_only_once = yes
+	
+	trigger = {
+		date > 1936.10.5
+	}
+	
+	option = {
+		##Hungary Death of Gambos
+		if = {
+			limit = { 
+				country_exists = HUN
+			}
+			HUN = { country_event = hungary.1 }
+		}
+		
+	}
+}

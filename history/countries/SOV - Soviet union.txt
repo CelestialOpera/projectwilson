@@ -1,5 +1,5 @@
 ﻿capital = 195
-
+create_faction = workers_united_front
 oob = "SOV_1936"
 #if = {
 #	limit = { has_dlc = "Man the Guns" }

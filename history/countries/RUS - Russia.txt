@@ -1,4 +1,5 @@
 ﻿capital = 566
+create_faction = emancipation_movement
 
 set_research_slots = 1
 oob = "RUS_1936"

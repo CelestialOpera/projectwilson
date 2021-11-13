@@ -1,9 +1,10 @@
 ﻿capital = 43
 
+oob = "HUN_1936"
 set_research_slots = 3
-set_stability = 0.50
+set_stability = 0.75
 set_war_support = 0.6
-
+#Dropping below 35? will be the point where Untied Front Takes over
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
@@ -42,6 +43,105 @@ create_country_leader = {
 	picture = "Gyula_Gombos.dds"
 	expire = "1965.1.1"
 	ideology = national_unitarist_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Miklós Horthy"
+	desc = "POLITICS_MIKLOS_HORTHY_DESC"
+	picture = "Miklos_Horthy.dds"
+	expire = "1965.1.1"
+	ideology = despotist_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "István Bethlen"
+	desc = "POLITICS_ISTVAN_BETHLEN_DESC"
+	picture = "Istvan_Bethlen.dds"
+	expire = "1965.1.1"
+	ideology = authoritarian_democrat_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Gaszton Gaál" #Smallholders, Tildy can take over???
+	desc = "POLITICS_GASZTON_GAAL_DESC"
+	picture = "Gaszton_Gaal.dds"
+	expire = "1965.1.1"
+	ideology = social_conservative_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Vince Nagy" #
+	desc = "POLITICS_VINCE_NAGY_DESC"
+	picture = "Vince_Nagy.dds"
+	expire = "1965.1.1"
+	ideology = market_liberal_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Mihály Károlyi" #
+	desc = "POLITICS_MIHALY_KAROLYI_DESC"
+	picture = "Mihaly_Karolyi.dds"
+	expire = "1965.1.1"
+	ideology = social_liberal_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Károly Peyer" #
+	desc = "POLITICS_KAROLY_PEYER_DESC"
+	picture = "Karoly_Peyer.dds"
+	expire = "1965.1.1"
+	ideology = social_democrat_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Sándor Csizmadia" #
+	desc = "POLITICS_SANDOR_CSIZMADIA_DESC"
+	picture = "Sandor_Csizmadia.dds"
+	expire = "1965.1.1"
+	ideology = libertarian_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Gyula Peidl" #
+	desc = "POLITICS_GYULA_PEIDL_DESC"
+	picture = "Gyula_Peidl.dds"
+	expire = "1965.1.1"
+	ideology = radical_socialist_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "József Cserny" #
+	desc = "POLITICS_JOZSEF_CSZERNY_DESC"
+	picture = "Jozsef_Cserny.dds"
+	expire = "1965.1.1"
+	ideology = communist_ideology
 	traits = {
 		#
 	}

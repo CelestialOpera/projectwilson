@@ -419,6 +419,18 @@ country_event = { #A Romantic Abdication
 		}
 		add_stability = 0.05
 		
+		set_party_name = { 
+			ideology = social_conservative 
+			long_name = ENG_conservative_party_abdication_traditionalist_long
+			name = ENG_conservative_party_abdication_traditionalist 
+		}
+		
+		set_party_name = { 
+			ideology = authoritarian_democrat 
+			long_name = ENG_conservative_edward_abdicated_progressive_long
+			name = ENG_conservative_edward_abdicated_progressive
+		}
+		
 		hidden_effect = { #Election Of Radicals
 			#ENG = {
 			#	country_event = {
