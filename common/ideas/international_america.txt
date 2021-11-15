@@ -1,0 +1,83 @@
+ideas = {
+
+	country = {
+		#The three following American_XXX ideas are all based on levels of influence. 
+		#American Influence essentially implies American favourability in the government, with no necessary official control. This would not be held by a puppet but instead nations that have been assisted by the Americans. One country that will have it is Armenia
+		#America In Our Economy, this essentially is there to represent debts and economic control by le epic americans, one country with it will be Ireland who had help from America for rebuilding after the War of Independence and the Stability Efforts lead by them
+		#American Occupation is exactly what it sounds, if you have this you also will be a puppet state of America, where as the last two didn't mean it had to be. 
+		#Sort of like a 3 step, AI can't be puppet, AIOE can be a puppet but not always, AO is always a puppet. 
+		american_influence = { 
+			
+			allowed = {
+				always = yes
+				NOT = {
+					is_puppet_of = USA
+				}
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.05
+				political_power_factor = -0.05
+			}
+			
+
+		}
+		
+		america_in_our_economy = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.15
+				war_support_factor = -0.05
+				political_power_factor = -0.05
+				civilian_factory_use = 1
+			}
+			
+
+		}
+		
+		american_occupation = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.25
+				war_support_factor = -0.25
+				political_power_factor = -0.10
+				civilian_factory_use = 1
+				army_morale_factor = -0.3
+			}
+			
+
+		}
+
+		
+
+	}
+
+
+}
+

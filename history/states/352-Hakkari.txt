@@ -10,13 +10,13 @@ state={
 		owner = KUR
 		add_core_of = KUR
 		victory_points = {
-			12476 1 
+			12476 15 
 		}
 		victory_points = {
-			7530 1 
+			7530 5 
 		}
 		victory_points = {
-			10497 1 
+			10497 25 
 		}
 		buildings = {
 			infrastructure = 2

@@ -11,12 +11,12 @@ country_event = {
 	
 	option = {
 		##Hungary Death of Gambos
-		if = {
-			limit = { 
-				country_exists = HUN
-			}
-			HUN = { country_event = hungary.1 }
-		}
+		#if = {
+		#	limit = { 
+		#		country_exists = HUN
+		#	}
+		#	HUN = { country_event = hungary.1 }
+		#}
 		
 	}
 }

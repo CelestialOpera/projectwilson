@@ -7,12 +7,12 @@ country_event = { #Gambos Succumbs To Fate
 	desc = hungary.1.d
 	picture = hungary_death_of_gambos
 	fire_only_once = yes
-	
-	trigger = {
-		tag = HUN
-		date > 1936.10.1
-		date < 1936.10.30
-	}
+	is_triggered_only = yes
+	#trigger = {
+	#	tag = HUN
+	#	date > 1936.10.1
+	#	date < 1936.10.30
+	#}
 	
 	mean_time_to_happen = {
 		days = 5

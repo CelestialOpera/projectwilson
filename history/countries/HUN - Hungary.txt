@@ -18,7 +18,7 @@ set_technology = {
 }
 
 set_politics = {
-	ruling_party = national_unitarist
+	ruling_party = despotist
 	last_election = "1935.3.31"
 	election_frequency = 48
 	elections_allowed = no
@@ -37,6 +37,21 @@ set_popularities = {
 	communist = 16
 }
 
+add_ideas = {
+	#GyulaGombos Advisor-1 Prime Minister
+	#Béla Imrédy Advisor-2
+	Laszlo Endre Advisor-3
+}
+
+#Horthy starts in control, however there is a power struggle between Gombos/NatUnis and Bethlen(with Horthy and co)/Agrarians
+#When Gombos dies in 1936 he can be succeeded in his wing by Endre or Szalasi
+#The power struggle between the Agrarians and National Unitarists are a major aspect of Hungarian politics. Horthy must make a choice of who he sides with but he needs to make the right one.
+#In 1936 Horthy is the post powerful in the land but the influence of Gombos is undeniable, as he is Prime Minister.
+#The Starting Advisors could be, Gombos, Imredy, and Endre??? Two NatUnis to show their dominance.
+#If Horthy does not balance things, his influence will fail and his regency may even be at stake but it is more likely that his influence just falls.
+#In game things start as despotist but it is aligned to NatUni, and things will move depending on what happens. If Horthy embraces the right then he leads.
+#If Horthy does not balance things right??? IDK how to implemenent but yes if he does not balance things, whichever side comes to power, their leader is in charge instead of Horthy.
+ 
 create_country_leader = {
 	name = "Gyula Gömbös"
 	desc = "POLITICS_GYULA_GOMBOS_DESC"
@@ -47,7 +62,7 @@ create_country_leader = {
 		#
 	}
 }
-
+#Second in command is Béla Imrédy and Kálmán Darányi
 create_country_leader = {
 	name = "Miklós Horthy"
 	desc = "POLITICS_MIKLOS_HORTHY_DESC"
@@ -58,7 +73,7 @@ create_country_leader = {
 		#
 	}
 }
-
+#
 create_country_leader = {
 	name = "István Bethlen"
 	desc = "POLITICS_ISTVAN_BETHLEN_DESC"
