@@ -125,7 +125,7 @@ set_popularities = {
 	social_conservative = 17 #Democrats
 	market_liberal = 23 #Democrats
 	social_liberal = 27 #Republicans
-	social_democrat = 13 #Progressives Then American Labor Party
+	social_democrat = 13 #American Labor Party
 	libertarian = 4
 	radical_socialist = 5
 	communist = 3
@@ -139,6 +139,21 @@ set_autonomy = {
 
 set_autonomy = {
 	target = HAI
+	autonomous_state =  autonomy_puppet
+}
+
+set_autonomy = {
+	target = CUB
+	autonomous_state =  autonomy_puppet
+}
+
+set_autonomy = {
+	target = HON
+	autonomous_state =  autonomy_puppet
+}
+
+set_autonomy = {
+	target = NIC
 	autonomous_state =  autonomy_puppet
 }
 

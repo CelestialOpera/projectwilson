@@ -31,3 +31,9 @@
  HON_communist:0 "Republic of Honduras"
  HON_communist_DEF:0 "The Republic of Honduras"
  HON_communist_ADJ:0 "Honduran"
+ 
+ HON_national_unitarist_party:0 "KKK"
+ HON_national_unitarist_party_long:0 "Ku Klux Klan - Honduran Cell"
+ 
+ HON_social_conservative_party:0 "National Party"
+ HON_social_conservative_party_long:0 "National Party of Honduras"

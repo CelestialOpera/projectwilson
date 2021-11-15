@@ -13,6 +13,10 @@ set_technology = {
 	early_bomber = 1
 }
 
+add_ideas = {
+	american_occupation
+}
+
 set_convoys = 5
 
 

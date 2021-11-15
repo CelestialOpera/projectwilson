@@ -447,7 +447,7 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_ideology_authoritarian_democrat_ideology_group"
+		name = "GFX_ideology_authoritarian_democrat_group"
 		texturefile = "gfx/interface/ideologies/authoritarian_democrat_Icon.dds"
 	}
 	

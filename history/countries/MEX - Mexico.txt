@@ -44,6 +44,10 @@ if = {
 
 set_country_flag = monroe_doctrine
 
+add_ideas = {
+	america_in_our_economy
+}
+
 set_convoys = 45
 set_stability = 0.2
 set_war_support = 0.1

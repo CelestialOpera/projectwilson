@@ -5604,5 +5604,20 @@ spriteTypes = {
 		name = "GFX_idea_gre_metaxism_empowered"
 		texturefile = "gfx/interface/ideas/idea_gre_metaxism_empowered.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_idea_AmericaEconomy"
+		texturefile = "gfx/interface/ideas/AmericaEconomy.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_AmericanInfluence"
+		texturefile = "gfx/interface/ideas/AmericanInfluence.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_AmericanOccupation"
+		texturefile = "gfx/interface/ideas/AmericanOccupation.dds"
+	}
 
 }

@@ -96,6 +96,10 @@ if = {
 	}
 }
 
+add_ideas = {
+	america_in_our_economy
+}
+
 set_research_slots = 4
 set_convoys = 200
 set_stability = 0.75 

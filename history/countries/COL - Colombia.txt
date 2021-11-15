@@ -39,6 +39,10 @@ if = {
 
 set_country_flag = monroe_doctrine
 
+add_ideas = {
+	american_influence
+}
+
 set_convoys = 10
 
 set_convoys = 5

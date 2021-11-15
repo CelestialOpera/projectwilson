@@ -12,6 +12,10 @@ set_technology = {
 
 set_convoys = 10
 
+add_ideas = {
+	america_in_our_economy
+}
+
 set_politics = {
 	ruling_party = social_conservative
 	last_election = "1933.1.24"

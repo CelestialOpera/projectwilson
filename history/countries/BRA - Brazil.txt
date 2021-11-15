@@ -49,7 +49,7 @@ if = {
 set_country_flag = monroe_doctrine
 
 set_politics = {
-	ruling_party = social_conservative
+	ruling_party = authoritarian_democrat
 	last_election = "1934.7.17"
 	election_frequency = 48
 	elections_allowed = no
@@ -58,8 +58,8 @@ set_politics = {
 set_popularities = {
 	national_unitarist = 3
 	despotist = 8
-	authoritarian_democrat = 13
-	social_conservative = 21
+	authoritarian_democrat = 21
+	social_conservative = 13
 	market_liberal = 17
 	social_liberal = 6
 	social_democrat = 15
@@ -69,11 +69,110 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Washington Luís"
-	desc = "POLITICS_WASHINGTON_LUIS_DESC"
-	picture = "Washington_Luis.dds"
+	name = "Arlindo Veiga dos Santos"
+	desc = "POLITICS_ARLINDO_VEIGA_DOS_SANTOS_DESC"
+	picture = "Arlindo_Veiga_dos_Santos.dds"
+	expire = "1965.1.1"
+	ideology = national_unitarist_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Isidoro Dias Lopes"
+	desc = "POLITICS_ISIDORO_DIAS_LOPES_DESC"
+	picture = "Isidoro_Dias_Lopes.dds"
+	expire = "1965.1.1"
+	ideology = despotist_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Júlio Prestes"
+	desc = "POLITICS_JULIO_PRESTES_DESC"
+	picture = "Julio_Prestes.dds"
+	expire = "1965.1.1"
+	ideology = authoritarian_democrat_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Antônio Carlos Ribeiro de Andrada"
+	desc = "POLITICS_ANTONIO_CARLOS_RIBEIRO_DE_ANDRADA_DESC"
+	picture = "Antonio_Carlos_Ribeiro_de_Andrada.dds"
 	expire = "1965.1.1"
 	ideology = social_conservative_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Valdemar Ferreira"
+	desc = "POLITICS_VALDEMAR_FERREIRA_DESC"
+	picture = "Valdemar_Ferreira.dds"
+	expire = "1965.1.1"
+	ideology = market_liberal_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Cleto da Costa Campelo Filho"
+	desc = "POLITICS_CLETO_DA_COSTA_CAMPELO_FILHO_DESC"
+	picture = "Cleto_da_Costa_Campelo_Filho.dds"
+	expire = "1965.1.1"
+	ideology = social_liberal_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Lindolfo Collor"
+	desc = "POLITICS_LINDOLFO_COLLOR_DESC"
+	picture = "Lindolfo_Collor.dds"
+	expire = "1965.1.1"
+	ideology = social_democrat_ideology
+	traits = {
+		#
+	}
+}
+
+#create_country_leader = {
+#	name = "Edgard Leuenroth"
+#	desc = "POLITICS_EDGARD_LEUENROTH_DESC"
+#	picture = "Edgard_Leuenroth.dds"
+#	expire = "1965.1.1"
+#	ideology = libertarian_ideology
+#	traits = {
+#		#
+#	}
+#}
+
+create_country_leader = {
+	name = "Luís Carlos Prestes"
+	desc = "POLITICS_LUIS_CARLOS_PRESTES_DESC"
+	picture = "Luis_Carlos_Prestes.dds"
+	expire = "1965.1.1"
+	ideology = radical_socialist_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Antonio Maciel Bonfim"
+	desc = "POLITICS_ANTONIO_MACIEL_BONFIM_DESC"
+	picture = "Antonio_Maciel_Bonfim.dds"
+	expire = "1965.1.1"
+	ideology = communist_ideology
 	traits = {
 		#
 	}

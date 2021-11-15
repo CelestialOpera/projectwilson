@@ -12,6 +12,10 @@ set_country_flag = monroe_doctrine
 set_war_support = 0.1
 set_convoys = 5
 
+add_ideas = {
+	america_in_our_economy
+}
+
 set_politics = {
 	ruling_party = despotist
 	last_election = "1931.2.8"
