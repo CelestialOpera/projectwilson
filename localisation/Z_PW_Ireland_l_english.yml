@@ -36,4 +36,20 @@
  
  
  #Parties
+ IRE_national_unitarist_party:0 "Fine Gael(NGM)"
+ IRE_national_unitarist_party_long:0 "Fine Gael(National Guard Movement)"
  
+ IRE_authoritarian_democrat_party:0 "Fine Gael(C)"
+ IRE_authoritarian_democrat_party_long:0 "Fine Gael(Collinsites)"
+ IRE_social_conservative_party:0 "Fianna Fáil"
+ IRE_social_conservative_party_long:0 "Fianna Fáil"
+ 
+ 
+ IRE_social_democrat_party:0 "Labour"
+ IRE_social_democrat_party_long:0 "Labour Party"
+ IRE_libertarian_party:0 "CPI(LibComs)"
+ IRE_libertarian_party_long:0 "Communist Party of Ireland(Liberal Communists)"
+ IRE_radical_socialist_party:0 "CPI(Syndicalists)"
+ IRE_radical_socialist_party_long:0 "Communist Party of Ireland(Syndicalists)"
+ IRE_communist_party:0 "CPI(Leninists)"
+ IRE_communist_party_long:0 "Communist Party of Ireland(Leninists)"
