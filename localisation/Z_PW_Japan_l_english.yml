@@ -44,8 +44,8 @@
  JAP_despotist_party_long:0 "Tōseiha - Control Faction"
  JAP_authoritarian_democrat_party:0 "Seiyūkai"
  JAP_authoritarian_democrat_party_long:0 "Rikken Seiyūkai - Association of Friends of Constitutional Government"
- JAP_social_conservative_party:0 "Shōwakai"
- JAP_social_conservative_party_long:0 "Shōwakai - Shōwa Society"
+ JAP_social_conservative_party:0 "Seiyūkai(Moderate)"
+ JAP_social_conservative_party_long:0 "Rikken Seiyūkai Moderates"
  JAP_market_liberal_party:0 "Minseitō-K"
  JAP_market_liberal_party_long:0 "Rikken Minseitō(Kanryōha) - Constitutional Democratic Party(Bureaucrat Faction)"
  JAP_social_liberal_party:0 "Minseitō-T"
@@ -59,12 +59,18 @@
  JAP_communist_party:0 "Kyōsantō"
  JAP_communist_party_long:0 "Nihon Kyōsan-tō - Japanese Communist Party"
  
+ JAP_new_sun_society:0 "Nyūsansosaeti"
+ JAP_new_sun_society_long:0 "Nyūsansosaeti - New Sun Society"
+ 
  ##Events
  japan.1.t:0 "The Night of The Black Tulips"
  japan.1.d:0 "Smoke, not the first thing people want to smell in the morning outside their homes but for many around Tokyo that was what they got. The night before started out calm in the early evening until the late night meeting of the Imperial Diet where a draft of a bill to limit influence of factions within the Imperial Japanese Army and Navy was being discussed. As the house was getting ready to vote on the bill a soldier of the army ran into the chambers and shot at the podium where the Prime Minister sat fortunately for the PM missing every shot. After those shots however more shots could be heard from outside as the city began to come under fire. Radical dissenters of the army began to attack the city in an attempted coup of the parliamentary government, radical dissenters loyal to the Yangunipponsosaeti. Retaliation against them however was strong as the Tōseiha, a faction of the IJA launched their own offensive against the city and YNS control zones. Many thought that the state of battle would lead to the fall of democracy regardless of who won, at least until loyal forces within the IJA and IJN decided to take a stronger stand and push against the dissenting forces; however, the loyal forces were severally outmatched.\n\nFighting went on through the night, with bloodshed from both soldier and civilian being spilled as the two dissenting forces fought each other and the loyal forces towards the house of the Imperial Diet. The Diet went into lockdown as loyal forces commanded by Gengo Hyakutake managed to secure the house in early morning and advised the councilors to rest through the night. As the sun rose in the morning however, and gunfire became more sparse the ministers woke to a loud knock on the doors of the chambers and Admiral Hyakutake gave an okay to his men to open the doors, as they opened in walked the Emperor with..."
  japan.1.o1:0 "...Loyalists"
  japan.1.o2:0 "...Tetsuzan Nagata"
  japan.1.o3:0 "...Fumimaro Konoe"
+ japan.2.t:0 "Rise of A New Sun"
+ japan.2.d:0 "Once again smoke rose over Tokyo, but this time for something different. A small brigade of soliders believed to be loyal to the Yangunipponsosaeti and Fumimaro Konoe, turned their guns towards the Prime Ministers offices and raided it, executing aides and arrest the Prime Minister. In retaliation to the arrest, elements of the Yangunipponsosaeti truly loyal to their leader began to fight back and fighting broke out across the city, but these believed to be traitors did not fight fair. Eventually as the day came to a close, it was clear who had won, and it was not Konoe loyalists.\n\nSadao Araki surrounded by men in uniforms dawned with orange suns on their caps stood at a podium not far from the old office of Fumimaro Konoe and Sadao began a speech. Declaring Konoe to be the true traitor to the cause of the Young Nippon and the birth of the New Sun Society's reign over Japan, Japan would be fixed and set down the path to retain its position in the world and honor their ancestors, and emperor. Sadao in a show of force drew his ninjatō, grabbed the head of Fumimaro Konoe and slit his throat himself, declaring that he did not deserve the death of an honourable man, as a degenerate has no honour. At first their was silence, but as the fear began to kick into the crowd around, a wave of applause broke out. Many fear for what comes next, many fear they may not make it."
+ japan.2.o1:0 "The New Sun, Shall Never Set"
  
  japan_news.1.t:0 "Coup In Japan"
  japan_news.1.d:0 "A few nights ago in the middle of Tokyo, conflict broke out between factions of the Japanese military. The Night of The Black Tulips as it has been labeled saw the Authoritarian Tōseiha come to dominance in the political sphere of Japan as they occupied the city with approval from the Emperor himself. Tetsuzan Nagata, leader of the Tōseiha and now Prime Minister of Japan has advocated for the turn of Japan away from parliamentary democracy that is has been struggling through and towards an authoritarian military state under rule by the Emperor. Many are nervous about future developments."
@@ -78,3 +84,32 @@
  japan_news.3.d:0 "A few nights ago in the middle of Tokyo, conflict broke out between factions of the Japanese military. The Night of The Black Tulips as it has been labeled saw various loyalist groups outnumbered by enemies defend the government from the conspirators. While to many, it would seem impossible that these groups could stand strong, they took advantage of the two opposing factions fighting each other as well and as the sun rose over Tokyo the dissenters were put down. Prime Minister Hamaguchi Osachi addressed the nation over radio backed by the Emperor and Admiral Gengo Hyakutake, speaking how the Japanese Democracy stands strong against the reactionaries and the dissenters captured and those yet to be captured will be punished. Many are nervous about future developments."
  japan_news.3.o1:0 "Democracy Prevails.."
  japan_news.3.o2:0 "Democracy Forever!"
+ 
+ 
+ ##Flags
+ japan_night_of_black_tulips:0 "Night Of The Black Tulips"
+ japan_yangunipponsosaeti_success:0 "Yangunipponsosaeti Coup"
+ japan_toseihas_dawn:0 "Tōseiha Coup"
+ japan_government_holds:0 "Japanese Democracy Prevails"
+ cry_of_the_ancients_JAP:0 "Rise Of The New Sun"
+ japan_elections_held:0 "Elections Held 1936"
+ japan_soc_dems_win:0 "Social People's Party Wins Election"
+ japan_liberals_win:0 "Minseitō Wins Election"
+ japan_authdems_win:0 "Seiyūkai Wins Election"
+ #Ideologies
+ imperial_nipponism:0 ""
+ imperial_nipponism_desc:0 "Imperial Nipponism is the ideology of the Yangunipponsosaeti, holding up the importance of Japanese spiritualism above all else."
+ 
+ 
+ ##Focus
+ JAP_smoke_over_tokyo:0 "Smoke Over Tokyo"
+ JAP_smoke_over_tokyo_desc:0 ""
+ JAP_yangunipponsosaeti_rises:0 "Yangunipponsosaeti Rises"
+ JAP_yangunipponsosaeti_rises_desc:0 ""
+ 
+ 
+ JAP_democracy_prevails:0 "Democracy Prevails"
+ JAP_democracy_prevails_desc:0 ""
+ 
+ JAP_toseihas_take_over:0 "Tōseiha's Take Over"
+ JAP_toseihas_take_over_desc:0 ""

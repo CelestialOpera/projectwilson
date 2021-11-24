@@ -102,3 +102,118 @@ country_event = { #The Night of The Black Tulips
 		
 	}
 }
+
+
+country_event = { #Rise Of The New Sun
+	id = japan.2
+	title = japan.2.t
+	desc = japan.2.d
+	#picture = report_night_of_black_tulips
+	fire_only_once = yes
+	
+	trigger = {
+		tag = JAP
+		has_country_flag = japan_night_of_black_tulips
+		has_country_flag = japan_yangunipponsosaeti_success
+		check_variable = {
+			var = new_suns_anger
+			value = 2
+			compare = greater_than_or_equals
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 35
+	}
+	
+	option = { 
+		name = japan.2.o1
+		
+		set_country_flag = cry_of_the_ancients_JAP
+		add_stability = -0.15
+		
+		set_party_name = { 
+			ideology = national_unitarist 
+			long_name = JAP_new_sun_society_long
+			name = JAP_new_sun_society 
+		}
+		
+		create_country_leader = {
+			name = "Sadao Araki"
+			desc = "POLITICS_SADAO_ARAKI_DESC"
+			picture = "Sadao_Araki.dds"
+			expire = "1989.1.1"
+			ideology = imperial_nipponism
+			traits = {
+			}
+		}
+		
+	}
+	
+}
+
+country_event = { #Emergency Elections
+	id = japan.3
+	title = japan.3.t
+	desc = japan.3.d
+	#picture = report_night_of_black_tulips
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	#Minseito Wins Re-Election
+	option = { 
+		name = japan.3.o1
+		
+		set_country_flag = japan_liberals_win
+		
+		add_popularity = {
+			ideology = market_liberal
+			popularity = 0.05
+		}
+		
+		add_political_power = 50
+		
+	}
+	
+	#Seiyukai Wins Election
+	option = { 
+		name = japan.3.o2
+		
+		set_country_flag = japan_authdems_win
+		
+		set_politics = {
+			ruling_party = authoritarian_democrat
+			elections_allowed = no
+		}
+		
+		add_popularity = {
+			ideology = authoritarian_democrat
+			popularity = 0.10
+		}
+		
+		add_political_power = 50
+		
+	}
+	
+	#Social Peoples Party Wins Election
+	option = { 
+		name = japan.3.o3
+		
+		set_country_flag = japan_soc_dems_win
+		
+		set_politics = {
+			ruling_party = social_democrat
+			elections_allowed = no
+		}
+		
+		add_popularity = {
+			ideology = social_democrat
+			popularity = 0.05
+		}
+		
+		add_political_power = 50
+		
+	}
+	
+}

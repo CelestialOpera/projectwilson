@@ -610,6 +610,32 @@ ALB = {
 	callsigns = { }
 }
 
+KOS = {
+	male = {
+		names = { 
+			Ahmet Ali Azem Bajram Behxhet Davud Ekrem Elez Enver Eqrem
+			Esad Fatmir Fejzi Fiqri Gjergj Gjon Hasan Hashim Ibrahim Idhomene
+			Iliaz Ishak Ismail Izet Kara Kastriot Koçi Köpryly Kostaq Lekë
+			Maliq Marin Mehdi Musa Mustafa Pandeli Petro Qamil Qazim Ramush
+			Rexhep Shefqet Skënder Sulejman Tewfik Theofan Turhan Vasil Veton Xhafer
+		  }
+	}
+	female = {
+		names = { 
+			Gjylo Afërdita Blerta Bora Dafina Dardana Era Fatmire Flutura Gentiana Jehona Lindita Lule Luljeta Pranvera Shpresa 
+			Shqipe Teuta Venera Vera Vesa Yllka
+		}
+	}
+	surnames = { 
+		Ahmeti al-Albani Bardha Bazna "Bej Alizoti" "Bej Biçakçiu" "Bej Delvina" "Bej Frashëri" "Bej Libohova" "Bej Ndroque"
+		"Bej Prishtina" "Bej Verlaci" "Bej Vrioni" "Bej Ypi" "Bej Zogu" Belishi Burbank Bushati Buza Çabej
+		Çeku Dine Dragoti Dukagiini Dushku Evangjeli Feza Hoxha Islami Kadare
+		Koculi Konica Konushevci Kosturi Kota Logoreci Merlika-Kruja Mitrovica Mula Noli
+		"Pashë Përmeti" "Pashë Tepelena" "Pashë Toptani" Poga "Qemal Bej" Shahini Skiroi Thaçi Troja Xoxe
+	}
+	callsigns = { }
+}
+
 BUL = {
 	male = {
 		names = { 
@@ -1472,6 +1498,77 @@ IRQ = {
 	}
 	callsigns = { }
 }
+PAL = { # Palestine
+	male = {
+		names = {
+			"Abd Allah"
+			"Abd al-Karim"
+			"Abd al-Malik"
+			"Abd al-Qadir"
+			"Abd al-Rahman"
+			"Abu Bakr"
+			"Ahmad"
+			"Ali"
+			"Fawzi"
+			"Fuad"
+			"Halil"
+			"Hasan"
+			"Hisham"
+			"Ibrahim"
+			"Ishaq"
+			"Iskandar"
+			"Ja'far"
+			"Jamal"
+			"Kamil"
+			"Khalid"
+			"Muhammad"
+			"Mustafa"
+			"Nur al-Din"
+			"Sa'd al-Din"
+			"Salim"
+			"Sa'ud"
+			"Shukri"
+			"Tawfiq"
+			"Umar"
+			"Uthman"
+			"Yahya"
+			"Yusuf"
+			"Zafir"
+		}
+	}
+	female = {
+		names = {
+			Ihsan Marwa Aisha Aziza Duha Farida Golbahar Gulnar Gulnaz Gulpari Hafsa Hasti Huma Ibtisam Jalila Kamala
+			Karima Khandan Khaterah Khatira Kinah Lala Madiha Mahdokht Nazy Neelab Negar Niki Nikoo Noushin Rabiya
+			Mahsa Mahwash Marwa Mastana Mehri Mina Minoo Munawwar Muzhdah Nahal Najela Nasiba Nastaran Nazaneen
+			Rajiya Sadiya Salma Sitara Thana Zahra Zahra Zuhayra
+		}
+	}
+	surnames = {
+		"ibn Abd Allah"
+		"ibn Abd al-Qadir"
+		"ibn Abu Bakr"
+		"ibn Ahmad"
+		"ibn Ali"
+		"ibn Fuad"
+		"ibn Halil"
+		"ibn Hasan"
+		"ibn Hisham"
+		"ibn Ishaq"
+		"ibn Ja'far"
+		"ibm Kamil"
+		"ibn Khalid"
+		"ibn Muhammad"
+		"ibn Mustafa"
+		"ibn Salim"
+		"ibn Umar"
+		"ibn Uthman"
+		"ibn Yusuf"
+		"al-Najdi"
+		"al-Hijazi"
+	}
+	callsigns = {}
+}
 OMA = {
 	male = {
 		names = {
@@ -2092,23 +2189,23 @@ KAZ = {
 
 BUK = {
 	male = {
-		names = { 
-			Aibek Alikhan Alisher Arman Aslan Aybek Azat Bolat Bulat Erasyl Islam Makhmud Mukhamed Mukhammed Nurasyl Nurislam Nurzhan Ramazan Ruslan Rustam Serik Shamil Sukhrab Talgat Temir Timur
+		names = {
+			Abbos "Abdug'ani" Abdulla Abdurahmin Abdurahmon Abdurashid Abdusalom Abduseit Ahamdjon Anvar Arslon Azamat Azizbek Bahodir Bakhretdin "Bo'ri" Botir Dilshod Djavohir Elshod Ergash Farhod Fathullo Habibullo Ibrohim
+			Ilhom Ishoq Ismoil Jahon Jahongir Jiyan "Jo'ra" Jurabek Mamur Mirzo Muhammadjon Muhammadkarim Mukhammad Murod Nosir Nuriddin Odil "Po'lat" Rahmatillo Rakhim Ravshan Ravshanbek Rishod "Sa'dulla" Samandar Sayfuddin
+			Sayfullo Shavkat Sherzod Shuhrat Sobir Suhrob Tohir Tursunmurod "Ulug'bek" Utkirbek Yoqub Yunusbek Zokir
 		}
 	}
-	
 	female = {
 		names = {
-			Aiday Aiman Aina Aliya Anar Anara Anargul Aruzhan Ayaulym Ayna Aynur Bibigul Gulnar Gulnara Gulnaz Inkar Inzhu Madina Saltanat Sezim Zhuldyz
+			Adolat Akgul Anora Azaliya Chinara Gulchekhra Gulya Guylchekhra Jamola Jiyan Lola Muhabbat Munisa Nigina Nigora Nozima Olma Oltingul Ravshana Ruhsora Tomyris Yulduza Zamira Ziroatkhon Ziyoda Zuhro Zulfiya
 		}
 	}
-
 	surnames = {
-		Abaev Abdulayev Abdulin Adelzhanov Aibekov Aitmukhambetov Akhmetov Aliev Alikhanov Alimov Aliyev Almatyev Amangeldiev Amirov Aruzhanov Astana Asylmuratov Aubakirov Aybekov Azizov Babaev Baizhanov Bolatov Erjanov Erzhanov
-		Ibragimov Idrisov Isaev Iskakov Islamov Ismailov Kadyrov Karimov Kasymov Khasanov Kudaibergenov Kurbanov Kusainov Maksatov Malzagov Mendygaliev Musaev Mustafin Nazarbayev Niyazov Niyazymbetov Nurasylov Nurgaliev Nurislamov
-		Nursultanov Nurzhanov Omarov Ospan Rakhimov Ramadanov Ramazanov Rasulov Salimov Sapiyev Sarsenbaev Sarsenov Serikbaev Serikov Sharipov Shumenov Sultanbekov Sultanov Sydykov Talgatov Tazhibaev Temirov Tursynbekov Umarov
-		Usmanov Yuldashev Ynusov Yusupov Zhanibekov Zhaparov Zhumabekov Zhunusov Zhusupov
+		Abaev Abbasov Abdulatipov Abdulin Abdullaev Abdulov Abdurakhmanov Abdurashidov Akbarov Akhtaov Akhmadiev Aliev Alimor Amirov Atoev Azamatov Azizov Babaev Boqiev Burkhanov Cheryazov Choriev Ergashev Hamidov Haydarov
+		Ibragimov Idrisov Isaev Islambekov Islamov Jalilov "Jo'rayev" Jumaniyozov Juraev Kadyrov Karimov Kasymov Khasanov Kurbanov Majidov Mamurov Murodov Musaev Mustafin Niyazov Nuraliev Qurbonov Rakhimonv Ramazon Rasulov
+		Ravshanov Sadykov Saidov Saipov Salamov Samandarov Sharipov Sheraliev Sobirov Sulaymanov Sultanbekov Sultanov Umarov Usmanov Yoldoshov Yunusov Yusufov Yusupov
 	}
+	callsigns = {}
 }
 
 PNG = {
@@ -4653,6 +4750,349 @@ IND = {
 	}
 	callsigns = { }
 }
+VIN = {
+	male = {
+		names = {
+			"Hai Cong"
+			"Thanh Qui"
+			"Hy Huu"
+			"Kien"
+			"Hang Xuan"
+			"Kha Manh"
+			"Vien Qui"
+			"Thang Duc"
+			"Phoung Qui"
+			"Mai Qui"
+			"Minh Dinh"
+			"Co Xuan"
+			"Quyen Manh"
+			"Kieu Huu"
+			"Mac"
+			"Quang"
+			"Bien"
+			"Dieu Trong"
+			"Tieu"
+			"Hoang"
+			"Huynh Huu"
+			"Lo"
+			"Nguy Manh"
+			"Tang Ngoc"
+			"Voung"
+			"Nhan Duc"
+			"Tu Xuan"
+			"Tien Ngoc"
+			"Bo Ngoc"
+		}
+	}
+	female = {
+		names = {
+			"Tuan Thi"
+			"Trinh Thi Hong"
+			"Dong"
+			"Than"
+			"Ba Thi"
+			"Hang Ngoc"
+			"Phang Thi"
+			"Thai"
+			"Hoang"
+			"Diep Thi"
+			"Cam"
+			"Trinh Thi"
+			"Minh"
+			"Bien Thi"
+			"Phong Thi"
+			"Che"
+			"Ton Thi"
+			"Tieu"
+			"Cong"
+			"Voung Thi"
+		}
+	}
+	surnames = {
+		"Lan"
+		"Giang"
+		"Huy"
+		"De"
+		"Trieu"
+		"An"
+		"Minh"
+		"Diem"
+		"Thu"
+		"Chinh"
+		"Nhat"
+		"Khan"
+		"Tho"
+		"Thang"
+		"Quan"
+		"Duc"
+		"Huy"
+		"Thao"
+		"Vien"
+		"Phuc"
+		"Gia"
+		"Tu"
+		"Hien"
+		"Quoc"
+		"Dien"
+		"Ngyuen"
+		"Bich"
+		"Hanh"
+		"Anh"
+		"Truc"
+		"Lien"
+		"Thuy"
+		"Hyunh"
+		"Linh"
+		"My"
+		"Chau"
+		"Xuan"
+		"Giang"
+		"Nu"
+		"Thanh"
+		"Phoung"
+		"Van"
+	}
+	callsigns = {}
+}
+LAO = {
+	male = {
+		names = {
+			"Teyvada"
+			"Phonesavanh"
+			"Maik"
+			"Havika"
+			"Keoki"
+			"Kye"
+			"Kalani"
+			"Kimo"
+			"Kanoa"
+			"Somphone"
+			"Ikaika"
+			"Liko"
+			"Bane"
+			"Kale"
+			"Noi"
+			"Malo"
+			"Keola"
+			"Aulii"
+			"Moke"
+			"Makan"
+			"Leilani"
+			"Phetdum"
+			"Konala"
+			"Keanu"
+			"Keahi"
+			"Saravan"
+		}
+	}
+	female = {
+		names = {
+			"Kieli"
+			"Phetmany"
+			"Kailea"
+			"Halia"
+			"Aloha"
+			"Oke"
+			"Leilanie"
+			"Kalaina"
+			"Ani"
+			"Alani"
+			"Noma"
+			"Nani"
+			"Laya"
+			"Khampheng"
+			"Alika"
+			"Onaona"
+		}
+	}
+	surnames = {
+		"Khouphongsy"
+		"Phaophanit"
+		"Sisoulith"
+		"Phrasavath"
+		"Thepsenavong"
+		"Souvannaphouma"
+		"Manwilaivong"
+		"Kittiphan"
+		"Phoutthasinh"
+		"Saenbouthalath"
+		"Savang"
+		"Saenthavisouk"
+		"Saysamongdy"
+		"Keopraseuth"
+		"Oudomphonh"
+		"Kethavongsa"
+		"Chereune"
+		"Saysanasy"
+		"Phakham"
+		"Virasongs"
+		"Vorachith"
+		"Ketthavong"
+		"Thammavong"
+		"Bouphavanh"
+		"Malaythong"
+		"Syvongsa"
+		"Pakdimounivong"
+		"Thiamphasome"
+	}
+	callsigns = {}
+}
+
+CAM = {
+	male = {
+		names = {
+			"Heang"
+			"Thith"
+			"Um"
+			"Khun"
+			"Khoun"
+			"Chhet"
+			"Kim"
+			"Mok"
+			"Khin"
+			"Chhay"
+			"San"
+			"Yim"
+			"Sang"
+			"Mak"
+			"Rous"
+			"Aek"
+			"Chin"
+			"So"
+			"Toch"
+			"Prum"
+			"Chen"
+			"Khiev"
+			"Uk"
+			"Im"
+			"Mao"
+			"Say"
+			"Khan"
+			"Hong"
+			"Prum"
+			"Mul"
+			"Mean"
+			"Jan"
+			"Em"
+			"Uch"
+			"Aok"
+			"Sin"
+			"Chan"
+			"Chea"
+			"Dara"
+			"Makara"
+			"Phirun"
+			"Pich"
+			"Samnang"
+			"Sophea"
+			"Sopheap"
+			"Soth"
+			"Sothy"
+			"Vanna"
+			"Veasna"
+			"Vibol"
+		}
+	}
+	female = {
+		names = {
+			"Kim"
+			"Ty"
+			"Chouen"
+			"Khun"
+			"Voeum"
+			"Touch"
+			"Phon"
+			"Eav"
+			"Neak"
+			"Mon"
+			"Tum"
+			"Prum"
+			"Sar"
+			"Lorn"
+			"Um"
+			"Chey"
+			"Hun"
+			"Thith"
+			"Phann"
+			"Bopha"
+			"Botum"
+			"Chan"
+			"Channary"
+			"Chantrea"
+			"Chea"
+			"Chinda"
+			"Dara"
+			"Kolab"
+			"Makara"
+			"Kunthea"
+			"Pich"
+			"Samnang"
+			"Sophea"
+			"Sopheap"
+			"Sothy"
+			"Sovanna"
+			"Tola"
+			"Vanna"
+			"Veasna"
+		}
+	}
+	surnames = {
+		"Chea"
+		"Sann"
+		"Boran"
+		"Anchaly"
+		"Mao"
+		"Chann"
+		"Rottana"
+		"Sorya"
+		"Sopath"
+		"Sothea"
+		"Sopheap"
+		"Darany"
+		"Chantou"
+		"Samrin"
+		"Visna"
+		"Phirum"
+		"Mittapheap"
+		"Davuth"
+		"Bona"
+		"Sokha"
+		"Nhean"
+		"Vichear"
+		"Arun"
+		"Pich"
+		"Poue"
+		"Samang"
+		"Phala"
+		"Samnang"
+		"Meaker"
+		"Prek"
+		"Misay"
+		"Narith"
+		"Rith"
+		"Makara"
+		"Toch"
+		"Nary"
+		"Sokhanya"
+		"Chhorvon"
+		"Chhaya"
+		"Kaliyan"
+		"Pheakkley"
+		"Setha"
+		"Kolthida"
+		"Sros"
+		"Sreypich"
+		"Rotttana"
+		"Rachany"
+		"Phary"
+		"Da"
+		"Rathana"
+		"Thyda"
+		"Kannareth"
+		"Soboen"
+	}
+	callsigns = {}
+}
 #Ukraine
 UKR = {
 	male = {
@@ -4703,4 +5143,123 @@ ARM = {
 	surnames = {
 		Aharonian Adontz Arshakuni Artashesian Assarian Aviet Azatyan Babaian Babalian Bagratuni Bakunts Banaian Boshian Boyajian Esmerian Gamburyan Gamerikian Hakobjanian Hintlian Ishkhanian Kajaznuni Kasabian Kasparian Khachatourian Khatisan Khorenatsi Krikorian Mamikonian Manoogian Manvelian Markarian Minassian Mirzoyan Narcessian Nzhdeh Ohanjanyan Pashayan Petrosian Pilosyan Rodnoian Sahakyan Samuelian Sarian Sasounyan Seropian Shirakatsi Shiraz Skendarian Suzmeyan Tatiossian Tigranyan Tovmasian Tumanian Yeghiayan Yerevanian Zakaryan Zornakyan
 	}
+}
+
+AZR = {
+	male = {
+		names = {
+			"Ibrahim"
+			"Muhammad"
+			"Ibrahim"
+			"Farrukhsiyar"
+			"Khalil"
+			"Bahram"
+			"Farrukhsiyar"
+			"Ghazi"
+			"Farrukhsiyar"
+			"Mahmud"
+			"Ghazi"
+			"Eldar"
+		}
+	}
+	female = {
+		names = {
+			"Malahat"
+			"Amsha"
+			"Asiya"
+			"Faghira"
+			"Habiba"
+			"Hanifa"
+			"Jahaira"
+			"Kamala"
+			"Layla"
+			"Maryam"
+			"Nafisa"
+			"Nyawela"
+			"Parand"
+			"Aaliyah"
+			"Aamina"
+			"Aamira"
+			"Aaqila"
+			"Aarifa"
+			"Aazzi"
+			"Adelah"
+			"Adela"
+			"Adiba"
+			"Adilah"
+			"Adilia"
+			"Adiva"
+			"Adjan"
+			"Aeesha"
+			"Adila"
+			"Ikram"
+		}
+	}
+	surnames = {
+		"Abbasov"
+		"Abdulayev"
+		"Abdulin"
+		"Abdullayev"
+		"Abdulov"
+		"Abiyev"
+		"Afandiyev"
+		"Aghayev"
+		"Ahmadov"
+		"Alakbarov"
+		"Alasgarov"
+		"Aliyev"
+		"Arablinski"
+		"Asgarov"
+		"Aslanov"
+		"Babayev"
+		"Gambarov"
+		"Garayev"
+		"Gasimov"
+		"Gaziyev"
+		"Gharabaghi"
+		"Guliyev"
+		"Hajiyev"
+		"Huseynov"
+		"Ibragimov"
+		"Iravani"
+		"Kazimov"
+		"Khalilov"
+		"Mammadbeyov"
+		"Mammadov"
+		"Nabiyev"
+		"Orujov"
+		"Salmanov"
+		"Samedov"
+		"Sharifov"
+		"Valiyev"
+		"Vazirov"
+		"Zadeh"
+	}
+	callsigns = {}
+}
+
+TRA = {
+	male = {
+		names = {
+			Adelin Adita Aleodor Alexie Anastasiu Andi Antim Aristip Atanasie Auras Avraam Banel Basarab Benone Bradut Bucur Calinic Cantemir Cazimir Cerber Chivu Codrin Codru Corvin Cozmin Cristea Danubian Dascalu Deliu Dida
+			Diogene Dorinel Ecaterin Egeu Elefteriu Elisei Emanuil Epimeteu Eugeniu Evarist Fanurie Francisc Gavra Gelu Gherasim Gigel Gogu Gruia Horasiu Hygin Ibi Ieremia Ignatie Ilian Ionica Iorghu Ireneu Isac Iulica Larion
+			Lazar Leontin Leucip Manolache Marku Minodor Morfeu Mugurel Nazdravan Nestorie Nicoara Nicolaie Nistor Octav Olimpiu Pahomie Patriciu Perseu Petrisor Policarp Proteu Raca Raducu Robertino Romul Scarlat Sebi Silvian
+			Sofronie Sorinel Stoian Teodosie Tibi Urie Vasaru Victoras Vintila Vitalie Vraja Zamfir
+		}
+	}
+	female = {
+		names = {
+			Adelin Adorata Agripina Alexandreina Ancuta Anduta Anemona Anicuta Antoaneta Antuza Anuta Artemisa Atanasia Aurica Biancamaria Brindusa Casandra Catinca Cazimira Cerasella Chiva Claudela Coca Codruta Coralia Costinela
+			Craita Daiana Dariana Davia Dida Dochia Domnita Doriana Drosida Dumitrana Edviga Eufrosina Evdochia Felicea Floare Florenta Fridolina Gavra GEnovieva Gheorghita Gherghina Gladiola Hariclea Iarina Ibi Icuta Ildico
+			Iosefina Izabela Lacramioara Lalea Lioara Liuba Lorelai Lorina Lucretia Malina Marieta Mariuta Medeea Miana Miliana Minela Mirabela Natasa Nicuta Ninela Nuti Olia Ovidia Paladia Parasceva Paraschiva Patricea Pepina
+			Petruta Raca Rasela Relia Rodica Rucsandra Scolastica Septimia Sevastiana Sibila Simina Smaranda Sorana Sorinna Stanca Stefana Steluta Taisia Tancuta Tanta Teodorina Tincuta Tudora Vaduny Vladia Voica Voislava Zanovia
+			Zincuta
+		}
+	}
+	surnames = {
+		Adamescu Aldea Andrei Anestin Baciu Balitiu Barbu Biolan Blaga Boldea Borsan Branza Butucel Cazacu "Cel Tradat" Ciobanu Ciubotaru Codreanu Comaneci Comanici Costea Costiniu Creanga Dagau Dantis Dinu Dracula Dragan Enescu
+		Evian Fising Floarea Ghibasan Gilca Hila Iliese Ion Iorgovan Ivas Kohlrus Lacusta Lazarescu Lupescu Maior Manole Marandici Marin Matei Mihai Mitrea Murea Murgulescu Nastaca Nedelcu Nistor Onofrei Palarie Pogonat Popa
+		Pricop Prosie Puscas Radu Roman Ruican Segarceanu Soryan Stefanescu Suta Tanase Tarniceriu Tchaikova Tessler Timmar Ungureanu Vacarescu Vlad Vulpe Zamfir Zugravescu
+	}
+	callsigns = {}
 }

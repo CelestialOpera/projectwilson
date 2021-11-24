@@ -188,7 +188,7 @@ create_country_leader = {
 	desc = "POLITICS_FUMIMARO_KONOE_DESC"
 	picture = "Fumimaro_Konoe.dds"
 	expire = "1989.1.1"
-	ideology = national_unitarist_ideology
+	ideology = imperial_nipponism
 	traits = {
 	}
 }
@@ -204,11 +204,81 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "Suzuki Kisaburō"
+	desc = "POLITICS_SUZUKI_KISABURO_DESC"
+	picture = "Suzuki_Kisaburo.dds"
+	expire = "1989.1.1"
+	ideology = authoritarian_democrat_ideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Tokonami Takejirō"
+	desc = "POLITICS_TOKONAMI_TAKEJIRO_DESC"
+	picture = "Tokonami_Takejiro.dds"
+	expire = "1989.1.1"
+	ideology = social_conservative_ideology
+	traits = {
+	}
+}
+
+create_country_leader = {
 	name = "Hamaguchi Osachi"
 	desc = "POLITICS_HAMAGUCHI_OSACHI_DESC"
 	picture = "Hamaguchi_Osachi.dds"
 	expire = "1989.1.1"
 	ideology = market_liberal_ideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Hamaguchi Osachi"
+	desc = "POLITICS_HAMAGUCHI_OSACHI_DESC"
+	picture = "Hamaguchi_Osachi.dds"
+	expire = "1989.1.1"
+	ideology = social_liberal_ideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Saitō Takao"
+	desc = "POLITICS_SAITO_TAKAO_DESC"
+	picture = "Saito_Takao.dds"
+	expire = "1989.1.1"
+	ideology = social_democrat_ideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = ""
+	desc = "POLITICS_DESC"
+	picture = "Empty_Leadership.dds"
+	expire = "1989.1.1"
+	ideology = libertarian_ideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Ikuo Oyama"
+	desc = "POLITICS_IKUO_OYAMA_DESC"
+	picture = "Ikuo_Oyama.dds"
+	expire = "1989.1.1"
+	ideology = radical_socialist_ideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Yoshio Shiga"
+	desc = "POLITICS_YOSHIO_SHIGA_DESC"
+	picture = "Yoshio_Shiga.dds"
+	expire = "1989.1.1"
+	ideology = communist_ideology
 	traits = {
 	}
 }

@@ -2354,4 +2354,24 @@ spriteTypes = {
 		name = "GFX_focus_TUR_loosen_the_laws_on_secularism"
 		texturefile = "gfx/interface/goals/focus_TUR_loosen_the_laws_on_secularism.dds"
 	}
+	
+	SpriteType = { 
+		name = "GFX_toseiha_takeover"
+		texturefile = "gfx/interface/goals/toseiha_takeover.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_young_nippon_takeover"
+		texturefile = "gfx/interface/goals/young_nippon_takeover.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_democracy_prevails_JAP"
+		texturefile = "gfx/interface/goals/democracy_prevails_JAP.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_smoke_in_tokyo"
+		texturefile = "gfx/interface/goals/smoke_in_tokyo.dds"
+	}
 }

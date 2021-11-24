@@ -1,0 +1,1058 @@
+﻿focus_tree = {
+	id = japanese_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = JAP
+		}
+	}
+	
+	
+	continuous_focus_position = { x = 0 y = 10000 }
+	
+	
+	focus = {
+		id = JAP_smoke_over_tokyo
+		icon = GFX_smoke_in_tokyo
+		x = 15
+		y = 0
+
+		cost = 1
+		
+		#bypass = {
+		#	date < 2010.01.01
+		#}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+			has_country_flag = japan_night_of_black_tulips
+		}
+		#bypass = {
+		#	has_country_flag = 
+		#}
+
+		completion_reward = {
+			add_political_power = -50
+		}
+	}
+	
+	focus = {
+		id = JAP_yangunipponsosaeti_rises
+		icon = GFX_young_nippon_takeover
+		x = -5
+		y = 1
+		relative_position_id = JAP_smoke_over_tokyo
+
+		cost = 2
+		prerequisite = { focus = JAP_smoke_over_tokyo }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+			has_country_flag = japan_yangunipponsosaeti_success
+		}
+		bypass = {
+			has_country_flag = japan_yangunipponsosaeti_success
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = JAP_execute_the_diet
+		#icon = GFX_focus_generic_little_entente
+		x = -7
+		y = 2
+		relative_position_id = JAP_smoke_over_tokyo
+
+		cost = 5
+		prerequisite = { focus = JAP_yangunipponsosaeti_rises }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+		}
+
+		completion_reward = {
+			#Event
+		}
+	}
+	
+	focus = {
+		id = JAP_rial_up_the_people
+		#icon = GFX_focus_generic_little_entente
+		x = -5
+		y = 2
+		relative_position_id = JAP_smoke_over_tokyo
+
+		cost = 5
+		prerequisite = { focus = JAP_yangunipponsosaeti_rises }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+		}
+
+		completion_reward = {
+			#PP and stability??? Maybeeee event?? 
+			#Definitely Popularity
+		}
+	}
+	
+	focus = {
+		id = JAP_arrest_toseiha_leaders
+		#icon = GFX_focus_generic_little_entente
+		x = -3
+		y = 2
+		relative_position_id = JAP_smoke_over_tokyo
+
+		cost = 5
+		prerequisite = { focus = JAP_yangunipponsosaeti_rises }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+		}
+
+		completion_reward = {
+			#Event
+		}
+	}
+	
+	focus = {
+		id = JAP_consolidate_konoes_rule
+		#icon = GFX_focus_generic_little_entente
+		x = -5
+		y = 3
+		relative_position_id = JAP_smoke_over_tokyo
+
+		cost = 10
+		prerequisite = { focus = JAP_execute_the_diet }
+		prerequisite = { focus = JAP_rial_up_the_people }
+		prerequisite = { focus = JAP_arrest_toseiha_leaders }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+			NOT = {
+				has_country_flag = cry_of_the_ancients_JAP
+			}
+		}
+
+		completion_reward = {
+			#This event will have an event about purging members of the YNS accused of degeneracy by others (others being New Sun Society members) 
+			#If Konoe does not purge them for his consolidation, then it enables the path to the NSS taking over.
+			#If the path is opened and two of the next three are chosen softely then the NSS will take over.
+		}
+	}
+	
+	focus = {
+		id = JAP_end_multiparty_mob_rule
+		#icon = GFX_focus_generic_little_entente
+		x = -7
+		y = 4
+		relative_position_id = JAP_smoke_over_tokyo
+
+		cost = 5
+		prerequisite = { focus = JAP_consolidate_konoes_rule }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+			NOT = {
+				has_country_flag = cry_of_the_ancients_JAP
+			}
+		}
+
+		completion_reward = {
+			#This event will have more then one option, one being to arrest all members of other parties and executing them, one is banning said parties with state enforcement. The third option may be to arrest leaders and ban the parties.
+			#The first and last option is enough to quell the NSS
+		}
+	}
+	
+	focus = {
+		id = JAP_question_of_state_shintoism
+		#icon = GFX_focus_generic_little_entente
+		x = -5
+		y = 4
+		relative_position_id = JAP_smoke_over_tokyo
+
+		cost = 5
+		prerequisite = { focus = JAP_consolidate_konoes_rule }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+			NOT = {
+				has_country_flag = cry_of_the_ancients_JAP
+			}
+		}
+
+		completion_reward = {
+			#Two options, either establish State Shintoism with enforcement or mold the doctrine of State Shintoism without heavy enforcement.
+			#The first option can be used to quell the NSS from couping
+		}
+	}
+	
+	focus = {
+		id = JAP_execute_unloyals
+		#icon = GFX_focus_generic_little_entente
+		x = -3
+		y = 4
+		relative_position_id = JAP_smoke_over_tokyo
+
+		cost = 5
+		prerequisite = { focus = JAP_consolidate_konoes_rule }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+			NOT = {
+				has_country_flag = cry_of_the_ancients_JAP
+			}
+		}
+
+		completion_reward = {
+			#In a show of force, action needs to be taken against those who are protesting the government. Some suggest extreme measures with gassing the crowds and using machien gun fire to prevent escapees.
+			#The other suggestion is to offer concessions in the form of welfare, while cleaning up the remaining few
+			#You NEED to pick the first option, otherwise it adds 2 to the count of NSS coup meter and that is enough for them to take over. This is the only one that needs to be picked unless Konoe purged the degenerates in the YNS
+			#If Konoe did the purge, and offers concessions, the NSS will coup, it will be dirty.
+			#Events will talk about how the Gassing and gun fire happen anyways
+			#Konoe attempts to stop it, but the YNS guards detain him
+		}
+	}
+	
+	focus = {
+		id = JAP_japanese_futurism
+		#icon = GFX_focus_generic_little_entente
+		x = -6
+		y = 5
+		relative_position_id = JAP_smoke_over_tokyo
+
+		cost = 5
+		prerequisite = { focus = JAP_end_multiparty_mob_rule }
+		prerequisite = { focus = JAP_question_of_state_shintoism }
+		prerequisite = { focus = JAP_execute_unloyals }
+		mutually_exclusive = {
+			focus = JAP_japanese_moralism
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+			NOT = {
+				has_country_flag = cry_of_the_ancients_JAP
+			}
+		}
+
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = JAP_japanese_moralism
+		#icon = GFX_focus_generic_little_entente
+		x = -4
+		y = 5
+		relative_position_id = JAP_smoke_over_tokyo
+
+		cost = 5
+		prerequisite = { focus = JAP_end_multiparty_mob_rule }
+		prerequisite = { focus = JAP_question_of_state_shintoism }
+		prerequisite = { focus = JAP_execute_unloyals }
+		mutually_exclusive = {
+			focus = JAP_japanese_futurism
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+			NOT = {
+				has_country_flag = cry_of_the_ancients_JAP
+			}
+		}
+
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = JAP_revolutionary_shintoist_nationalism
+		#icon = GFX_focus_generic_little_entente
+		x = -6
+		y = 6
+		relative_position_id = JAP_smoke_over_tokyo
+
+		cost = 5
+		prerequisite = { focus = JAP_japanese_futurism }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+			NOT = {
+				has_country_flag = cry_of_the_ancients_JAP
+			}
+		}
+
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = JAP_crackdown_on_dangerous_religions
+		#icon = GFX_focus_generic_little_entente
+		x = -4
+		y = 6
+		relative_position_id = JAP_smoke_over_tokyo
+
+		cost = 5
+		prerequisite = { focus = JAP_japanese_moralism }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+			NOT = {
+				has_country_flag = cry_of_the_ancients_JAP
+			}
+		}
+
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = JAP_an_ethnic_monolith
+		#icon = GFX_focus_generic_little_entente
+		x = -7
+		y = 7
+		relative_position_id = JAP_smoke_over_tokyo
+
+		cost = 5
+		prerequisite = { focus = JAP_revolutionary_shintoist_nationalism }
+		prerequisite = { focus = JAP_crackdown_on_dangerous_religions }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+			NOT = {
+				has_country_flag = cry_of_the_ancients_JAP
+			}
+		}
+
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = JAP_dawn_of_a_new_sun
+		#icon = GFX_focus_generic_little_entente
+		x = -5
+		y = 7
+		relative_position_id = JAP_smoke_over_tokyo
+
+		cost = 5
+		prerequisite = { focus = JAP_revolutionary_shintoist_nationalism }
+		prerequisite = { focus = JAP_crackdown_on_dangerous_religions }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+			NOT = {
+				has_country_flag = cry_of_the_ancients_JAP
+			}
+		}
+
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = JAP_empower_pan_asianism
+		#icon = GFX_focus_generic_little_entente
+		x = -3
+		y = 7
+		relative_position_id = JAP_smoke_over_tokyo
+
+		cost = 5
+		prerequisite = { focus = JAP_revolutionary_shintoist_nationalism }
+		prerequisite = { focus = JAP_crackdown_on_dangerous_religions }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+			NOT = {
+				has_country_flag = cry_of_the_ancients_JAP
+			}
+		}
+
+		completion_reward = {
+		
+		}
+	}
+	
+	##Democracy
+	
+	focus = {
+		id = JAP_democracy_prevails
+		icon = GFX_democracy_prevails_JAP
+		x = 0
+		y = 1
+		relative_position_id = JAP_smoke_over_tokyo
+
+		cost = 2
+		prerequisite = { focus = JAP_smoke_over_tokyo }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+			has_country_flag = japan_government_holds
+		}
+		bypass = {
+			has_country_flag = japan_government_holds
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = JAP_crackdown_on_dissenting_pockets
+		#icon = GFX_focus_generic_little_entente
+		x = -1
+		y = 2
+		relative_position_id = JAP_smoke_over_tokyo
+
+		cost = 5
+		prerequisite = { focus = JAP_democracy_prevails }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+		}
+		
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = JAP_hold_a_grand_trial
+		#icon = GFX_focus_generic_little_entente
+		x = 1
+		y = 2
+		relative_position_id = JAP_smoke_over_tokyo
+
+		cost = 5
+		prerequisite = { focus = JAP_democracy_prevails }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+		}
+		
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = JAP_meet_with_the_emperor
+		#icon = GFX_focus_generic_little_entente
+		x = -1
+		y = 3
+		relative_position_id = JAP_smoke_over_tokyo
+
+		cost = 5
+		prerequisite = { focus = JAP_crackdown_on_dissenting_pockets }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+		}
+		
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = JAP_hold_zaibatsus_accountable
+		#icon = GFX_focus_generic_little_entente
+		x = 1
+		y = 3
+		relative_position_id = JAP_smoke_over_tokyo
+
+		cost = 5
+		prerequisite = { focus = JAP_hold_a_grand_trial }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+		}
+		
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = JAP_dissolve_imperial_diet
+		#icon = GFX_focus_generic_little_entente
+		x = 0
+		y = 4
+		relative_position_id = JAP_smoke_over_tokyo
+
+		cost = 5
+		prerequisite = { focus = JAP_meet_with_the_emperor }
+		prerequisite = { focus = JAP_hold_zaibatsus_accountable }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+		}
+		
+
+		completion_reward = {
+			
+		}
+	}
+	
+	###Toseiha
+	
+	focus = {
+		id = JAP_toseihas_take_over
+		icon = GFX_toseiha_takeover
+		x = 5
+		y = 1
+		relative_position_id = JAP_smoke_over_tokyo
+
+		cost = 2
+		prerequisite = { focus = JAP_smoke_over_tokyo }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+			has_country_flag = japan_toseihas_dawn
+		}
+		bypass = {
+			has_country_flag = japan_toseihas_dawn
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = JAP_trial_against_the_yangunipponsosaeti
+		#icon = GFX_focus_generic_little_entente
+		x = 3
+		y = 2
+		relative_position_id = JAP_smoke_over_tokyo
+
+		cost = 5
+		prerequisite = { focus = JAP_toseihas_take_over }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = JAP_crackdown_on_socialism
+		#icon = GFX_focus_generic_little_entente
+		x = 5
+		y = 2
+		relative_position_id = JAP_smoke_over_tokyo
+
+		cost = 5
+		prerequisite = { focus = JAP_toseihas_take_over }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = JAP_suspend_the_diet
+		#icon = GFX_focus_generic_little_entente
+		x = 7
+		y = 2
+		relative_position_id = JAP_smoke_over_tokyo
+
+		cost = 5
+		prerequisite = { focus = JAP_toseihas_take_over }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = JAP_no_place_for_radicals_in_japan
+		#icon = GFX_focus_generic_little_entente
+		x = 4
+		y = 3
+		relative_position_id = JAP_smoke_over_tokyo
+
+		cost = 5
+		prerequisite = { focus = JAP_trial_against_the_yangunipponsosaeti }
+		prerequisite = { focus = JAP_crackdown_on_socialism }
+		prerequisite = { focus = JAP_suspend_the_diet }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = JAP_vilify_western_democracy
+		#icon = GFX_focus_generic_little_entente
+		x = 6
+		y = 3
+		relative_position_id = JAP_smoke_over_tokyo
+
+		cost = 5
+		prerequisite = { focus = JAP_trial_against_the_yangunipponsosaeti }
+		prerequisite = { focus = JAP_crackdown_on_socialism }
+		prerequisite = { focus = JAP_suspend_the_diet }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = JAP_imperial_education
+		#icon = GFX_focus_generic_little_entente
+		x = 5
+		y = 4
+		relative_position_id = JAP_smoke_over_tokyo
+
+		cost = 5
+		prerequisite = { focus = JAP_no_place_for_radicals_in_japan }
+		prerequisite = { focus = JAP_vilify_western_democracy }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = JAP_guidance_from_the_emperor
+		#icon = GFX_focus_generic_little_entente
+		x = 4
+		y = 5
+		relative_position_id = JAP_smoke_over_tokyo
+
+		cost = 7
+		prerequisite = { focus = JAP_imperial_education }
+		mutually_exclusive = { focus = JAP_the_emperors_aide }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = JAP_the_emperors_aide
+		#icon = GFX_focus_generic_little_entente
+		x = 6
+		y = 5
+		relative_position_id = JAP_smoke_over_tokyo
+
+		cost = 7
+		prerequisite = { focus = JAP_imperial_education }
+		mutually_exclusive = { focus = JAP_guidance_from_the_emperor }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = JAP_restore_the_diet_under_one_party #Restore The Diet, Under One Party
+		#icon = GFX_focus_generic_little_entente
+		x = 5
+		y = 6
+		relative_position_id = JAP_smoke_over_tokyo
+
+		cost = 5
+		prerequisite = { focus = JAP_guidance_from_the_emperor focus = JAP_the_emperors_aide }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = JAP_enshrine_bureaucracy
+		#icon = GFX_focus_generic_little_entente
+		x = 3
+		y = 7
+		relative_position_id = JAP_smoke_over_tokyo
+
+		cost = 5
+		prerequisite = { focus = JAP_restore_the_diet_under_one_party }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = JAP_enshrine_militarism
+		#icon = GFX_focus_generic_little_entente
+		x = 5
+		y = 7
+		relative_position_id = JAP_smoke_over_tokyo
+
+		cost = 5
+		prerequisite = { focus = JAP_restore_the_diet_under_one_party }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = JAP_enshrine_aristocracy
+		#icon = GFX_focus_generic_little_entente
+		x = 7
+		y = 7
+		relative_position_id = JAP_smoke_over_tokyo
+
+		cost = 5
+		prerequisite = { focus = JAP_restore_the_diet_under_one_party }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	###Democratic Paths
+	
+	focus = {
+		id = JAP_aftermath_of_the_elections
+		#icon = GFX_focus_generic_treaty
+		x = 15
+		y = 8
+
+		cost = 1
+		
+		#bypass = {
+		#	date < 2010.01.01
+		#}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+			has_country_flag = japan_elections_held
+		}
+		bypass = {
+			has_country_flag = japan_elections_held
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = JAP_social_peoples_party_wins
+		#icon = GFX_focus_generic_little_entente
+		x = -4
+		y = 1
+		relative_position_id = JAP_aftermath_of_the_elections
+
+		cost = 1
+		prerequisite = { focus = JAP_aftermath_of_the_elections }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+			has_country_flag = japan_soc_dems_win
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = JAP_minseito_wins
+		#icon = GFX_focus_generic_little_entente
+		x = 0
+		y = 1
+		relative_position_id = JAP_aftermath_of_the_elections
+
+		cost = 1
+		prerequisite = { focus = JAP_aftermath_of_the_elections }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+			has_country_flag = japan_liberals_win
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = JAP_seiyukai_wins
+		#icon = GFX_focus_generic_little_entente
+		x = 4
+		y = 1
+		relative_position_id = JAP_aftermath_of_the_elections
+
+		cost = 1
+		prerequisite = { focus = JAP_aftermath_of_the_elections }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			ROOT = {
+				is_subject = no
+			}
+			has_country_flag = japan_authdems_win
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	
+	
+}

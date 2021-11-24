@@ -16,6 +16,9 @@ ideologies = {
 			right_wing_technocracy = { #British Technocracy
 			}
 			
+			imperial_nipponism = { #Imperial Nipponism is the ideology of the YNS and is more pure interwoven faction the New Sun Society.
+			}
+			
 		}
 		
 		dynamic_faction_names = {
@@ -98,6 +101,9 @@ ideologies = {
 		types = {
 			
 			authoritarian_democrat_ideology = {
+			}
+			
+			authoritarian_constitutionalism = { #Prussian Constitutionalism, authoritarian constitutional monarchy
 			}
 			
 		}
