@@ -2,7 +2,7 @@ state={
 	id=736
 	name="STATE_736"
 	
-	state_category = small_town
+	state_category = town
 
 	history={
 		
@@ -13,8 +13,6 @@ state={
 		add_core_of = CRO
 		buildings = {
 			infrastructure = 2
-			
-
 		}
 
 	}
